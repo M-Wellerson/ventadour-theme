@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="téléchargement" transform="translate(1.000000, 1.000000)" stroke="#272727">
+            <g id="Group-2">
+                <circle id="Oval-11" fill="#FFFFFF" cx="25" cy="25" r="25"></circle>
+                <polyline id="Path-8" points="14 28 14 33.4792168 35.4995928 33.4792168 35.4995928 28.3023582"></polyline>
+                <path d="M24.5,11 L24.5,27.5273573" id="Path-10"></path>
+                <polyline id="Path-11" points="19.0822754 22.0616455 24.5322266 27.4829102 29.9821777 22.0616455"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

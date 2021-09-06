@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Pestrin';
+  src: url("../../assets/fonts/pestrin.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaLT-Bold';
+  src: url("../../assets/fonts/FuturaLT-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaLT-Condensed';
+  src: url("../../assets/fonts/FuturaLT-Condensed.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaLT-CondensedBold';
+  src: url("../../assets/fonts/FuturaLT-CondensedBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-CondensedExtra';
+  src: url("../../assets/fonts/FuturaStd-CondensedExtraBd.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaLT-CondensedLight';
+  src: url("../../assets/fonts/FuturaLT-CondensedLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaLT-ExtraBold';
+  src: url("../../assets/fonts/FuturaLT-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-CondensedLight';
+  src: url("../../assets/fonts/FuturaStd-CondensedLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-Book';
+  src: url("../../assets/fonts/FuturaStd-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url("../../assets/fonts/FuturaStd-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-Condensed';
+  src: url("../../assets/fonts/FuturaStd-Condensed.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-CondensedLight';
+  src: url("../../assets/fonts/FuturaStd-CondensedLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-CondensedBold';
+  src: url("../../assets/fonts/FuturaStd-CondensedBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-ExtraBold';
+  src: url("../../assets/fonts/FuturaStd-ExtraBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */

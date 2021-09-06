@@ -1,0 +1,12 @@
+{
+  "name": "rsw-ateliedob",
+  "authors": "aymeric",
+  "version": "0.0.1",
+  "devDependencies": {
+    "swiper": "^3.4.2",
+    "jquery": "^3.2.1",
+    "masonry": "^4.2.0",
+    "jquery-mapael": "^2.1.0",
+    "skrollr": "^0.6.30"
+  }
+}
