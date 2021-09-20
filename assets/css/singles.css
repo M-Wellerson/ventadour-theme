@@ -1,0 +1,93 @@
+.single-banner {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+}
+
+.single-banner>div>img {
+    height: 180px;
+}
+
+.single-content {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.full-track {
+    display: block;
+    background-color: #FEF7DF;
+    margin-top: 50px;
+}
+
+.full-track-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.track-item {
+    display: flex;
+}
+
+.track-item img {
+    display: block;
+    padding-right: 24px;
+}
+
+.single-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.single-bg {
+    display: block;
+    background-image: url(../images/relaxante.png);
+    background-position: 0 50px;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.single-sitacao{
+    background-color: #FFF6D8;
+    display: block;
+    padding: 24px;    
+}
+
+.single-list {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    padding: 24px;
+}
+
+@media ( max-width: 600px) {
+    /* [s-] pequeno */
+}
+
+@media ( min-width: 600px) {
+    /* [m-] medio */
+}
+
+@media ( min-width: 992px) {
+    /* [l-] largo */
+    .single-banner>div>img {
+        height: 90vh;
+    }
+    .single-banner>div>img:nth-child(2) {
+        margin-bottom: -150px;
+    }
+    .full-track-grid {
+        display: flex;
+        justify-content: space-around;
+        /* grid-template-columns: repeat(3, 1fr); */
+    }
+}
+
+@media ( min-width: 1200px) {
+    /* [xl-] muito largo */
+}

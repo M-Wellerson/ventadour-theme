@@ -45,6 +45,8 @@
 	</div>
 </div>
 
+<?php include_once('includes/slider-home.php'); ?>
+
 <?php include_once('page_components/menu.php'); ?>
 <div class="wrapper home">
 	<div class="home__social belowIpadF">

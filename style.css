@@ -4,7 +4,285 @@ Theme URI:
 Author: RSW
 Author URI: 
 Description: 
-Version: 0.1.0
+Version: 1.0.0
 License: Copyright
 Text Domain: rsw-pestrin
 */
+
+body {
+    overflow-x: hidden;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.banner-home {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: -120px;
+}
+
+.banner-home-slide>img {
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: auto !important;
+    transition: all .3s ease-in-out;
+}
+
+.banner-home-slide:hover>img {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.banner-home-slide>a {
+    display: block;
+    width: 159px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    border: 1px solid #222;
+    color: #222;
+    margin: 0 auto;
+    transition: all .2s ease-in-out;
+    background: linear-gradient(#111, #111);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 0% 100%;
+    cursor: pointer;
+}
+
+.banner-home-slide>a:hover {
+    color: #EEE;
+    background-size: 100% 100%;
+}
+
+.banner-home-slide>strong {
+    display: block;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.banner-home-slide>span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.home-quick-view {
+    display: block;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 70px 0;
+}
+
+.home-quick-view>div {
+    position: relative;
+    display: block;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    background-color: #FFF;
+    width: 1010px;
+    max-width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.quick-close {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.home-quick-view-title {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: auto
+}
+
+.home-quick-view-subtitle {
+    display: block;
+    font-size: 40px;
+    margin-top: -15px;
+}
+
+.home-quick-view-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-quick-view-image>img {
+    position: relative;
+    z-index: 9992;
+    height: 270px;
+    transition: all .3s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.home-quick-view-image>img:hover {
+    transform: rotate(-7deg);
+}
+
+.home-quick-view-image>span {
+    display: block;
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: 9991;
+    background-color: #C00;
+    background-color: attr(color);
+}
+
+.home-quick-view-preco {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.home-quick-view-add {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.home-quick-view-add:hover {
+    filter: brightness(1.2);
+}
+
+.home-quick-view-select {
+    display: block;
+    width: 100%;
+    border: 1px solid #111;
+    margin-top: 20px;
+    height: 40px;
+    padding: 0 12px;
+    outline: none;
+}
+
+.home-quick-view-link {
+    display: block;
+    line-height: 40px;
+    color: #111;
+    font-size: 13px;
+}
+
+.home-quick-view-description {
+    display: block;
+    font-size: 20px;
+}
+
+.banner-control {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    border: 1px solid #222;
+    background-image: url(assets/images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: 170px;
+    z-index: 999;
+}
+
+.banner-control:hover {
+    background-color: #FFF;
+    filter: invert(1);
+}
+
+.banner-nex {
+    transform: rotate(0deg);
+    right: 50px;
+    cursor: pointer;
+}
+
+.banner-prev {
+    transform: rotate(-180deg);
+    left: 50px;
+    cursor: pointer;
+}
+
+.banner-padding-left {
+    padding-left: 0px;
+}
+
+.home__header {
+    height: calc(100vh + 150px);
+}
+.header__social {
+    bottom: 105px !important;
+}
+
+@media ( max-width: 600px) {
+    /* [s-] pequeno */
+}
+
+@media ( min-width: 600px) {
+    /* [m-] medio */
+    .home-quick-view>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner-padding-left {
+        padding-left: 20px;
+    }
+    .home-quick-view-image>span {
+        width: 300px;
+        height: 300px;
+    }
+    .home-quick-view-image>img {
+        height: auto;
+    }
+    .home-quick-view-preco {
+        margin-top: 50px;
+    }
+    .home-quick-view {
+        display: flex;
+        padding: none;
+    }
+    .home-quick-view-title {
+        font-size: 80px;
+        line-height: 90px;
+    }
+}
+
+@media ( min-width: 992px) {
+    /* [l-] largo */
+}
+
+@media ( min-width: 1200px) {
+    /* [xl-] muito largo */
+}
