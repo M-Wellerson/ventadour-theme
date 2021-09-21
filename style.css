@@ -173,9 +173,9 @@ body {
     text-align: center;
     padding: 10px 0;
     font-size: 20px;
-    font-weight: lighter;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: 'FuturaLT-CondensedLight';
 }
 
 .home-quick-view-add:hover {
@@ -190,13 +190,14 @@ body {
     height: 40px;
     padding: 0 12px;
     outline: none;
+    font-family: 'FuturaLT-CondensedLight';
 }
 
 .home-quick-view-link {
     display: block;
-    line-height: 40px;
     color: #111;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: 'FuturaLT-CondensedLight';
 }
 
 .home-quick-view-description {

@@ -1,0 +1,22 @@
+.title {
+    font-size: 30px;
+    font-family: 'FuturaLT-Bold';
+}
+.title-big {
+    font-family: 'FuturaLT-ExtraBold';
+    font-size: 100px;
+}
+.title-sub {
+    font-family: 'FuturaLT-CondensedLight';
+    font-size: 39px;
+}
+.text {
+    font-family: 'FuturaLT-Condensed';
+    font-size: 20px;
+    line-height: 25px;
+}
+.text-small {
+    font-family: 'FuturaLT-Condensed';
+    font-size: 15px;
+    line-height: 18px;
+}
