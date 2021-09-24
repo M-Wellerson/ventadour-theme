@@ -33,6 +33,7 @@
 
 .track-item {
     display: flex;
+    justify-content: center;
 }
 
 .track-item img {
@@ -104,9 +105,10 @@
 }
 .track-space {
     display: block;
-    width: 1px;
+    width: 80%;
     background-color: #898989;
-    height: 67px;
+    height: 1px;
+    margin: 25px 10%;
 }
 
 @media ( max-width: 600px) {
@@ -128,6 +130,11 @@
     .full-track-grid {
         display: flex;
         justify-content: space-between;
+    }
+    .track-space {
+        width: 1px;
+        height: 67px;
+        margin: 0px;
     }
 }
 

@@ -1,26 +1,82 @@
-<footer>
-	<div class="footer__wrapper">
-		<div class="footer__item footer__item_logo"><img src="<?= get_template_directory_uri(); ?>/assets/logos/logo-1868.png" alt=""></div>
-		<div class="footer__item">
-			<a href="<?= $homePage ?>"><?= __('Un patrimoine', 'pestrin'); ?></a>
-			<a href="javascript:;" class="aime menu__sub_action_footer"><?= __('on aime', 'pestrin'); ?></a>
-		</div>
-		<div class="footer__item">
-			<a href="<?= $ventadourPage ?>"><?= __('Ventadour', 'pestrin'); ?></a>
-			<a href="<?= $portfolioPage ?>"><?= __('Vos photos', 'pestrin'); ?></a></div>
-		<div class="footer__item">
-			<a href="<?= $chantemerlePage ?>"><?= __('Chantemerle', 'pestrin'); ?></a>
-			<a href="<?= $ventesPage ?>"><?= __('Points de vente', 'pestrin'); ?></a></div>
-		<div class="footer__item">
-			<a href="<?= $sourcesPage ?>"><?= __('Une histoire', 'pestrin'); ?></a>
-			<a href="<?= $contactPage ?>"><?= __('Contact', 'pestrin'); ?></a></div>
-		<div class="footer__item">
-			<a href="<?= $pressePage ?>"><?= __('Presse', 'pestrin'); ?></a>
-			<a href="http://eepurl.com/cR6BtL" target="_blank"><?= __('Newsletter', 'pestrin'); ?></a></div>
-		<div class="footer__item footer__item_large">
-			<a href="<?= $ardechePage ?>"><?= __('Émerveillés par l’ardèche', 'pestrin'); ?></a>
-			<a href="http://www.regularswitch.com" target="_blank"><?= __('Design et développement', 'pestrin'); ?></a>
-		</div>
+<?php
+$homePage;
+$ventadourPage;
+$portfolioPage;
+$chantemerlePage;
+$ventesPage;
+$sourcesPage;
+$contactPage;
+$pressePage;
+$ardechePage;
+?>
 
+<footer class="c-footer">
+	<div class="footer__wrapper">
+		<div class="c-footer-grid">
+			<div>
+				<img class="c-footer-logo" src="<?= get_template_directory_uri() ?>/assets/logos/lg-1868.svg">
+				<h5 class="c-footer-title">
+					Moyen de paiement
+				</h5>
+				<img class="c-footer-brands" src="<?= get_template_directory_uri() ?>/assets/images/brands.png">
+				<h5 class="c-footer-title">
+					Livraison
+				</h5>
+				<img class="c-footer-brands" src="<?= get_template_directory_uri() ?>/assets/images/colissimo.png">
+				<h5 class="c-footer-title">
+					Financé par
+				</h5>
+				<img class="c-footer-brands" src="<?= get_template_directory_uri() ?>/assets/images/frelance.png">
+			</div>
+			<div class="c-footer-sanfona" onclick="this.classList.toggle('active-footer')">
+				<h5 class="c-footer-title">
+					<img class="c-footer-next" src="<?= get_template_directory_uri() ?>/assets/images/next.png">
+					Les sources du Pestrins
+				</h5>
+				<a href="javascript:void(0)" class="c-footer-link"> Un territoire et son patrimoine naturel </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Une histoire </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Ventadour </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Chantemerle </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Actualités </a>
+				<a href="javascript:void(0)" class="c-footer-link"> On aime </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Émerveillés par l’Ardèche </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Vos photos </a>
+			</div>
+			<div class="c-footer-sanfona" onclick="this.classList.toggle('active-footer')">
+				<h5 class="c-footer-title">
+					<img class="c-footer-next" src="<?= get_template_directory_uri() ?>/assets/images/next.png">
+					Nos boissons
+				</h5>
+				<a href="javascript:void(0)" class="c-footer-link"> Ventadour Plate </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Ventadour Gazeuses </a>
+				<a href="javascript:void(0)" class="c-footer-link"> O’cool </a>
+				<a href="javascript:void(0)" class="c-footer-link"> O’Coll </a>
+				<a href="javascript:void(0)" class="c-footer-link"> O’ZakeA.Fer </a>
+				<a href="javascript:void(0)" class="c-footer-link"> O’Vive </a>
+			</div>
+			<div class="c-footer-sanfona" onclick="this.classList.toggle('active-footer')">
+				<h5 class="c-footer-title">
+					<img class="c-footer-next" src="<?= get_template_directory_uri() ?>/assets/images/next.png">
+					Aide
+				</h5>
+				<a href="javascript:void(0)" class="c-footer-link"> Je suis professionel </a>
+				<a href="javascript:void(0)" class="c-footer-link"> FAQLivraisonPolitique de privacité </a>
+				<a href="javascript:void(0)" class="c-footer-link"> des données  </a>
+			</div>
+			<div class="c-footer-sanfona" onclick="this.classList.toggle('active-footer')">
+				<h5 class="c-footer-title">
+					<img class="c-footer-next" src="<?= get_template_directory_uri() ?>/assets/images/next.png">
+					Contact
+				</h5>
+				<a href="javascript:void(0)" class="c-footer-link"> Entrer en contact via: </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Email </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Par	téléphone </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Instagram </a>
+				<a href="javascript:void(0)" class="c-footer-link"> Facebook </a>
+			</div>
+		</div>
+		<div class="c-footer-copy"> 
+			© 2019 Ursofrango | All rights reserved. 
+		</div>
 	</div>
 </footer>

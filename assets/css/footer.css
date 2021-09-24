@@ -1,0 +1,108 @@
+.c-footer {
+    background-color: #161616;
+}
+
+.c-footer-grid {
+    display: grid;
+    width: 100%;
+}
+
+.c-footer-logo {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.c-footer-title {
+    display: flex;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.666667px;
+    font-family: 'FuturaLT-CondensedLight';
+    margin-bottom: 7px;
+}
+
+.c-footer-link {
+    display: block;
+    font-family: 'FuturaLT-CondensedLight';
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 34px;
+}
+
+.c-footer-copy {
+    display: block;
+    width: 100%;
+    height: 25px;
+    font-family: 'FuturaLT-CondensedLight';
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-top: 1px solid #FFF;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.c-footer-brands {
+    display: block;
+    max-width: 80%;
+}
+.c-footer-next {
+    display: block;
+    margin-right: 19px;
+    transition: .3s;
+    margin-left: 10px;
+}
+
+.c-footer-sanfona {
+    display: block;
+    max-height: 70px;
+    overflow: hidden;
+    transition: .3s;
+}
+.c-footer-sanfona.active-footer {
+    max-height: 1500px;
+}
+
+.c-footer-sanfona.active-footer .c-footer-next {
+   transform: rotate(90deg);
+}
+
+@media ( max-width: 600px) {
+    /* [s-] pequeno */
+}
+
+@media ( min-width: 600px) {
+    /* [m-] medio */
+}
+
+@media ( min-width: 992px) {
+    /* [l-] largo */
+    .c-footer-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .c-footer-logo {
+        margin: 3px;
+    }
+    .c-footer-next {
+        display: none;
+    }
+    .c-footer-sanfona ,
+    .c-footer-sanfona.active-footer {
+        max-height: 1500px;
+    }
+    .c-footer-link {
+        margin-left: 0px;
+    }
+    
+}
+
+@media ( min-width: 1200px) {
+    /* [xl-] muito largo */
+}
