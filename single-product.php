@@ -2,7 +2,7 @@
 
 <?php include_once('page_components/menu.php'); ?>
 
-<div class="single-banner">
+<div class="single-banner js-single-banner">
     <div>
 
         <img src="<?= get_template_directory_uri() ?>/assets/images/c1.png">
@@ -23,9 +23,9 @@
         <div>
             <div class="box-single">
                 <div class="mb-10">
-                    <strong class="text c-gray-300">75,26 € </strong> 
-                    <strong class="text ml-10">52,50 €</strong> 
-                    <b class="text red-900 c-gray-50 single-discout ml-10">- 30%</b>  
+                    <strong class="text c-gray-300">75,26 € </strong>
+                    <strong class="text ml-10">52,50 €</strong>
+                    <b class="text red-900 c-gray-50 single-discout ml-10">- 30%</b>
                 </div>
                 <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
                 <select class="home-quick-view-select text">
@@ -64,7 +64,7 @@
     </div>
 </div>
 
-<div class="single-bg">
+<div class="single-bg js-single-bg">
     <div class="wrapper">
         <div class="single-grid-2">
             <div>
@@ -82,7 +82,7 @@
             <h4 class="title mb-10">QUE EST CE QUE LE CBD ?</h4>
             <p class="text mb-30">
                 <b>Lorem ipsum dolor sit amet, consectetur adipiscing
-                labore et dolore magna aliqua. </b> Ut enim ad minim veniam,
+                    labore et dolore magna aliqua. </b> Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi
                 ut aliquip ex ea commodo consequat.
             </p>
@@ -148,5 +148,17 @@
 </div>
 
 <?php include('page_components/footer.php'); ?>
+
+<script>
+    window.scroll({ behavior: 'smooth' });
+    window.onscroll = function() {
+        const horizontal = document.querySelector('.js-single-bg');
+        // const scroll     = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+        // background-position: 0 50px, -175px 50px;
+        let x1 = window.scrollY / 4
+        let x2 = ((window.scrollY / 4) - 175) * -1
+        horizontal.style.backgroundPosition = `${x1}px 50px, ${x2}px 50px`;
+    }
+</script>
 
 <?php get_footer(); ?>
