@@ -1,0 +1,33 @@
+.menu-cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-cat-link {
+    display: block;
+    font-family: 'FuturaLT-CondensedLight';
+    font-size: 21px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #282828;
+    text-decoration: none;
+    background: linear-gradient(#000, #000);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0% 4px;
+    padding: 7px;
+    transition: all .3s ease-in-out;
+}
+.menu-cat-link:hover,
+.menu-cat-link-active {
+    font-family: 'FuturaLT-ExtraBold';
+    background-size: 60% 4px;
+}
+.menu-cat-separador {
+    display: block;
+    width: 1px;
+    height: 36px;
+    background-color: #000;
+}
