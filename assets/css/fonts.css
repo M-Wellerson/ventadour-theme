@@ -1,97 +1,139 @@
 @font-face {
-    font-family: 'Pestrin';
-    src: url("../fonts/pestrin.otf") format("opentype");
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-BoldOblique.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-Book.otf") format("opentype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-BookOblique.otf") format("opentype");
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-Condensed.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaLT-Bold';
-    src: url("../fonts/FuturaLT-Bold.ttf") format("truetype");
+    font-family: 'FuturaStd Condensed';
+    src: url("../font/FuturaStd-CondensedBold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd Condensed';
+    src: url("../font/FuturaStd-CondensedBoldObl.otf") format("opentype");
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'FuturaStd Condensed';
+    src: url("../font/FuturaStd-CondensedExtraBd.otf") format("opentype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd Condensed';
+    src: url("../font/FuturaStd-CondensedLight.otf") format("opentype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd Condensed';
+    src: url("../font/FuturaStd-CondensedLightObl.otf") format("opentype");
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'FuturaStd Condensed';
+    src: url("../font/FuturaStd-CondensedOblique.otf") format("opentype");
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'FuturaStd Condensed';
+    src: url("../font/FuturaStd-CondExtraBoldObl.otf") format("opentype");
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-ExtraBold.otf") format("opentype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-ExtraBoldOblique.otf") format("opentype");
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'FuturaStd Heavy';
+    src: url("../font/FuturaStd-Heavy.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaLT-Condensed';
-    src: url("../fonts/FuturaLT-Condensed.ttf") format("truetype");
+    font-family: 'FuturaStd Heavy';
+    src: url("../font/FuturaStd-HeavyOblique.otf") format("opentype");
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-Light.otf") format("opentype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-LightOblique.otf") format("opentype");
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-Medium.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaLT-CondensedBold';
-    src: url("../fonts/FuturaLT-CondensedBold.ttf") format("truetype");
+    font-family: 'FuturaStd';
+    src: url("../font/FuturaStd-MediumOblique.otf") format("opentype");
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-CondensedExtra';
-    src: url("../fonts/FuturaStd-CondensedExtraBd.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FuturaLT-CondensedLight';
-    src: url("../fonts/FuturaLT-CondensedLight.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FuturaLT-ExtraBold';
-    src: url("../fonts/FuturaLT-ExtraBold.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-CondensedLight';
-    src: url("../fonts/FuturaStd-CondensedLight.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-Book';
-    src: url("../fonts/FuturaStd-Book.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-Bold';
-    src: url("../fonts/FuturaStd-Bold.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-Condensed';
-    src: url("../fonts/FuturaStd-Condensed.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-CondensedLight';
-    src: url("../fonts/FuturaStd-CondensedLight.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-CondensedBold';
-    src: url("../fonts/FuturaStd-CondensedBold.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura-ExtraBold';
-    src: url("../fonts/FuturaStd-ExtraBold.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+    font-style: oblique;
 }

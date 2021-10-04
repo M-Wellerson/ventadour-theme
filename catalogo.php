@@ -5,6 +5,7 @@
 ?>
 <?php get_header(); ?>
 <?php include_once('page_components/menu.php'); ?>
+<?php include_once('includes/carrinho.php'); ?>
 
 <div class="wrapper ventes">
 
@@ -26,12 +27,16 @@
         <canvas class="shop-product-canvas"></canvas>
         <h2 class="shop-product-title">O’COOL</h2>
         <span class="shop-product-subtitle">CBD</span>
-        <p class="shop-product-descriacao">
-            <b>Nouvelle boisson enrichie en CBD. Relaxante, pas stupéfiante …</b> 
-            Garanti zéro sucre et zéro calorie, parfait donc pour une pause aussi 
-            désaltérante que délassante.
-        </p>
-        <a href="javascript" class="shop-product-link">en savoir plus</a>
+        <div class="shop-product-row">
+            <div class="shop-product-col">
+                <p class="shop-product-descriacao">
+                    <b>Nouvelle boisson enrichie en CBD. Relaxante, pas stupéfiante …</b> 
+                    Garanti zéro sucre et zéro calorie, parfait donc pour une pause aussi 
+                    désaltérante que délassante.
+                </p>
+                <a onclick="showCart()" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+            </div>
+        </div>
     </div>
     
 </div>

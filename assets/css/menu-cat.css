@@ -2,10 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 125px;
 }
+
 .menu-cat-link {
     display: block;
-    font-family: 'FuturaLT-CondensedLight';
+    font-family: 'FuturaStd Condensed';
     font-size: 21px;
     line-height: 25px;
     align-items: center;
@@ -20,11 +22,12 @@
     padding: 7px;
     transition: all .3s ease-in-out;
 }
-.menu-cat-link:hover,
-.menu-cat-link-active {
-    font-family: 'FuturaLT-ExtraBold';
+
+.menu-cat-link:hover, .menu-cat-link-active {
     background-size: 60% 4px;
+    font-weight: bolder;
 }
+
 .menu-cat-separador {
     display: block;
     width: 1px;
