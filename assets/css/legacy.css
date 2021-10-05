@@ -15,3 +15,9 @@
     color: #282828;
 
 }
+.menu__item--link_login{
+    margin-right: 25px;
+}
+.pointer {
+    cursor: pointer;
+}

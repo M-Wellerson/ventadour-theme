@@ -32,5 +32,5 @@
         <span>SUB TOTAL :</span>
         <b>75,00 €</b>
     </div>
-    <a href="" class="carrinho-link">acheter</a>
+    <a href="<?= get_site_url() ?>/cart/" class="carrinho-link">acheter</a>
 </div>
