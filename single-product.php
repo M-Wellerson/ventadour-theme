@@ -137,7 +137,7 @@
             </div>
             <div class="track-space"></div>
             <div class="track-item">
-                <img src="<?= get_template_directory_uri() ?>/assets/icons/comment.png">
+                <img src="<?= get_template_directory_uri() ?>/assets/icons/commet.svg">
                 <span>
                     Besoin d’aide ? <br>
                     Entrer en contact

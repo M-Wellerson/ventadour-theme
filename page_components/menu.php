@@ -10,7 +10,13 @@
 
 		</a></div>
 		<div class="menu__item no-iphone"><h4 class="fontpestrin"><a href="<?= $chantemerlePage ?>">Chantemerle</a></h4></div>
-		<div class="menu__item"></div>
+		<div class="menu__item">
+			<div onclick="showCart()" class="menu__item--more_cart">
+				<img src="<?= get_template_directory_uri() ?>/assets/images/lata.svg" alt="">
+				<span>01</span> 
+			</div>
+			
+		</div>
 
 	</div>
 </menu>

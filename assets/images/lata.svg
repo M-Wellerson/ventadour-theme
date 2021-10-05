@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="lata.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.024018"
+     inkscape:cx="-60.029112"
+     inkscape:cy="88.190917"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect858"
+       style="fill:#000000;stroke:none;stroke-width:0.0266173;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+       d="M 5.2839291,0.31570848 A 0.39569958,0.39569958 0 0 0 4.8847809,0.58581087 0.39569958,0.39569958 0 0 0 5.1348944,1.086127 l 1.075587,0.3584703 H 5.248073 c -0.7985742,0 -1.4414216,0.6428481 -1.4414216,1.4414216 v 8.5867261 c 0,0.798574 0.6428474,1.441422 1.4414216,1.441422 h 2.7330205 c 0.7985736,0 1.4414217,-0.642848 1.4414217,-1.441422 V 2.8860189 c 0,-0.7905505 -0.6302593,-1.4274563 -1.417664,-1.4401939 A 0.39569958,0.39569958 0 0 0 7.7372913,1.1196153 L 5.3854471,0.33534587 a 0.39569958,0.39569958 0 0 0 -0.101518,-0.0196374 z m 0.088543,1.89518632 h 2.4842211 c 0.4355866,0 0.7862857,0.3507006 0.7862857,0.7862865 V 5.3435899 C 8.3699029,5.6422865 7.6318249,6.345346 6.7185126,6.3638595 5.7781648,6.382921 4.8895782,6.880635 4.5862744,7.0687901 V 2.9971813 c 0,-0.4355859 0.3506121,-0.7862865 0.7861977,-0.7862865 z m 3.2705068,4.218452 v 4.9322372 c 0,0.435585 -0.3506991,0.786285 -0.7862857,0.786285 H 5.3724724 c -0.4355859,0 -0.786198,-0.3507 -0.786198,-0.786285 V 8.0835364 C 4.8401546,7.873508 5.7546639,7.1678456 6.6087534,7.1478659 7.7074034,7.1221677 8.4208404,6.6127025 8.6429789,6.4293468 Z" />
+  </g>
+</svg>

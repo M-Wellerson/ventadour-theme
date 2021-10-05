@@ -11,6 +11,7 @@
     display: block;
     width: 60px;
     margin: 0 auto;
+    filter: invert(1);
 }
 
 .c-footer-title {

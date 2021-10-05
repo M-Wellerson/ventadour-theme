@@ -1,3 +1,17 @@
 .slowTop {
     border-bottom: 1px solid #000;
 }
+.menu__item--more_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: FuturaStd;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.514286px;
+    text-transform: uppercase;
+    color: #282828;
+
+}

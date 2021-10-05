@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 <?php include_once('page_components/menu.php'); ?>
-<?php include_once('includes/carrinho.php'); ?>
+
 
 <div class="wrapper ventes">
 

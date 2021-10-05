@@ -10,6 +10,8 @@ $pressePage;
 $ardechePage;
 ?>
 
+<?php include_once( __DIR__ . '/../includes/carrinho.php'); ?>
+
 <footer class="c-footer">
 	<div class="footer__wrapper">
 		<div class="c-footer-grid">
@@ -76,7 +78,7 @@ $ardechePage;
 			</div>
 		</div>
 		<div class="c-footer-copy"> 
-			© 2019 Ursofrango | All rights reserved. 
+			© 2019 Ventadour | All rights reserved. 
 		</div>
 	</div>
 </footer>
