@@ -1,0 +1,2 @@
+GET http://ventadour.con/wp-json/api/add-to-cart?product_id=183
+

@@ -1,7 +1,5 @@
 <?php
 
-
-
 // Allow Featured Images
 add_theme_support('post-thumbnails');
 
@@ -74,3 +72,11 @@ function my_acf_google_map_api( $api ){
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+/**
+ * Rotas para api Woocomerce
+ */
+include __DIR__ . "/api/add-to-cart.php";
+include __DIR__ . "/api/get-cart.php";
+include __DIR__ . "/api/del-to-cart.php";
+include __DIR__ . "/api/quick-view.php";
