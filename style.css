@@ -33,6 +33,7 @@ body {
     margin-bottom: 0px;
     width: auto !important;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .banner-home-slide:hover>img {
@@ -41,8 +42,10 @@ body {
 }
 
 .banner-home-slide>a {
+    font-family: "FuturaStd CondensedLight";
+    letter-spacing: 3.33px;
     display: block;
-    width: 159px;
+    width: 165px;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -67,6 +70,8 @@ body {
 }
 
 .banner-home-slide>strong {
+    font-family: "FuturaStd Condensed";
+    letter-spacing: 1.5px;
     display: block;
     font-size: 16px;
     font-weight: bolder;
@@ -74,6 +79,7 @@ body {
 }
 
 .banner-home-slide>span {
+    font-family: "FuturaStd";
     display: block;
     font-size: 16px;
     text-align: center;
@@ -247,8 +253,39 @@ body {
     bottom: 105px !important;
 }
 
+.home__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+}
+
+.home__info-text h2 {
+    font-family: "FuturaStd ExtraBold";
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #282828;
+    margin-bottom: 1rem;
+}
+
+.home__info-text span {
+    font-family: "FuturaStd";
+    font-size: 25px;
+    line-height: 30px;
+    color: #282828;
+}
+
 @media ( max-width: 600px) {
     /* [s-] pequeno */
+    .home__info {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 0;
+    }
+    .home__info-text {
+        max-width: 92vw;
+        margin: 0 auto;
+    }
 }
 
 @media ( min-width: 600px) {

@@ -1,3 +1,26 @@
 html {
     scroll-behavior: smooth;
 }
+.space {
+    --s: 30px;
+    display: block;
+    height: var(--s) ;
+}
+
+@media ( max-width: 600px ) {
+    /* [s-] pequeno */
+    .s-space {
+        --ss: 30px;
+        display: block;
+        height: var(--ss) !important ;
+    }
+}
+@media ( min-width: 600px ) {
+    /* [m-] medio */
+}
+@media ( min-width: 992px ) {
+    /* [l-] largo */
+}
+@media ( min-width: 1200px ) {
+    /* [xl-] muito largo */
+}

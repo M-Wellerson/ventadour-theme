@@ -8,7 +8,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-color: #CCC;
+    background-color: #FFF;
     position: absolute;
     z-index: -1;
 }
@@ -16,39 +16,81 @@
 .shop-product-title {
     display: block;
     font-family: FuturaStd;
-    font-size: 200px;
-    line-height: 200px;
+    font-size: clamp( 8rem, 10vw, 12.5rem );
+    line-height: clamp( 8rem, 10vw, 12.5rem );
     color: #282828;
     text-align: center;
     font-weight: bolder;
     margin: 0;
     padding: 0;
 }
+.shop-product-title-right {
+    width: 50%;
+    margin-left: 49%;
+}
+.shop-product-title-afer {
+    text-align: left;
+    font-size: clamp( 7.5rem, 13vw, 15rem );
+    line-height: clamp( 7.5rem, 13vw, 15rem );
+}
 
 .shop-product-subtitle {
     display: block;
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd Light';
     font-style: normal;
     font-weight: lighter;
-    font-size: 200px;
-    line-height: 200px;
+    font-size: clamp( 8rem, 10vw, 12.5rem );
+    line-height: clamp( 8rem, 10vw, 12.5rem );
     color: #282828;
     text-align: right;
     margin: 0;
     padding: 0;
 }
+.shop-product-subtitle-100 {
+    font-size: clamp( 4rem, 5vw, 6.25rem ) !important;
+    line-height: clamp( 4rem, 5vw, 6.25rem ) !important;
+    margin-right: 75px;
+}
+.shop-title-light {
+    font-family: 'FuturaStd CondensedLight';
+}
+.shop-product-subtitle-marin {
+    font-family: 'FuturaStd CondensedLight';
+    font-size: clamp( 4rem, 5vw, 6.25rem ) !important;
+    line-height: clamp( 4rem, 5vw, 6.25rem ) !important;
+    text-transform: uppercase;
+}
+.shop-product-subtitle-marin b {
+    font-family: 'FuturaStd Heavy';
+}
+
+.shop-product-descriacao-selt {
+    margin-top: 35vw;
+}
 
 .shop-product-descriacao {
-    font-family: FuturaStd;
+    font-family: 'FuturaStd Medium';
     font-size: 20px;
     line-height: 25px;
     color: #282828;
+}
+.shop-image {
+    position: absolute;
+    top: 20px;
+    right: 370px;
+    width: 500px;
+    max-width: 70vw;
+}
+.shop-image-selt {
+    width: 90%;
+    right: 5%;
+    top: 70px;
 }
 
 .shop-product-link {
     display: block;
     background-color: #FDE17F;
-    font-family: FuturaStd;
+    font-family: 'FuturaStd CondensedLight';
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -78,6 +120,34 @@
 
 @media ( max-width: 600px) {
     /* [s-] pequeno */
+    .shop-image {
+        right: 10vw;
+        width: 80vw;
+        max-width: 70vw;
+    }
+    .shop-product-descriacao {
+        margin-top: 30vw;
+    }
+    .shop-product-row {
+        justify-content: center;
+    }
+    .shop-product-title-right {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .shop-product-descriacao-right {
+        margin-top: 40vw;
+    }
+    .shop-product-descriacao--afer {
+        margin-top: 40vw;
+
+    }    
+    .shop-product-descriacao-vive {
+        margin-top: 63vw;
+
+    }
+
 }
 
 @media ( min-width: 600px) {

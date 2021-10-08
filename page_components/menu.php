@@ -11,7 +11,7 @@
 
 			</a></div>
 		<div class="menu__item no-iphone">
-			<h4 class="fontpestrin"><a href="<?= $chantemerlePage ?>">Chantemerle</a></h4>
+			<h4 class="fontpestrin"><a href="<?= get_site_url() ?>/loja">LES BOISSONS</a></h4>
 		</div>
 		<div class="menu__item">
 			<div class="menu__item--more_cart pointer">

@@ -57,6 +57,18 @@
 		<a href="https://www.instagram.com/ventadourchantemerle1868/?hl=fr" target="_blank"><img src="<?= get_template_directory_uri(); ?>/assets/icons/instagram_black.png" alt=""></a>
 	</div>
 
+	<div class="home__info">
+		<div class="home__info-img">
+			<img src="<?= get_template_directory_uri(); ?>/assets/images/finance.png" alt="">			
+		</div>
+		<div class="home__info-text">
+			<h2>Entreprise<br> lauréate</h2>
+			<span>
+				C’est sur la commune de Meyras, une ancienne cité médiévale, au cœur des volcans ardéchois et du parc naturel.
+			</span>
+		</div>
+	</div>
+
 	<div class="home__patrimoine" id="patrimoine">
 		<div class="patrimoine__header">
 			<div class="patrimoine__header_title">

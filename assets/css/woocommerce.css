@@ -1,0 +1,53 @@
+.woocommerce button.button {
+    background: #FDE17F !important;
+    font-family: FuturaStd;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #282828 !important;
+}
+.woocommerce form .form-row select,
+.woocommerce form .form-row input.input-text {
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #282828;
+}
+fieldset,
+.woocommerce form.register,
+.woocommerce form.login {
+    border: 1px solid #282828 !important;
+}
+.woocommerce-MyAccount-navigation {
+    border: 1px solid #282828 !important;
+    border-radius: 8px;
+}
+
+
+.woocommerce-MyAccount-navigation-link a {
+    text-decoration: none !important;
+    color: #282828 !important;
+    font-family: FuturaStd;
+}
+
+.is-active a {
+    font-weight: bolder;
+}
+
+.title h3 {
+    font-size: 24px !important;
+}
+
+a.edit {
+    color: #282828 !important;
+    border: 2px solid #282828;
+    text-decoration: none;
+    font-family: FuturaStd;
+    font-weight: lighter;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 7px 14px;
+    margin: 7px 0;
+}

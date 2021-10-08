@@ -1,96 +1,96 @@
 @font-face {
     font-family: 'FuturaStd';
     src: url("../font/FuturaStd-Bold.otf") format("opentype");
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd BoldOblique';
     src: url("../font/FuturaStd-BoldOblique.otf") format("opentype");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd Book';
     src: url("../font/FuturaStd-Book.otf") format("opentype");
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd BookOblique';
     src: url("../font/FuturaStd-BookOblique.otf") format("opentype");
     font-weight: lighter;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd Condensed';
     src: url("../font/FuturaStd-Condensed.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd Condensed';
+    font-family: 'FuturaStd CondensedBold';
     src: url("../font/FuturaStd-CondensedBold.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd Condensed';
+    font-family: 'FuturaStd CondensedBoldObl';
     src: url("../font/FuturaStd-CondensedBoldObl.otf") format("opentype");
     font-weight: normal;
     font-style: oblique;
 }
 
 @font-face {
-    font-family: 'FuturaStd Condensed';
+    font-family: 'FuturaStd CondensedExtraBd';
     src: url("../font/FuturaStd-CondensedExtraBd.otf") format("opentype");
     font-weight: bolder;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd Condensed';
+    font-family: 'FuturaStd CondensedLight';
     src: url("../font/FuturaStd-CondensedLight.otf") format("opentype");
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd Condensed';
+    font-family: 'FuturaStd CondensedLightObl';
     src: url("../font/FuturaStd-CondensedLightObl.otf") format("opentype");
     font-weight: lighter;
     font-style: oblique;
 }
 
 @font-face {
-    font-family: 'FuturaStd Condensed';
+    font-family: 'FuturaStd CondensedOblique';
     src: url("../font/FuturaStd-CondensedOblique.otf") format("opentype");
     font-weight: normal;
     font-style: oblique;
 }
 
 @font-face {
-    font-family: 'FuturaStd Condensed';
+    font-family: 'FuturaStd CondExtraBoldObl';
     src: url("../font/FuturaStd-CondExtraBoldObl.otf") format("opentype");
     font-weight: bolder;
     font-style: oblique;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd ExtraBold';
     src: url("../font/FuturaStd-ExtraBold.otf") format("opentype");
     font-weight: bolder;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd ExtraBoldOblique';
     src: url("../font/FuturaStd-ExtraBoldOblique.otf") format("opentype");
     font-weight: bolder;
     font-style: oblique;
@@ -104,35 +104,35 @@
 }
 
 @font-face {
-    font-family: 'FuturaStd Heavy';
+    font-family: 'FuturaStd HeavyOblique';
     src: url("../font/FuturaStd-HeavyOblique.otf") format("opentype");
     font-weight: normal;
     font-style: oblique;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd Light';
     src: url("../font/FuturaStd-Light.otf") format("opentype");
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd LightOblique';
     src: url("../font/FuturaStd-LightOblique.otf") format("opentype");
     font-weight: lighter;
     font-style: oblique;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd Medium';
     src: url("../font/FuturaStd-Medium.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'FuturaStd';
+    font-family: 'FuturaStd MediumOblique';
     src: url("../font/FuturaStd-MediumOblique.otf") format("opentype");
     font-weight: normal;
     font-style: oblique;
