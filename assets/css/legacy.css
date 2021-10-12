@@ -21,3 +21,14 @@
 .pointer {
     cursor: pointer;
 }
+menu {
+    z-index: 999999999 !important;
+}
+.menu__popup {    
+    z-index: 9999999999 !important;
+}
+.font_certa {
+    font-family: 'FuturaStd Medium' !important ;
+    font-weight: 1000;
+
+}

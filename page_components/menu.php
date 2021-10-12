@@ -3,7 +3,7 @@
 	<div class="menu__wrapper">
 		<div class="menu__item menu__action"><img src="<?= get_template_directory_uri(); ?>/assets/icons/burger_black.svg" alt=""></div>
 		<div class="menu__item no-iphone">
-			<h4 class="fontpestrin"><a href="<?= $ventadourPage ?>">Ventadour</a></h4>
+			<h4 class="font_certa"><a href="<?= $ventadourPage ?>">Ventadour</a></h4>
 		</div>
 		<div class="menu__item"><a href="<?= $homePage ?>">
 				<img class="logo" id="logo_big" src="<?= get_template_directory_uri(); ?>/assets/logos/logo_1868_big.svg" alt="">
@@ -11,12 +11,16 @@
 
 			</a></div>
 		<div class="menu__item no-iphone">
-			<h4 class="fontpestrin"><a href="<?= get_site_url() ?>/loja">LES BOISSONS</a></h4>
+			<h4 class="font_certa">
+				<a href="<?= get_site_url() ?>/loja">
+					LES BOISSONS
+				</a>
+			</h4>
 		</div>
 		<div class="menu__item">
 			<div class="menu__item--more_cart pointer">
-				<a href="<?= get_site_url() ?>/my-account/" class="menu__item--link_login">
-				<?= is_user_logged_in() ? 'PERFIL' : 'LOGIN' ?>
+				<a href="<?= get_site_url() ?>/my-account/" class="menu__item--link_login font_certa no-iphone">
+					<?= is_user_logged_in() ? 'PERFIL' : 'LOGIN' ?>
 				</a>
 				<img onclick="showCart()" src="<?= get_template_directory_uri() ?>/assets/images/lata.svg" alt="">
 				<span onclick="showCart()">01</span>

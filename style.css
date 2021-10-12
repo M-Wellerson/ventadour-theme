@@ -152,6 +152,13 @@ body {
     transition: all .3s ease-in-out;
     transform: rotate(0deg);
 }
+.home-quick-view-image>canvas {
+    position: relative;
+    z-index: 992;
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+}
 
 .home-quick-view-image>img:hover {
     transform: rotate(-7deg);
@@ -163,7 +170,7 @@ body {
     width: 180px;
     height: 180px;
     position: absolute;
-    z-index: 9991;
+    z-index: 991;
     background-color: #C00;
     background-color: attr(color);
 }
@@ -275,6 +282,14 @@ body {
     color: #282828;
 }
 
+.quick-fix {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    z-index: 9999;
+    background-color: #FFF;
+}
+
 @media ( max-width: 600px) {
     /* [s-] pequeno */
     .home__info {
@@ -285,6 +300,10 @@ body {
     .home__info-text {
         max-width: 92vw;
         margin: 0 auto;
+    }
+    .s-grid-quick-view {
+        display: grid !important;
+        width: 80vw;
     }
 }
 

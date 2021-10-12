@@ -11,17 +11,17 @@
 </div>
 
 <div class="wrapper ventes">
-    <div class="flex between">
+    <div class="flex between s-grid-quick-view">
         <div>
             <strong class="title-big">O’COOL</strong><br>
             <span class="title-sub">GAZEUSE</span>
             <div class="home-quick-view-image">
                 <span style="background-color: #FDE17F;"></span>
-                <img src="<?= get_template_directory_uri() ?>/assets/images/zoo.png">
+                <canvas width="500" height="390" class="can-of-soda"></canvas>
             </div>
         </div>
         <div>
-            <div class="box-single">
+            <div class="box-single js-single-snap">
                 <div class="mb-10">
                     <strong class="text c-gray-300">75,26 € </strong>
                     <strong class="text ml-10">52,50 €</strong>

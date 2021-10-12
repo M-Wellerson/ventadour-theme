@@ -11,5 +11,6 @@
 	<?php wp_footer(); ?>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPJ_VxNIHdbXDAf8ar9qUJjN-a733Nw80"></script>
 	<script src="<?= get_template_directory_uri() ?>/assets/js/main.js"></script>
+	<script src="<?= get_template_directory_uri() ?>/js/animation/Can.js" type="module"></script>
 	</body>
 </html>
