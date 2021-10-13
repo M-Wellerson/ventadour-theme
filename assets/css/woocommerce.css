@@ -51,3 +51,18 @@ a.edit {
     padding: 7px 14px;
     margin: 7px 0;
 }
+.woocommerce {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-areas: "login login" "navigator content_wc" ;
+    gap: 30px ;
+}
+#customer_login {
+    grid-area: login;
+}
+.woocommerce-MyAccount-navigation {
+    grid-area: navigator;
+}
+.woocommerce-MyAccount-content {
+    grid-area: content_wc;
+}
