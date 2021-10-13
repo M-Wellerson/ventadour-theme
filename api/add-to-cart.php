@@ -14,9 +14,9 @@ function add_product_to_cart($request)
     $quantity = $request['quantity'] ?? 1;
 
     $full_url = site_url();
-    $full_url .= "/?add-to-cart={$product_id}&quantity={$quantity}";
+    $full_url .= "/add-to-cart?product_id={$product_id}&quantity={$quantity}";
 
-    $woocommerce->cart->add_to_cart($product_id);
+    $woocommerce->cart->add_to_cart($product_id, $quantity);
 
     $response = array(
         'next' => true,

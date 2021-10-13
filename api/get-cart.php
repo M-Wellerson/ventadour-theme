@@ -13,6 +13,13 @@ function get_cart_wc($request)
     $itens = $woocommerce->cart->get_cart();
     $total = $woocommerce->cart->cart_contents_total;
 
+    
+    foreach( $itens as $k => $i ) {
+        $default_prod = wc_get_product($i['product_id']);
+        $itens[$k]['thumbnail'] = get_the_post_thumbnail_url($i['product_id']);
+        $itens[$k]['name'] = $default_prod->get_name();
+    }
+
     return rest_ensure_response([
         'itens' => $itens,
         'total' => $total
