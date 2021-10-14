@@ -78,3 +78,4 @@ include __DIR__ . "/api/get-cart.php";
 include __DIR__ . "/api/del-to-cart.php";
 include __DIR__ . "/api/quick-view.php";
 include __DIR__ . "/includes/show-product-checkout.php";
+include __DIR__ . "/includes/actions.php";
