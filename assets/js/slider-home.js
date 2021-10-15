@@ -54,8 +54,10 @@ function template_slider(prod) {
     `
 }
 
-$banner_itens = document.querySelector('.js-banner-itens')
-$banner_itens.innerHTML = globalThis._store.banner.map(template_slider).join('')
+let $banner_itens = document.querySelector('.js-banner-itens')
+if( $banner_itens ) {
+    $banner_itens.innerHTML = globalThis._store.banner.map(template_slider).join('')
+}
 
 
 

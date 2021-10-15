@@ -1,0 +1,168 @@
+import * as THREE from './three.js-master/build/three.module.js';
+import { GLTFLoader } from './three.js-master/examples/jsm/loaders/GLTFLoader.js'
+import { DRACOLoader } from './three.js-master/examples/jsm/loaders/DRACOLoader.js'
+
+export default class Lata {
+
+    texture = './../wp-content/themes/rsw-pestrin/assets/images/can/metal.jpg'
+    draw3d = './../wp-content/themes/rsw-pestrin/assets/images/can/materials/can-of-soda-4.0.glb'
+    
+    canvas = null
+    camera = null
+    scene = null
+    renderer = null
+    sizes = {
+        width: 0,
+        height: 0
+    }
+
+    constructor(selector) {
+        this.canvas = document.querySelector(selector)
+        if (!this.canvas) return null
+
+        this.get_size()
+        this.create_scene()
+        this.create_camera()
+        this.resize()
+        this.add_light_in_scene()
+        this.render()
+        this.animate()
+    }
+
+    action() {
+        this.render()
+    }
+
+    add(positionMove, positionCan, path_img) {
+
+        const textureLoader = new THREE.TextureLoader();
+        const texture = textureLoader.load(this.texture);
+        const textureRotulo = textureLoader.load(path_img);
+
+        texture.rotation = 10;
+        texture.generateMipmaps = false;
+        texture.minFilter = THREE.NearestFilter;
+        texture.magFilter = THREE.NearestFilter;
+
+        const dracoLoader = new DRACOLoader()
+        dracoLoader.setDecoderPath('./draco/')
+
+        const gltfLoader = new GLTFLoader()
+        gltfLoader.setDRACOLoader(dracoLoader)
+
+        gltfLoader.load(
+            this.draw3d,
+            gltf => {
+                gltf.scene.scale.set(0.120, 0.105, 0.120);
+
+                let mesh = gltf.scene.children[0];
+                let mesh2 = gltf.scene.children[1];
+
+                mesh.rotation.x += positionCan.rotateX;
+                mesh2.rotation.x += positionCan.rotateX;
+
+                mesh.position.y = positionCan.y;
+                mesh.position.x = positionCan.x;
+                mesh.position.z = positionCan.z;
+                mesh2.position.y = positionCan.y;
+                mesh2.position.x = positionCan.x;
+                mesh2.position.z = positionCan.z;
+
+                mesh.material = new THREE.MeshMatcapMaterial({
+                    matcap: texture
+                });
+
+                mesh2.material = new THREE.MeshStandardMaterial({
+                    map: textureRotulo,
+                    metalness: .1,
+                    roughness: .1
+                });
+
+                gltf.scene.rotateZ(positionCan.rotateZ);
+                this.scene.add(gltf.scene);
+
+                gsap.registerPlugin(ScrollTrigger);
+
+                gsap.to(gltf.scene.rotation, {
+                    scrollTrigger: {
+                        trigger: "body",
+                        start: "top top",
+                        end: "bottom bottom",
+                        scrub: true,
+                        toggleActions: "restart pause resume pause"
+                    },
+                    y: positionMove.rotateY,
+                    transformOrigin: "left right",
+                    ease: "none"
+                });
+
+                const tlCan = new TimelineMax({ repeat: -1 });
+                let randomDur = gsap.utils.random(1, 3, 0.1, true);
+                let randomDelay = gsap.utils.random(0.1, 1, 0.1, true);
+
+                tlCan.to(gltf.scene.position, {
+                    y: positionMove.y,
+                    yoyo: true,
+                    rotation: positionMove.rotation,
+                    ease: "Power1.easeInOut",
+                    duration: randomDur(),
+                    delay: randomDelay(),
+                    repeat: -1
+                });
+            },
+            (progress) => {
+                // console.log(progress);
+            },
+            console.log
+        )
+    }
+
+    render() {
+        this.renderer = new THREE.WebGLRenderer({
+            canvas: this.canvas,
+            alpha: true
+        })
+        this.renderer.shadowMap.enabled = true
+        this.renderer.shadowMap.type = THREE.PCFSoftShadowMap
+        this.renderer.setSize(this.sizes.width, this.sizes.height)
+        this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    }
+
+    add_light_in_scene() {
+        let ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+        this.scene.add(ambientLight);
+    }
+
+    resize() {
+        window.addEventListener('resize', () => {
+            this.sizes.width = this.canvas.innerWidth
+            this.sizes.height = this.canvas.innerHeight
+            this.camera.aspect = this.sizes.width / this.sizes.height
+            this.camera.updateProjectionMatrix()
+            this.renderer.setSize(this.sizes.width, this.sizes.height)
+            this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+        })
+    }
+
+    create_camera() {
+        this.camera = new THREE.PerspectiveCamera(20, this.sizes.width / this.sizes.height, 1, 3000);
+        this.camera.position.set(0, 0, 7);
+    }
+
+    create_scene() {
+        this.scene = new THREE.Scene();
+    }
+
+    get_size() {
+        this.sizes = {
+            width: this.canvas.width,
+            height: this.canvas.height
+        }
+    }
+
+    animate() {
+        this.renderer.render(this.scene, this.camera)
+        requestAnimationFrame(() => this.animate())
+    }
+
+}

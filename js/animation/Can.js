@@ -3,7 +3,7 @@ import { OrbitControls } from './three.js-master/examples/jsm/controls/OrbitCont
 import { GLTFLoader } from './three.js-master/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from './three.js-master/examples/jsm/loaders/DRACOLoader.js'
 
-function main(nameClass, gltfFile) {
+function main(nameClass, path_img) {
     if (document.querySelector(nameClass)) {
         // Canvas
         const canvas = document.querySelector(nameClass)
@@ -17,8 +17,8 @@ function main(nameClass, gltfFile) {
 
         //texture
         const textureLoader = new THREE.TextureLoader();
-        const texture = textureLoader.load("./../../wp-content/themes/ventadour-theme/assets/images/can/metal.jpg");
-        const textureRotulo = textureLoader.load("./../../wp-content/themes/ventadour-theme/assets/images/can/textures/rotulo.png");
+        const texture = textureLoader.load("./../../wp-content/themes/rsw-pestrin/assets/images/can/metal.jpg");
+        const textureRotulo = textureLoader.load(path_img);
         texture.generateMipmaps = false;
         texture.minFilter = THREE.NearestFilter;
         texture.magFilter = THREE.NearestFilter;
@@ -31,7 +31,7 @@ function main(nameClass, gltfFile) {
         gltfLoader.setDRACOLoader(dracoLoader)
 
         gltfLoader.load(
-            gltfFile,
+            './../../wp-content/themes/rsw-pestrin/assets/images/can/materials/can-of-soda-4.0.glb',
             (gltf) => {
                 gltf.scene.scale.set(0.080, 0.065, 0.080);
                 let mesh = gltf.scene.children[0];
@@ -108,4 +108,4 @@ function main(nameClass, gltfFile) {
     }
 }
 
-main('canvas.can-of-soda', './../../wp-content/themes/ventadour-theme/assets/images/can/materials/can-of-soda-4.0.glb');
+main('canvas.can-of-soda', "./../../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png");

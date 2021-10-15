@@ -38,7 +38,6 @@ globalThis._ui_cart = {
     },
     set itens(list) {
         list = Object.values( list )
-        console.log(list)
         let template = i => `
             <div class="carrinho-item">
                 <div>
@@ -102,7 +101,6 @@ async function render_cart() {
     let path = `${window.location.protocol}//${window.location.hostname}/wp-json/api/get-cart`
     let res = await (await fetch(path)).json()
     let total_itens = Object.keys( res.itens ).length
-    console.log(res.itens)
 
     globalThis._ui_cart.total = total_itens
     globalThis._ui_cart.total_amount = res?.total || 0
