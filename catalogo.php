@@ -33,10 +33,10 @@
     <?php endforeach; ?>
 
     <div class="shop-product">
-        <canvas class="shop-product-canvas"></canvas>
+        <!-- <canvas class="shop-product-canvas"></canvas> -->
+        <canvas width="800" height="690" class="can-shop-1 shop-product-canvas"></canvas>
         <h2 class="shop-product-title">O’COOL</h2>
         <span class="shop-product-subtitle">CBD</span>
-        <canvas width="800" height="690" class="can-shop-1"></canvas>
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao">
@@ -51,7 +51,8 @@
     <div class="space s-space" style="--s:70px; --ss:50px"></div>
 
     <div class="shop-product">
-        <canvas class="shop-product-canvas"></canvas>
+        <!-- <canvas class="shop-product-canvas"></canvas> -->
+        <canvas width="800" height="690" class="can-shop-2 shop-product-canvas"></canvas>
         <h2 class="shop-product-title shop-product-title-right">
             EAUX <br>
             <span class="shop-title-light">MINERALES</span> 
@@ -59,7 +60,6 @@
         <span class="shop-product-subtitle shop-product-subtitle-100">
             NATURELLES
         </span>
-        <canvas width="800" height="690" class="can-shop-2"></canvas>
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-right">
