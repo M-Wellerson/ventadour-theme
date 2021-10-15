@@ -23,7 +23,7 @@
 					<?= is_user_logged_in() ? 'PERFIL' : 'LOGIN' ?>
 				</a>
 				<img onclick="showCart()" src="<?= get_template_directory_uri() ?>/assets/images/lata.svg" alt="">
-				<span onclick="showCart()">01</span>
+				<span onclick="showCart()" class="js-total-itens">0</span>
 			</div>
 
 		</div>

@@ -44,7 +44,7 @@
                     Garanti zéro sucre et zéro calorie, parfait donc pour une pause aussi
                     désaltérante que délassante.
                 </p>
-                <a onclick="showCart()" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a onclick="showCart(); cart_add(169)" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@
                     c’est peu de dire que ces deux eaux minérales
                     ont de sérieux atouts à faire valoir.
                 </p>
-                <a onclick="showCart()" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a onclick="showCart(); cart_add(169) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
@@ -91,7 +91,7 @@
                     santé des os, des articulations, croissance de la masse 
                     musculaire, beauté ?de la peau, réduit la fatigue.
                 </p>
-                <a onclick="showCart()" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a onclick="showCart(); cart_add(173) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>    
@@ -113,7 +113,7 @@
                     santé des os, des articulations, croissance de la masse 
                     musculaire, beauté ?de la peau, réduit la fatigue.
                 </p>
-                <a onclick="showCart()" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a onclick="showCart(); cart_add(171) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
@@ -134,7 +134,7 @@
                     gazeuse et puisée au coeur des roches volcaniques du 
                     Parc Naturel Régional des Monts d’Ardèche, à du fer.
                 </p>
-                <a onclick="showCart()" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a onclick="showCart(); cart_add(173) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@
                     aliquip ex ea commodo consequat. Duis aute 
                     irure dolor in reprehenderit in voluptate
                 </p>
-                <a onclick="showCart()" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a onclick="showCart(); cart_add(175) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>

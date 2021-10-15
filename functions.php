@@ -8,18 +8,14 @@ add_action('get_header', 'remove_admin_login_header');
 function remove_admin_login_header()
 {
     remove_action('wp_head', '_admin_bar_bump_cb');
-}
-
-;
+};
 
 // Prevent HTTP Error when uploading images to the back office
 add_filter('wp_image_editors', 'change_graphic_lib');
 function change_graphic_lib($array)
 {
     return array('WP_Image_Editor_GD', 'WP_Image_Editor_Imagick');
-}
-
-;
+};
 
 function truncate($string, $length, $stopanywhere = false)
 {
@@ -41,10 +37,10 @@ function truncate($string, $length, $stopanywhere = false)
 function get_image_url($id, $size = 'full')
 {
     $att = wp_get_attachment_image_src(get_post_thumbnail_id($id), $size);
-//		if(empty($att)) {
-//			$o_ID = icl_object_id($id, 'post', false, 'pt-br');
-//			$att = wp_get_attachment_image_src( get_post_thumbnail_id($o_ID), $size);
-//		}
+    //		if(empty($att)) {
+    //			$o_ID = icl_object_id($id, 'post', false, 'pt-br');
+    //			$att = wp_get_attachment_image_src( get_post_thumbnail_id($o_ID), $size);
+    //		}
     return $att[0];
 }
 
@@ -58,17 +54,18 @@ function get_gallery($id)
     return $gallery;
 }
 
-function addValuesTo($newValues, $array) {
-	array_push($array,$newValues);
+function addValuesTo($newValues, $array)
+{
+    array_push($array, $newValues);
 }
 
 
-function my_acf_google_map_api( $api ){
+function my_acf_google_map_api($api)
+{
 
-	$api['key'] = 'AIzaSyDPJ_VxNIHdbXDAf8ar9qUJjN-a733Nw80';
+    $api['key'] = 'AIzaSyDPJ_VxNIHdbXDAf8ar9qUJjN-a733Nw80';
 
-	return $api;
-
+    return $api;
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
@@ -80,3 +77,5 @@ include __DIR__ . "/api/add-to-cart.php";
 include __DIR__ . "/api/get-cart.php";
 include __DIR__ . "/api/del-to-cart.php";
 include __DIR__ . "/api/quick-view.php";
+include __DIR__ . "/includes/show-product-checkout.php";
+include __DIR__ . "/includes/actions.php";
