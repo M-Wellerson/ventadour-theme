@@ -36,7 +36,7 @@
         <canvas class="shop-product-canvas"></canvas>
         <h2 class="shop-product-title">O’COOL</h2>
         <span class="shop-product-subtitle">CBD</span>
-        <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo138.png">
+        <canvas width="800" height="690" class="can-shop-1"></canvas>
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao">
@@ -59,7 +59,7 @@
         <span class="shop-product-subtitle shop-product-subtitle-100">
             NATURELLES
         </span>
-        <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo139.png">
+        <canvas width="800" height="690" class="can-shop-2"></canvas>
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-right">
