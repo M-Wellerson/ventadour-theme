@@ -1,13 +1,20 @@
 <?php
-(function () {
-    if (!empty($_REQUEST['removed_item'])) {
-        global $woocommerce;
-        if (is_null(WC()->cart)) {
-            wc_load_cart();
-        }    
-        $ID = $_REQUEST['removed_item'];
-        // var_dump(WC()->cart);
-        // WC()->cart->remove_cart_item($ID);
-        // $woocommerce->cart->remove_cart_item($ID);
-    }
-})();
+
+// $args = array(
+//     81 => array(
+//         'product_id' => 1543,
+//         'quantity' => 3,
+//     ),
+//     84 => array(
+//         'product_id' => 1386,
+//         'quantity' => 1,
+//         'variation_id' => 3535,
+//         'attributes' => array(
+//             'attribute_pa_attribute-1' => 'value-1b',
+//             'attribute_pa_attribute-2' => 'value-2b',
+//         ),
+
+//     )
+// );
+
+// WC_PB()->cart->add_bundle_to_cart( 183 , 1, $args );

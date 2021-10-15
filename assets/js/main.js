@@ -83,8 +83,8 @@ async function cart_minus( id, quantity ) {
 }
 
 async function cart_remove( id ) {
-    let path = `${window.location.protocol}//${window.location.hostname}/`
-    path += `?removed_item=${id}`
+    let path = `${window.location.protocol}//${window.location.hostname}/wp-json/api/del-to-cart`
+    path += `?product_id=${id}`
     await fetch(path)
     render_cart()
 }
