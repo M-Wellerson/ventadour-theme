@@ -14,7 +14,7 @@ shop2.add(
     {
         rotateX: 6.7,
         y: -5.5,
-        x: -5,
+        x: -1.2,
         z: 3.5,
         rotateZ: Math.PI * +0.1
     },
@@ -29,7 +29,7 @@ shop2.add(
     {
         rotateX: -6.7,
         y: -5.5,
-        x: 0,
+        x: 3,
         z: -3.5,
         rotateZ: Math.PI * 0.1
     },
@@ -63,7 +63,7 @@ o_coll.add(
     {
         rotateX: 6.7,
         y: -5.5,
-        x: -5,
+        x: -1,
         z: 3.5,
         rotateZ: Math.PI * +0.1
     },
@@ -85,7 +85,7 @@ a_fer.add(
         z: -1.5,
         rotateZ: Math.PI * 0.2
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/afer.png"
 )
 
 let o_vive = new Lata('.js-o-vive')
@@ -134,7 +134,7 @@ let o_zak_default = {
     y: -5.5,
     x: -15,
     z: 1,
-    rotateZ: Math.PI * +0
+    rotateZ: Math.PI * + 0
 }
 
 o_zak.add(
@@ -143,7 +143,7 @@ o_zak.add(
         ...o_zak_default,
         y: -1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ozake-5.png"
 )
 o_zak.add(
     o_zak_animate,
@@ -151,7 +151,7 @@ o_zak.add(
         ...o_zak_default,
         x: -7,
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ozake-2.png"
 )
 o_zak.add(
     o_zak_animate,
@@ -160,7 +160,7 @@ o_zak.add(
         x: 0,
         y: 0
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ozake-1.png"
 )
 o_zak.add(
     o_zak_animate,
@@ -168,7 +168,7 @@ o_zak.add(
         ...o_zak_default,
         x: 7,
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ozake-4.png"
 )
 o_zak.add(
     o_zak_animate,
@@ -177,5 +177,5 @@ o_zak.add(
         x: 15,
         y: -2
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ozake-3.png"
 )
