@@ -285,7 +285,7 @@ body {
 .quick-fix {
     position: fixed;
     top: 100px;
-    right: 50px;
+    right: calc(100vw - 1200px);
     z-index: 9999;
     background-color: #FFF;
 }
