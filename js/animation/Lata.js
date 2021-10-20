@@ -40,8 +40,9 @@ export default class Lata {
         const texture = textureLoader.load(this.texture);
         const textureRotulo = textureLoader.load(path_img);
 
-        texture.rotation = 10;
-        texture.generateMipmaps = false;
+        texture.rotation = Math.PI * 2;
+        texture.flipY = false;
+
         texture.minFilter = THREE.NearestFilter;
         texture.magFilter = THREE.NearestFilter;
 
@@ -154,7 +155,7 @@ export default class Lata {
         this.scene = new THREE.Scene();
     }
 
-    get_size() {
+    get_size() { 
         this.sizes = {
             width: this.canvas.width,
             height: this.canvas.height

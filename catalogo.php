@@ -44,18 +44,18 @@
                     Garanti zéro sucre et zéro calorie, parfait donc pour une pause aussi
                     désaltérante que délassante.
                 </p>
-                <a onclick="showCart(); cart_add(169)" href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a href="<?= get_permalink( 169 ) ?>" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
-    
+
     <div class="shop-product" id="ventadour">
         <div class="space s-space" style="--s:70px; --ss:50px"></div>
         <!-- <canvas class="shop-product-canvas"></canvas> -->
         <canvas width="800" height="690" class="can-shop-2 shop-product-canvas"></canvas>
         <h2 class="shop-product-title shop-product-title-right">
             EAUX <br>
-            <span class="shop-title-light">MINERALES</span> 
+            <span class="shop-title-light">MINERALES</span>
         </h2>
         <span class="shop-product-subtitle shop-product-subtitle-100">
             NATURELLES
@@ -69,51 +69,51 @@
                     c’est peu de dire que ces deux eaux minérales
                     ont de sérieux atouts à faire valoir.
                 </p>
-                <a onclick="showCart(); cart_add(169) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a href="<?= get_permalink( 169 ) ?>" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
-    
+
     <div class="shop-product" id="o-coll">
         <div class="space s-space" style="--s:210px;--ss:50px"></div>
         <canvas width="800" height="690" class="shop-product-canvas js-shop-o-coll"></canvas>
         <h2 class="shop-product-title ">
-            O’COLL 
+            O’COLL
         </h2>
         <span class="shop-product-subtitle shop-product-subtitle-marin">
-           <b>collagène</b>  MARIN
+            <b>collagène</b> MARIN
         </span>
         <!-- <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo140.png"> -->
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-right">
-                    Une eau fonctionnelle et cognitive, source de protéines pour la 
-                    santé des os, des articulations, croissance de la masse 
+                    Une eau fonctionnelle et cognitive, source de protéines pour la
+                    santé des os, des articulations, croissance de la masse
                     musculaire, beauté ?de la peau, réduit la fatigue.
                 </p>
-                <a onclick="showCart(); cart_add(173) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a href="<?= get_permalink( 173 ) ?>" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
 
     <div class="shop-product shop-product-ozak" id="ozak">
         <div class="space s-space" style="--s:180px; --ss:50px"></div>
-        <canvas  width="1000" height="690" class="shop-product-canvas js-o-zak"></canvas>
+        <canvas width="1000" height="690" class="shop-product-canvas js-o-zak"></canvas>
         <h2 class="shop-product-title ">
-            O’ZAKE 
+            O’ZAKE
         </h2>
         <span class="shop-product-subtitle shop-product-subtitle-marin">
-           <b>HARD</b> SELTZER
+            <b>HARD</b> SELTZER
         </span>
         <!-- <img class="shop-image shop-image-selt" src="<?= get_template_directory_uri() ?>/assets/images/grupo143.png"> -->
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-selt">
-                    Une eau fonctionnelle et cognitive, source de protéines pour la 
-                    santé des os, des articulations, croissance de la masse 
-                    musculaire, beauté ?de la peau, réduit la fatigue.
+                    5% d’alcool
+                    60% de cabernet rosé
+                    40% d’eau minérale gazeuse Ventadour Et des arômes naturels surprenants
                 </p>
-                <a onclick="showCart(); cart_add(171) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a href="<?= get_permalink( 171 ) ?>" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
@@ -130,12 +130,12 @@
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao--afer ">
-                    Cette recette zéro sucre est aussi simple que bienfaisante 
-                    puisqu’elle associe la célèbre eau Ventadour, naturellement 
-                    gazeuse et puisée au coeur des roches volcaniques du 
+                    Cette recette zéro sucre est aussi simple que bienfaisante
+                    puisqu’elle associe la célèbre eau Ventadour, naturellement
+                    gazeuse et puisée au coeur des roches volcaniques du
                     Parc Naturel Régional des Monts d’Ardèche, à du fer.
                 </p>
-                <a onclick="showCart(); cart_add(173) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a href="<?= get_permalink( 173 ) ?>" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>
@@ -145,19 +145,19 @@
         <canvas width="800" height="690" class="shop-product-canvas js-o-vive"></canvas>
         <h2 class="shop-product-title">
             O’VIVE
-        </h2>        
+        </h2>
         <!-- <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo142.png"> -->
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-vive ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute
                     irure dolor in reprehenderit in voluptate
                 </p>
-                <a onclick="showCart(); cart_add(175) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
+                <a href="<?= get_permalink( 175 ) ?>" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
     </div>

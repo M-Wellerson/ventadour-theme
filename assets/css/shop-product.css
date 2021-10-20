@@ -74,7 +74,7 @@
 }
 
 .shop-product-descriacao-selt {
-    margin-top: 35vw;
+    margin-top: 20rem;
 }
 
 .shop-product-descriacao {
@@ -132,7 +132,11 @@
 .shop-product-ozak {
     background-image: url(../images/enradiacao.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 10px;
+}
+
+.shop-product-canvas {
+    pointer-events: none;
 }
 
 @media ( max-width: 600px) {
