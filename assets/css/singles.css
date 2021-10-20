@@ -74,6 +74,7 @@
     box-shadow: 0 0 15px  rgba(0, 0, 0, .2);
     padding: 30px;
     width: 460px;
+    max-width: 90vw;
     transition: .3s;
 }
 
@@ -114,6 +115,12 @@
 
 @media ( max-width: 600px) {
     /* [s-] pequeno */
+    .single-grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .single-images  img{
+        width: 30vw;
+    }
 }
 
 @media ( min-width: 600px) {
