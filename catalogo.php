@@ -10,17 +10,17 @@
 <div class="wrapper ventes">
 
     <div class="menu-cat">
-        <a href="?cat=" class="menu-cat-link menu-cat-link-active">O'cool</a>
+        <a href="#o-cool" class="menu-cat-link menu-cat-link-active">O'cool</a>
         <span class="menu-cat-separador"></span>
-        <a href="?cat=" class="menu-cat-link">Ventadour</a>
+        <a href="#ventadour" class="menu-cat-link">Ventadour</a>
         <span class="menu-cat-separador"></span>
-        <a href="?cat=" class="menu-cat-link">OZAK</a>
+        <a href="#ozak" class="menu-cat-link">OZAK</a>
         <span class="menu-cat-separador"></span>
-        <a href="?cat=" class="menu-cat-link">o’vive</a>
+        <a href="#o-vive" class="menu-cat-link">o’vive</a>
         <span class="menu-cat-separador"></span>
-        <a href="?cat=" class="menu-cat-link">O’COLL</a>
+        <a href="#o-coll" class="menu-cat-link">O’COLL</a>
         <span class="menu-cat-separador"></span>
-        <a href="?cat=" class="menu-cat-link">A.FER</a>
+        <a href="#a-fer" class="menu-cat-link">A.FER</a>
     </div>
 
     <?php
@@ -32,7 +32,7 @@
     <?php foreach ($products as $prod) : ?>
     <?php endforeach; ?>
 
-    <div class="shop-product">
+    <div class="shop-product" id="o-cool">
         <!-- <canvas class="shop-product-canvas"></canvas> -->
         <canvas width="800" height="690" class="can-shop-1 shop-product-canvas"></canvas>
         <h2 class="shop-product-title">O’COOL</h2>
@@ -48,9 +48,9 @@
             </div>
         </div>
     </div>
-    <div class="space s-space" style="--s:70px; --ss:50px"></div>
-
-    <div class="shop-product">
+    
+    <div class="shop-product" id="ventadour">
+        <div class="space s-space" style="--s:70px; --ss:50px"></div>
         <!-- <canvas class="shop-product-canvas"></canvas> -->
         <canvas width="800" height="690" class="can-shop-2 shop-product-canvas"></canvas>
         <h2 class="shop-product-title shop-product-title-right">
@@ -73,17 +73,17 @@
             </div>
         </div>
     </div>
-    <div class="space s-space" style="--s:210px;--ss:50px"></div>
-
-    <div class="shop-product">
-        <canvas class="shop-product-canvas"></canvas>
+    
+    <div class="shop-product" id="o-coll">
+        <div class="space s-space" style="--s:210px;--ss:50px"></div>
+        <canvas width="800" height="690" class="shop-product-canvas js-shop-o-coll"></canvas>
         <h2 class="shop-product-title ">
             O’COLL 
         </h2>
         <span class="shop-product-subtitle shop-product-subtitle-marin">
            <b>collagène</b>  MARIN
         </span>
-        <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo140.png">
+        <!-- <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo140.png"> -->
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-right">
@@ -94,18 +94,18 @@
                 <a onclick="showCart(); cart_add(173) " href="javascript:void(0)" class="shop-product-link">en savoir plus</a>
             </div>
         </div>
-    </div>    
-    <div class="space s-space" style="--s:180px; --ss:50px"></div>
+    </div>
 
-    <div class="shop-product">
-        <canvas class="shop-product-canvas"></canvas>
+    <div class="shop-product" id="ozak">
+        <div class="space s-space" style="--s:180px; --ss:50px"></div>
+        <canvas  width="1000" height="690" class="shop-product-canvas js-o-zak"></canvas>
         <h2 class="shop-product-title ">
             O’ZAKE 
         </h2>
         <span class="shop-product-subtitle shop-product-subtitle-marin">
            <b>HARD</b> SELTZER
         </span>
-        <img class="shop-image shop-image-selt" src="<?= get_template_directory_uri() ?>/assets/images/grupo143.png">
+        <!-- <img class="shop-image shop-image-selt" src="<?= get_template_directory_uri() ?>/assets/images/grupo143.png"> -->
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-selt">
@@ -117,15 +117,16 @@
             </div>
         </div>
     </div>
-    <div class="shop-product">
-        <canvas class="shop-product-canvas"></canvas>
+
+    <div class="shop-product" id="a-fer">
+        <canvas width="800" height="690" class="shop-product-canvas js-a-fer"></canvas>
         <h2 class="shop-product-title shop-product-title-afer">
             A.FER
         </h2>
         <span class="shop-product-subtitle shop-product-subtitle-100 shop-product-subtitle-marin">
             LA <b>FERTIFIANTE</b>
         </span>
-        <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/afer-persp.png">
+        <!-- <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/afer-persp.png"> -->
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao--afer ">
@@ -138,13 +139,14 @@
             </div>
         </div>
     </div>
-    <div class="space s-space" style="--s:160px; --ss:50px"></div>
-    <div class="shop-product">
-        <canvas class="shop-product-canvas"></canvas>
+
+    <div class="shop-product" id="o-vive">
+        <div class="space s-space" style="--s:160px; --ss:50px"></div>
+        <canvas width="800" height="690" class="shop-product-canvas js-o-vive"></canvas>
         <h2 class="shop-product-title">
             O’VIVE
         </h2>        
-        <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo142.png">
+        <!-- <img class="shop-image" src="<?= get_template_directory_uri() ?>/assets/images/grupo142.png"> -->
         <div class="shop-product-row">
             <div class="shop-product-col">
                 <p class="shop-product-descriacao shop-product-descriacao-vive ">
@@ -159,6 +161,7 @@
             </div>
         </div>
     </div>
+
     <div class="space s-space" style="--s:160px; --ss: 50px"></div>
 
 </div>

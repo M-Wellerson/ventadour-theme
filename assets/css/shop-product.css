@@ -10,6 +10,7 @@
     height: 100%;
     position: absolute;
     z-index: 99;
+    border: 1px solid #282828;
 }
 
 .shop-product-title {
