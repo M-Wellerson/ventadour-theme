@@ -11,7 +11,8 @@ function snap_single() {
     if (!$el) return
     globalThis._snap_top = globalThis._snap_top || $el.offsetTop - 120
     globalThis._snap_left = globalThis._snap_left || $el.offsetLeft
-    if (window.scrollY >globalThis._snap_top) {
+    console.log(window.scrollY)
+    if (window.scrollY >globalThis._snap_top && window.scrollY < 1700 ) {
         $el.classList.add('quick-fix')
     } else {
         $el.classList.remove('quick-fix')
