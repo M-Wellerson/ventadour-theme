@@ -52,6 +52,9 @@
     background-position: 0 50px, -175px 50px;
     padding: 50px 0;
     margin-bottom: 50px;
+    background-repeat: repeat-x, repeat-x;
+    background-position: center  center, center  center;
+
 }
 .single-sitacao{
     background-color: #FFF6D8;
