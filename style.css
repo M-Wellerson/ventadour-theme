@@ -143,6 +143,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 90vw;
 }
 
 .home-quick-view-image>img {
@@ -282,13 +283,7 @@ body {
     color: #282828;
 }
 
-.quick-fix {
-    position: fixed;
-    top: 100px;
-    right: calc(100vw - 1200px);
-    z-index: 9999;
-    background-color: #FFF;
-}
+
 
 @media ( max-width: 600px) {
     /* [s-] pequeno */
@@ -305,6 +300,11 @@ body {
         display: grid !important;
         width: 80vw;
     }
+    .can-of-soda {
+        width: 90vw !important;
+        height: 50vh !important;
+    }
+
 }
 
 @media ( min-width: 600px) {
@@ -338,6 +338,13 @@ body {
 
 @media ( min-width: 992px) {
     /* [l-] largo */
+    .quick-fix {
+        position: fixed;
+        top: 100px;
+        right: calc(100vw - 1200px);
+        z-index: 9999;
+        background-color: #FFF;
+    }
 }
 
 @media ( min-width: 1200px) {
