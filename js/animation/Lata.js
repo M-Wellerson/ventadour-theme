@@ -11,6 +11,7 @@ export default class Lata {
     camera = null
     scene = null
     renderer = null
+    scale = 0
     sizes = {
         width: 0,
         height: 0
@@ -53,7 +54,7 @@ export default class Lata {
         gltfLoader.load(
             this.draw3d,
             gltf => {
-                gltf.scene.scale.set(0.120, 0.105, 0.120);
+                gltf.scene.scale.set(0.120 + this.scale, 0.105 + this.scale, 0.120 + this.scale);
 
                 let mesh = gltf.scene.children[0];
                 let mesh2 = gltf.scene.children[1];

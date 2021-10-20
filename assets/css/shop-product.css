@@ -7,31 +7,34 @@
 .shop-product-canvas {
     display: block;
     width: 100%;
-    height: 100%;
+    max-width: 100vw;
+    /* height: 100%; */
     position: absolute;
     z-index: 99;
-    border: 1px solid #282828;
+    /* border: 1px solid #282828; */
 }
 
 .shop-product-title {
     display: block;
     font-family: FuturaStd;
-    font-size: clamp( 8rem, 10vw, 12.5rem );
-    line-height: clamp( 8rem, 10vw, 12.5rem );
+    font-size: clamp( 8rem, 10vw, 12.5rem);
+    line-height: clamp( 8rem, 10vw, 12.5rem);
     color: #282828;
     text-align: center;
     font-weight: bolder;
     margin: 0;
     padding: 0;
 }
+
 .shop-product-title-right {
     width: 50%;
     margin-left: 49%;
 }
+
 .shop-product-title-afer {
     text-align: left;
-    font-size: clamp( 7.5rem, 13vw, 15rem );
-    line-height: clamp( 7.5rem, 13vw, 15rem );
+    font-size: clamp( 7.5rem, 13vw, 15rem);
+    line-height: clamp( 7.5rem, 13vw, 15rem);
 }
 
 .shop-product-subtitle {
@@ -39,27 +42,31 @@
     font-family: 'FuturaStd Light';
     font-style: normal;
     font-weight: lighter;
-    font-size: clamp( 8rem, 10vw, 12.5rem );
-    line-height: clamp( 8rem, 10vw, 12.5rem );
+    font-size: clamp( 8rem, 10vw, 12.5rem);
+    line-height: clamp( 8rem, 10vw, 12.5rem);
     color: #282828;
     text-align: right;
     margin: 0;
     padding: 0;
 }
+
 .shop-product-subtitle-100 {
-    font-size: clamp( 4rem, 5vw, 6.25rem ) !important;
-    line-height: clamp( 4rem, 5vw, 6.25rem ) !important;
+    font-size: clamp( 4rem, 5vw, 6.25rem) !important;
+    line-height: clamp( 4rem, 5vw, 6.25rem) !important;
     margin-right: 75px;
 }
+
 .shop-title-light {
     font-family: 'FuturaStd CondensedLight';
 }
+
 .shop-product-subtitle-marin {
     font-family: 'FuturaStd CondensedLight';
-    font-size: clamp( 4rem, 5vw, 6.25rem ) !important;
-    line-height: clamp( 4rem, 5vw, 6.25rem ) !important;
+    font-size: clamp( 4rem, 5vw, 6.25rem) !important;
+    line-height: clamp( 4rem, 5vw, 6.25rem) !important;
     text-transform: uppercase;
 }
+
 .shop-product-subtitle-marin b {
     font-family: 'FuturaStd Heavy';
 }
@@ -74,6 +81,7 @@
     line-height: 25px;
     color: #282828;
 }
+
 .shop-image {
     position: absolute;
     top: 20px;
@@ -81,6 +89,7 @@
     width: 500px;
     max-width: 70vw;
 }
+
 .shop-image-selt {
     width: 90%;
     right: 5%;
@@ -118,6 +127,12 @@
     max-width: 80%;
 }
 
+.shop-product-ozak {
+    background-image: url(../images/enradiacao.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 @media ( max-width: 600px) {
     /* [s-] pequeno */
     .shop-image {
@@ -141,13 +156,20 @@
     }
     .shop-product-descriacao--afer {
         margin-top: 40vw;
-
-    }    
+    }
     .shop-product-descriacao-vive {
         margin-top: 63vw;
-
     }
-
+    .shop-product-canvas {
+        height: 50vh !important;
+    }
+    .menu-cat {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu-cat-separador {
+        display: none;
+    }
 }
 
 @media ( min-width: 600px) {

@@ -96,7 +96,7 @@
         </div>
     </div>
 
-    <div class="shop-product" id="ozak">
+    <div class="shop-product shop-product-ozak" id="ozak">
         <div class="space s-space" style="--s:180px; --ss:50px"></div>
         <canvas  width="1000" height="690" class="shop-product-canvas js-o-zak"></canvas>
         <h2 class="shop-product-title ">

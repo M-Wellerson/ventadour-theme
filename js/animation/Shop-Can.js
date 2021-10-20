@@ -18,7 +18,7 @@ shop2.add(
         z: 3.5,
         rotateZ: Math.PI * +0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png"
 )
 shop2.add(
     { 
@@ -33,7 +33,7 @@ shop2.add(
         z: -3.5,
         rotateZ: Math.PI * 0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/minerale.png"
 )
 
 
@@ -52,7 +52,7 @@ o_coll.add(
         z: -3.5,
         rotateZ: Math.PI * 0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/collagene.png"
 )
 o_coll.add(
     { 
@@ -67,7 +67,7 @@ o_coll.add(
         z: 3.5,
         rotateZ: Math.PI * +0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/collagene.png"
 )
 
 
@@ -76,14 +76,14 @@ a_fer.add(
     { 
         y: '-=0.1, +=0.2', 
         rotation: '-=1', 
-        rotateY: Math.PI * 2.5 
+        rotateY: Math.PI * 0 
     },
     {
-        rotateX: -6.7,
+        rotateX: 0.7,
         y: -5.5,
         x: 0,
-        z: -3.5,
-        rotateZ: Math.PI * 0.1
+        z: -1.5,
+        rotateZ: Math.PI * 0.2
     },
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
 )
@@ -102,7 +102,7 @@ o_vive.add(
         z: -3.5,
         rotateZ: Math.PI * 0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/collagene.png"
 )
 o_vive.add(
     { 
@@ -117,10 +117,12 @@ o_vive.add(
         z: 3.5,
         rotateZ: Math.PI * +0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/collagene.png"
 )
 
 let o_zak = new Lata('.js-o-zak')
+
+o_zak.scale = -0.030
 
 let o_zak_animate = {
     y: '-=0.1, +=0.2', 
@@ -130,7 +132,7 @@ let o_zak_animate = {
 let o_zak_default = {
     rotateX: 6.7,
     y: -5.5,
-    x: -8,
+    x: -15,
     z: 1,
     rotateZ: Math.PI * +0
 }
@@ -139,6 +141,7 @@ o_zak.add(
     o_zak_animate,
     {
         ...o_zak_default,
+        y: -1
     },
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
 )
@@ -146,7 +149,7 @@ o_zak.add(
     o_zak_animate,
     {
         ...o_zak_default,
-        x: -4,
+        x: -7,
     },
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
 )
@@ -155,6 +158,7 @@ o_zak.add(
     {
         ...o_zak_default,
         x: 0,
+        y: 0
     },
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
 )
@@ -162,7 +166,7 @@ o_zak.add(
     o_zak_animate,
     {
         ...o_zak_default,
-        x: 4,
+        x: 7,
     },
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
 )
@@ -170,7 +174,8 @@ o_zak.add(
     o_zak_animate,
     {
         ...o_zak_default,
-        x: 8
+        x: 15,
+        y: -2
     },
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png"
 )
