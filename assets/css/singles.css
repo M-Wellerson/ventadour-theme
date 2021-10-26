@@ -48,7 +48,7 @@
 
 .single-bg {
     display: block;
-    background-image: url(../images/texto-fundo.svg), url(../images/texto-fundo-2.svg);
+    background-image: url(http://localhost/pog/?texto=relaxante&size=50), url(http://localhost/pog/?texto=relaxante&size=50&top=50);
     background-position: 0 50px, -175px 50px;
     padding: 50px 0;
     margin-bottom: 50px;
@@ -123,6 +123,9 @@
     }
     .single-images  img{
         width: 30vw;
+    }
+    .single-bg {
+        background-size: 800px, 800px;    
     }
 }
 

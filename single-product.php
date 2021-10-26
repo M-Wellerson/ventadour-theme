@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div class="wrapper ventes">
+    <div class="wrapper ventes js-warp">
         <div class="flex between s-grid-quick-view">
             <div>
                 <strong class="title-big"><?php the_title() ?></strong><br>
@@ -167,6 +167,8 @@
         let x2 = ((window.scrollY / 4) - 175) * -1
         horizontal.style.backgroundPosition = `${x1}px 50px, ${x2}px 50px`;
     }
+    
+
 </script>
 
 
