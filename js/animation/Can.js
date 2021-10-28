@@ -108,4 +108,5 @@ function main(nameClass, path_img) {
     }
 }
 
-main('canvas.can-of-soda', "./../../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png");
+// main('canvas.can-of-soda', "./../../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png");
+main('canvas.can-of-soda', globalThis?._banner_single || '' );

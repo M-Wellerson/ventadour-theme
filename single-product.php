@@ -33,7 +33,7 @@
                 <span class="title-sub">GAZEUSE</span>
                 <div class="home-quick-view-image">
                     <span style="background-color: #FDE17F;"></span>
-                    <canvas width="500" height="390" class="can-of-soda"></canvas>
+                    <canvas width="500" height="500" class="can-of-soda"></canvas>
                 </div>
             </div>
             <div>
@@ -165,6 +165,7 @@
     window.scroll({
         behavior: 'smooth'
     });
+    globalThis._banner_single = "<?= $rotulo ?>"
     window.onscroll = function() {
         const horizontal = document.querySelector('.js-single-bg');
         // const scroll     = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;

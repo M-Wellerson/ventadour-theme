@@ -4,8 +4,8 @@ $texto = $_GET['texto'] ?? 'I love SVG!';
 $total_caracter = strlen($texto);
 $font_size = $_REQUEST['size'] ?? 50;
 $top = $_REQUEST['top'] ?? 0;
-$gap_top = $top + $font_size;
-$largura = $total_caracter * $font_size + 4;
+$gap_top = $top;
+$largura = $total_caracter * ($font_size - 15 ) + 2;
 ?>
 <svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 <?= $largura ?> 100" version='1.1'>
     <style>
