@@ -1,8 +1,40 @@
+<?php
+$ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
+?>
+
 <div class="-container">
 
     <div class="banner-home js-banner-home">
-        <div class="swiper-wrapper js-banner-itens">
-            <!-- content by js -->
+        <div class="swiper-wrapper">
+            <?php foreach ($ids as $id) : ?>
+                <?php $product = wc_get_product($id); ?>
+                <?php
+                $caracteristicas_1_image = get_field("caracteristicas_1_image", $product->get_id()) ?? "";
+                $caracteristicas_1_text  = get_field("caracteristicas_1_text", $product->get_id()) ?? "";
+                $caracteristicas_2_image = get_field("caracteristicas_2_image", $product->get_id()) ?? "";
+                $caracteristicas_2_text  = get_field("caracteristicas_2_text", $product->get_id()) ?? "";
+                $caracteristicas_3_image = get_field("caracteristicas_3_image", $product->get_id()) ?? "";
+                $caracteristicas_3_text  = get_field("caracteristicas_3_text", $product->get_id()) ?? "";
+                ?>
+                <div class="swiper-slide banner-home-slide" style="display: block !important; heigh: auto">
+                    <img onclick="window.location.href='<?= get_permalink($product->get_id()); ?>'" src="<?= wp_get_attachment_image_url($product->get_image_id(), 'full'); ?>">
+                    <strong><?= $product->get_name(); ?></strong>
+                    <span>$<?= $product->get_price(); ?> €</span>
+                    <a href="javascript:void(0)" onclick="open_quick_view(
+                        '<?= $product->get_name() ?>', 
+                        '<?= $product->get_price() ?>', 
+                        '<?= $product->get_short_description() ?>', 
+                        '<?= $caracteristicas_1_image ?>',
+                        '<?= $caracteristicas_1_text ?>',
+                        '<?= $caracteristicas_2_image ?>',
+                        '<?= $caracteristicas_2_text ?>',
+                        '<?= $caracteristicas_3_image ?>',
+                        '<?= $caracteristicas_3_text ?>',
+                        )">
+                        quick view
+                    </a>
+                </div>
+            <?php endforeach; ?>
         </div>
         <span class="banner-control banner-nex"></span>
         <span class="banner-control banner-prev"></span>
@@ -12,14 +44,14 @@
         <div>
             <div>
                 <strong class="home-quick-view-title">VENTADOUR</strong>
-                <span class="home-quick-view-subtitle">GAZEUSE</span>
+                <!-- <span class="home-quick-view-subtitle">GAZEUSE</span> -->
                 <div class="home-quick-view-image">
                     <span style="background-color: #FDE17F;"></span>
                     <img src="<?= get_template_directory_uri() ?>/assets/images/zoo.png">
                 </div>
             </div>
             <div class="banner-padding-left">
-                <strong class="home-quick-view-preco">32,50 € </strong>
+                <strong class="home-quick-view-preco">00,00 € </strong>
                 <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
                 <select class="home-quick-view-select">
                     <option>Gazeuse</option>
@@ -34,7 +66,18 @@
                     venue des volcans d’ardèche! !
                 </p>
                 <br>
-                <img src="<?= get_template_directory_uri() ?>/assets/images/logos.png" width="100%">
+                <div class="more-detail">
+                    <img class="more-detail__quick-view-image-1" src="">
+                    <span class="text more-detail__quick-view-text-1"></span>
+                </div>
+                <div class="more-detail">
+                    <img class="more-detail__quick-view-image-2" src="">
+                    <span class="text more-detail__quick-view-text-2"></span>
+                </div>
+                <div class="more-detail">
+                    <img class="more-detail__quick-view-image-3" src="">
+                    <span class="text more-detail__quick-view-text-3"></span>
+                </div>
             </div>
             <span onclick="close_quick_view()" class="quick-close">x</span>
         </div>

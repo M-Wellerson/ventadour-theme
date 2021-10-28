@@ -32,8 +32,18 @@ globalThis._store.banner = [
     },
 ]
 
-function open_quick_view(id) {
+function open_quick_view(id, price, short_descrition, caracteristicas_1_image, caracteristicas_1_text, caracteristicas_2_image, caracteristicas_2_text, caracteristicas_3_image, caracteristicas_3_text ) {
     let $quick = document.querySelector('.js-home-quick-view')
+    document.querySelector('.home-quick-view-title').innerHTML          = id;
+    document.querySelector('.home-quick-view-preco').innerHTML          = `${price} €`;
+    document.querySelector('.home-quick-view-description').innerHTML    = short_descrition || '';
+    document.querySelector('.more-detail__quick-view-text-1').innerHTML = caracteristicas_1_text || '';
+    document.querySelector('.more-detail__quick-view-image-1').src      = caracteristicas_1_image || '';
+    document.querySelector('.more-detail__quick-view-text-2').innerHTML = caracteristicas_2_text || '';
+    document.querySelector('.more-detail__quick-view-image-2').src      = caracteristicas_2_image || '';
+    document.querySelector('.more-detail__quick-view-text-3').innerHTML = caracteristicas_3_text || '';
+    document.querySelector('.more-detail__quick-view-image-3').src      = caracteristicas_3_image || '';
+
     $quick.removeAttribute('hidden')
 }
 function close_quick_view() {

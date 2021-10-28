@@ -3,14 +3,15 @@
 <?php include_once('page_components/menu.php'); ?>
 
 <?php 
-    global $product;
-
     $caracteristicas_1_image = get_field( "caracteristicas_1_image" ) ?? "";
     $caracteristicas_1_text  = get_field( "caracteristicas_1_text" ) ?? "";
     $caracteristicas_2_image = get_field( "caracteristicas_2_image" ) ?? "";
     $caracteristicas_2_text  = get_field( "caracteristicas_2_text" ) ?? "";
     $caracteristicas_3_image = get_field( "caracteristicas_3_image" ) ?? "";
     $caracteristicas_3_text  = get_field( "caracteristicas_3_text" ) ?? "";
+    
+    $banner  = get_field( "banner" ) ?? "";
+    $rotulo  = get_field( "rotulo" ) ?? "";
 
     $item_1_texto = get_field( "item_1_texto" ) ?? "";
     $item_1_image = get_field( "item_1_image" ) ?? "";
@@ -24,7 +25,6 @@
 
     <div class="single-banner js-single-banner">
         <div>
-
             <img src="<?= get_template_directory_uri() ?>/assets/images/c1.png">
             <img src="<?= get_template_directory_uri() ?>/assets/images/c2.png">
         </div>
