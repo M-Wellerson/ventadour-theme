@@ -35,9 +35,8 @@
                     <div class="carrinho-price">100</div>
                 </div>
             </div>
-                <a href="#" class="carrinho-item-close">x</a>            
+                <a href="#" class="carrinho-item-close">x</a>
             </div>
-        </div>
             ';
         };
         ?>
