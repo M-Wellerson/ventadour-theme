@@ -2,9 +2,25 @@
 
 <?php include_once('page_components/menu.php'); ?>
 
+<?php 
+    global $product;
+
+    $caracteristicas_1_image = get_field( "caracteristicas_1_image" ) ?? "";
+    $caracteristicas_1_text  = get_field( "caracteristicas_1_text" ) ?? "";
+    $caracteristicas_2_image = get_field( "caracteristicas_2_image" ) ?? "";
+    $caracteristicas_2_text  = get_field( "caracteristicas_2_text" ) ?? "";
+    $caracteristicas_3_image = get_field( "caracteristicas_3_image" ) ?? "";
+    $caracteristicas_3_text  = get_field( "caracteristicas_3_text" ) ?? "";
+
+    $item_1_texto = get_field( "item_1_texto" ) ?? "";
+    $item_1_image = get_field( "item_1_image" ) ?? "";
+    $item_2_texto = get_field( "item_2_texto" ) ?? "";
+    $item_2_image = get_field( "item_2_image" ) ?? "";
+    $destaque_texto = get_field( "destaque_texto" ) ?? "";
+    $product = wc_get_product(get_the_ID());
+?>
+
 <?php while (have_posts()) : the_post(); ?>
-
-
 
     <div class="single-banner js-single-banner">
         <div>
@@ -40,16 +56,16 @@
                     </select>
                     <a href="" class="home-quick-view-link text-small mb-10">INFORMATIONS NUTRICIONELLES</a>
                     <div class="more-detail">
-                        <img src="<?= get_template_directory_uri() ?>/assets/icons/sum.png">
-                        <span class="text">RELAXANTE</span>
+                        <img src="<?= $caracteristicas_1_image ?>">
+                        <span class="text"><?= $caracteristicas_1_text ?></span>
                     </div>
                     <div class="more-detail">
-                        <img src="<?= get_template_directory_uri() ?>/assets/icons/erva.png">
-                        <span class="text">40 MG DE CBD PAR CANETTE</span>
+                        <img src="<?= $caracteristicas_2_image ?>">
+                        <span class="text"><?= $caracteristicas_2_text ?></span>
                     </div>
                     <div class="more-detail mb-10">
-                        <img src="<?= get_template_directory_uri() ?>/assets/icons/erva.png">
-                        <span class="text">PAS STUPPEFIANTE</span>
+                        <img src="<?= $caracteristicas_3_image ?>">
+                        <span class="text"><?= $caracteristicas_3_text ?></span>
                     </div>
                     <div class="hr mb-10"></div>
                     <div class="flex between">
@@ -83,31 +99,25 @@
     <div class="wrapper" style="margin-bottom: 35px;">
         <div class="single-grid-2">
             <div>
-                <h4 class="title mb-10">QUE EST CE QUE LE CBD ?</h4>
+                <!-- <h4 class="title mb-10">QUE EST CE QUE LE CBD ?</h4> -->
                 <p class="text mb-30">
-                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing
-                        labore et dolore magna aliqua. </b> Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat.
+                    <?= $product->get_description(); ?>
                 </p>
                 <span class="single-sitacao text-small mb-30">
-                    Enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
+                    <?= $destaque_texto ?>
                 </span>
                 <div class="hr"></div>
                 <span class="single-list text-small">
-                    <img src="<?= get_template_directory_uri() ?>/assets/icons/securyt.png">
+                    <img src="<?= $item_1_image ?>">
                     <span>
-                        Veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip commodo consequat.
+                        <?= $item_1_texto ?>
                     </span>
                 </span>
                 <div class="hr"></div>
                 <span class="single-list text-small">
-                    <img src="<?= get_template_directory_uri() ?>/assets/icons/sum.png">
+                    <img src="<?= $item_2_image ?>">
                     <span>
-                        Enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <?= $item_2_texto ?>
                     </span>
                 </span>
                 <div class="hr"></div>
