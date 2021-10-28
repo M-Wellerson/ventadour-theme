@@ -151,6 +151,12 @@
     background-position: 20% center;
     background-size: auto 90%;
 }
+.bg-meridianas {
+    background-image: url(../images/meridianas.png);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: auto 100%;
+}
 
 .shop-product-canvas {
     pointer-events: none;

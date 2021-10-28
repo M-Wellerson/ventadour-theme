@@ -17,7 +17,7 @@
 <?php include_once('page_components/menu.php'); ?>
 
 
-<div class="wrapper ventes">
+<div class="wrapper bg-meridianas ventes">
 
     <div class="menu-cat">
         <a href="#o-cool" class="menu-cat-link menu-cat-link-active">O'cool</a>
