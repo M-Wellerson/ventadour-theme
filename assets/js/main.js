@@ -80,7 +80,7 @@ globalThis._ui_cart = {
                             <div class="carrinho-price"${i.line_subtotal}</div>
                         </div>
                     </div>
-                    <span onclick="cart_remove(${i.product_id})" class="carrinho-item-close">x</span>            
+                    <span onclick="cart_remove('${i.key}')" class="carrinho-item-close">x</span>            
                 </div>
             </div>
         `
@@ -107,6 +107,8 @@ async function cart_minus( id, quantity ) {
 async function cart_remove( id ) {
     let path = `${window.location.protocol}//${window.location.hostname}/wp-json/api/del-to-cart`
     path += `?product_id=${id}`
+    
+
     await fetch(path)
     render_cart()
 }
