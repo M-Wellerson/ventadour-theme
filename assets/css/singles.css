@@ -47,8 +47,9 @@
 }
 
 .single-bg {
+    --texto: 'TEXTO PADRAO';
     display: block;
-    background-image: url(http://localhost/pog/?texto=relaxante&size=50), url(http://localhost/pog/?texto=relaxante&size=50&top=50);
+    background-image: url(../../svg/?texto=RELAXANTE&size=50), url(../../svg/?texto=RELAXANTE&size=50&top=50);
     background-position: 0 50px, -175px 50px;
     padding: 50px 0;
     margin-bottom: 50px;

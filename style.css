@@ -309,6 +309,10 @@ body {
 
 @media ( min-width: 600px) {
     /* [m-] medio */
+    .s-grid-quick-view {
+        display: grid !important;
+        grid-template-columns: 1fr 460px;
+    }
     .home-quick-view>div {
         display: grid;
         grid-template-columns: 1fr 1fr;
