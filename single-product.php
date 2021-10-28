@@ -23,7 +23,7 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <img class="big-banner-single" src="<?= get_template_directory_uri() ?>/assets/images/banner-single.png">
+    <img class="big-banner-single" src="<?= $banner ?>">
     <div class="js-star-fix"></div>
 
     <div class="wrapper ventes js-warp">
