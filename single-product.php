@@ -23,12 +23,8 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <div class="single-banner js-single-banner">
-        <div>
-            <img src="<?= get_template_directory_uri() ?>/assets/images/c1.png">
-            <img src="<?= get_template_directory_uri() ?>/assets/images/c2.png">
-        </div>
-    </div>
+    <img class="big-banner-single" src="<?= get_template_directory_uri() ?>/assets/images/banner-single.png">
+    <div class="js-star-fix"></div>
 
     <div class="wrapper ventes js-warp">
         <div class="flex between s-grid-quick-view">
@@ -131,7 +127,6 @@
     </div>
     <?php include('includes/slider-home.php'); ?>
 
-
     <div class="full-track">
         <div class="single-content">
             <div class="full-track-grid">
@@ -181,6 +176,5 @@
     
 
 </script>
-
 
 <?php get_footer(); ?>
