@@ -116,6 +116,11 @@
     margin: 25px 10%;
 }
 
+.big-banner-single {
+    display: block;
+    width: 100%;
+}
+
 @media ( max-width: 600px) {
     /* [s-] pequeno */
     .single-grid-2 {

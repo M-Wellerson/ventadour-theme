@@ -341,7 +341,7 @@ body {
     .quick-fix {
         position: fixed;
         top: 100px;
-        right: calc(((100vw - 1200px) / 2) + 55 );
+        right: (100vw - 460px);
         z-index: 9999;
         background-color: #FFF;
     }
@@ -351,6 +351,3 @@ body {
     /* [xl-] muito largo */
 }
 
-.{
-    text-transform: uppercase;
-}

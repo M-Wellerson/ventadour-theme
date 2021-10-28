@@ -9,22 +9,38 @@ function showCart() {
 function snap_single() {
     let $el = document.querySelector('.js-single-snap')
     if (!$el) return
-    globalThis._snap_top = globalThis._snap_top || $el.offsetTop - 120
-    globalThis._snap_left = globalThis._snap_left || $el.offsetLeft
 
-    if (window.scrollY >globalThis._snap_top && window.scrollY < 1700 ) {
+    // globalThis._snap_top = globalThis._snap_top || $el.offsetTop - 120
+    // globalThis._snap_left = globalThis._snap_left || $el.offsetLeft
+    
+    $start = document.querySelector('.js-star-fix') 
+    $end = document.querySelector('.js-end-fix') 
+    $container = document.querySelector('.s-grid-quick-view')
+
+    $position = window.scrollY
+    $left = $container.offsetLeft
+    $a_partir = $start.offsetTop
+    $ate = $end.offsetTop - 500
+
+    $el.style.right = `${$left}px`
+
+    if ($position > $a_partir && $position < $ate ) {
         $el.classList.add('quick-fix')
     } else {
         $el.classList.remove('quick-fix')
     }
 
-    let largura_div = document.querySelector('.js-warp').offsetWidth
-    let largura_tela = window.screen.width
-    let distancia =  ((largura_tela - largura_div) / 2) + 55
+    // let largura_div = document.querySelector('.js-warp').offsetWidth
+    // let largura_tela = window.screen.width
+    // let distancia =  ((largura_tela - largura_div) / 2) + 55
 
-    $el.style.right = `${distancia}px`
+    // $el.style.right = `${distancia}px`
     // $el.style.right = ($el.offsetLeft - $el.offsetWidth) + 'px'
     // console.log( $el.offsetWidth  )
+
+
+    console.log($left)
+    $el.style.right = $left + 'px'
 }
 
 snap_single();

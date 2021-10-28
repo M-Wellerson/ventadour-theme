@@ -22,15 +22,10 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <div class="single-banner js-single-banner">
-        <div>
+    <img class="big-banner-single" src="<?= get_template_directory_uri() ?>/assets/images/banner-single.png">
+    <div class="js-star-fix"></div>
 
-            <img src="<?= get_template_directory_uri() ?>/assets/images/c1.png">
-            <img src="<?= get_template_directory_uri() ?>/assets/images/c2.png">
-        </div>
-    </div>
-
-    <div class="wrapper ventes js-warp">
+    <div class="wrapper ventes js-warp js-container">
         <div class="flex between s-grid-quick-view">
             <div>
                 <strong class="title-big"><?php the_title() ?></strong><br>
@@ -125,6 +120,7 @@
         </div>
     </div>
 
+    <div class="js-end-fix"></div>
     <div class="wrapper" style="margin-bottom: 100px;">
         <h4 class="title">AUTRES BOISSONS</h4>
     </div>
