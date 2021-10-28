@@ -102,7 +102,7 @@ o_vive.add(
         z: -3.5,
         rotateZ: Math.PI * 0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/collagene.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/01.png"
 )
 o_vive.add(
     { 
@@ -117,7 +117,7 @@ o_vive.add(
         z: 3.5,
         rotateZ: Math.PI * +0.1
     },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/collagene.png"
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/02.png"
 )
 
 let o_zak = new Lata('.js-o-zak')

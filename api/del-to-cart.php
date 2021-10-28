@@ -2,31 +2,21 @@
 
 function del_product_to_cart($request)
 {
-    // header("Content-Type: text/html");
+    header("Content-Type: text/html");
 
-    global $woocommerce;
+    $id = $_REQUEST['product_id'] ?? '';
 
-    if (is_null(WC()->cart)) {
-        wc_load_cart();
-    }
-
-    $product_id = $request['product_id'];
-
-    // var_dump( WC()->cart);
-
-    $cartId = $woocommerce->cart->generate_cart_id( $product_id  );
-    $cartItemKey = $woocommerce->cart->find_product_in_cart( $cartId );
-    $woocommerce->cart->remove_cart_item( $cartItemKey );
-
-    // $woocommerce->cart->remove_cart_item($product_id);
-
+    $full_url =  wc_get_cart_remove_url( $id );
+    $full_url = str_replace('amp;','', $full_url);
+    file_get_contents($full_url);
+    
     $response = array(
         'next' => true,
         'product_id' => $product_id,
         'message' => "produto Removido com sucesso",
-        'links' => array()
+        'links' => array($full_url  )
     );
-
+    
     return rest_ensure_response($response);
 }
 

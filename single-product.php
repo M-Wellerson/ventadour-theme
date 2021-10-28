@@ -46,7 +46,7 @@
                         <strong class="text ml-10">52,50 €</strong>
                         <b class="text red-900 c-gray-50 single-discout ml-10">- 30%</b>
                     </div>
-                    <a href="<?= $product->add_to_cart_url() ?>" style="text-decoration: none;color: #282828;font-size: 20px;">
+                    <a href="javascript:void(fetch('<?= $product->add_to_cart_url() ?>'));render_cart();" style="text-decoration: none;color: #282828;font-size: 20px;">
                         <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
                     </a>
                     <select class="home-quick-view-select text">
