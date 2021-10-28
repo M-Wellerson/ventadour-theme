@@ -11,16 +11,11 @@ $largura = $total_caracter * ($font_size - 15 ) + 2;
     <style>
         @font-face {
             font-family: 'FuturaT';
-            src: url("./FuturaLT-Bold.ttf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
+            src: url("FuturaLT-Bold.ttf") format("opentype");
         }
-        .style-text {
+        svg{
             font-family: 'FuturaT', sans-serif;
-            text-transform: uppercase;
-            font-weight: bolder;
-            -webkit-text-stroke: 2px #645c5b;
-            -webkit-text-fill-color: transparent;
+            font-weight: 900;
         }
     </style>
     <text
