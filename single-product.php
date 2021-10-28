@@ -125,6 +125,7 @@
         </div>
     </div>
 
+    <div class="js-end-fix"></div>
     <div class="wrapper" style="margin-bottom: 100px;">
         <h4 class="title">AUTRES BOISSONS</h4>
     </div>
