@@ -130,7 +130,8 @@ body {
     display: block;
     font-size: 40px;
     font-weight: 800;
-    line-height: auto
+    line-height: auto;
+    font-family: "FuturaStd";
 }
 
 .home-quick-view-subtitle {

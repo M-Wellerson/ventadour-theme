@@ -19,6 +19,9 @@
     $item_2_image = get_field( "item_2_image" ) ?? "";
     $destaque_texto = get_field( "destaque_texto" ) ?? "";
     $product = wc_get_product(get_the_ID());
+
+    global $woocommerce; 
+
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
@@ -43,7 +46,9 @@
                         <strong class="text ml-10">52,50 €</strong>
                         <b class="text red-900 c-gray-50 single-discout ml-10">- 30%</b>
                     </div>
-                    <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
+                    <a href="<?= $product->add_to_cart_url() ?>" style="text-decoration: none;color: #282828;font-size: 20px;">
+                        <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
+                    </a>
                     <select class="home-quick-view-select text">
                         <option>Gazeuse</option>
                     </select>

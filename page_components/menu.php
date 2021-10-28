@@ -23,7 +23,9 @@
 					<?= is_user_logged_in() ? 'PERFIL' : 'LOGIN' ?>
 				</a>
 				<img onclick="showCart()" src="<?= get_template_directory_uri() ?>/assets/images/lata.svg" alt="">
-				<span onclick="showCart()" class="js-total-itens">0</span>
+				<span onclick="showCart()" class="js-total-itens">
+					<?php echo WC()->cart->get_cart_contents_count(); ?>
+				</span>
 			</div>
 
 		</div>

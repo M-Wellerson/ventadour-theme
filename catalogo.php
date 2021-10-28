@@ -16,7 +16,6 @@
 <?php get_header(); ?>
 <?php include_once('page_components/menu.php'); ?>
 
-
 <div class="wrapper bg-meridianas ventes">
 
     <div class="menu-cat">
