@@ -3,7 +3,7 @@
 	<div class="menu__wrapper">
 		<div class="menu__item menu__action"><img src="<?= get_template_directory_uri(); ?>/assets/icons/burger_black.svg" alt=""></div>
 		<div class="menu__item no-iphone">
-			<h4 class="font_certa"><a href="<?= $ventadourPage ?>">Ventadour</a></h4>
+			<h4 class="font_certa"><a href="<?= $sourcesPage ?>">Les source du pestrin</a></h4>
 		</div>
 		<div class="menu__item"><a href="<?= $homePage ?>">
 				<img class="logo" id="logo_big" src="<?= get_template_directory_uri(); ?>/assets/logos/logo_1868_big.svg" alt="">

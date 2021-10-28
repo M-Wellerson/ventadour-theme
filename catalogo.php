@@ -42,7 +42,7 @@
     <?php foreach ($products as $prod) : ?>
     <?php endforeach; ?>
 
-    <div class="shop-product" id="o-cool">
+    <div class="shop-product bg-red" id="o-cool">
         <!-- <canvas class="shop-product-canvas"></canvas> -->
         <canvas width="800" height="690" class="can-shop-1 shop-product-canvas"></canvas>
         <h2 class="shop-product-title">O’COOL</h2>
@@ -57,8 +57,8 @@
         </div>
     </div>
 
-    <div class="shop-product" id="ventadour">
-        <div class="space s-space" style="--s:70px; --ss:50px"></div>
+    <div class="shop-product bg-amarelo" id="ventadour">
+        <!-- <div class="space s-space" style="--s:70px; --ss:50px"></div> -->
         <!-- <canvas class="shop-product-canvas"></canvas> -->
         <canvas width="800" height="690" class="can-shop-2 shop-product-canvas"></canvas>
         <h2 class="shop-product-title shop-product-title-right">
@@ -78,8 +78,8 @@
         </div>
     </div>
 
-    <div class="shop-product" id="o-coll">
-        <div class="space s-space" style="--s:210px;--ss:50px"></div>
+    <div class="shop-product " id="o-coll">
+        <!-- <div class="space s-space" style="--s:210px;--ss:50px"></div> -->
         <canvas width="800" height="690" class="shop-product-canvas js-shop-o-coll"></canvas>
         <h2 class="shop-product-title ">
             O’COLL
@@ -99,7 +99,7 @@
     </div>
 
     <div class="shop-product shop-product-ozak" id="ozak">
-        <div class="space s-space" style="--s:180px; --ss:50px"></div>
+        <!-- <div class="space s-space" style="--s:180px; --ss:50px"></div> -->
         <canvas width="1000" height="690" class="shop-product-canvas js-o-zak"></canvas>
         <h2 class="shop-product-title ">
             O’ZAKE
@@ -138,7 +138,7 @@
     </div>
 
     <div class="shop-product" id="o-vive">
-        <div class="space s-space" style="--s:160px; --ss:50px"></div>
+        <!-- <div class="space s-space" style="--s:160px; --ss:50px"></div> -->
         <canvas width="800" height="690" class="shop-product-canvas js-o-vive"></canvas>
         <h2 class="shop-product-title">
             O’VIVE
@@ -154,7 +154,7 @@
         </div>
     </div>
 
-    <div class="space s-space" style="--s:160px; --ss: 50px"></div>
+    <!-- <div class="space s-space" style="--s:160px; --ss: 50px"></div> -->
 
 </div>
 
