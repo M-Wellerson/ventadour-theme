@@ -76,6 +76,7 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 include __DIR__ . "/api/add-to-cart.php";
 include __DIR__ . "/api/get-cart.php";
 include __DIR__ . "/api/del-to-cart.php";
+include __DIR__ . "/api/alterar-quantidade.php";
 include __DIR__ . "/api/quick-view.php";
 include __DIR__ . "/includes/show-product-checkout.php";
 include __DIR__ . "/includes/actions.php";

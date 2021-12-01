@@ -13,12 +13,19 @@
     $banner  = get_field( "banner" ) ?? "";
     $rotulo  = get_field( "rotulo" ) ?? "";
 
+    $foto_1  = get_field( "foto_1" ) ?? "";
+    $foto_2  = get_field( "foto_2" ) ?? "";
+    $foto_3  = get_field( "foto_3" ) ?? "";
+
     $item_1_texto = get_field( "item_1_texto" ) ?? "";
     $item_1_image = get_field( "item_1_image" ) ?? "";
     $item_2_texto = get_field( "item_2_texto" ) ?? "";
     $item_2_image = get_field( "item_2_image" ) ?? "";
     $destaque_texto = get_field( "destaque_texto" ) ?? "";
     $product = wc_get_product(get_the_ID());
+
+    $terms      = get_the_terms( $product->get_id(), 'product_cat' );
+    $variations = $product->get_children();
 
     global $woocommerce; 
 
@@ -42,42 +49,54 @@
             <div>
                 <div class="box-single js-single-snap">
                     <div class="mb-10">
-                        <strong class="text c-gray-300">75,26 € </strong>
-                        <strong class="text ml-10">52,50 €</strong>
-                        <b class="text red-900 c-gray-50 single-discout ml-10">- 30%</b>
+                        <strong class="text c-gray-300 font__futura-bold">75,26 € </strong>
+                        <strong class="text ml-10 font__futura-bold">52,50 €</strong>
+                        <b class="text red-900 c-gray-50 single-discout ml-10 font__futura-bold">- 30%</b>
                     </div>
-                    <a href="javascript:void(fetch('<?= $product->add_to_cart_url() ?>'));render_cart();" style="text-decoration: none;color: #282828;font-size: 20px;">
+                    <a href="javascript:void(fetch('<?= '?add-to-cart=' . $product->get_id() . '&quantity=2' ?>'));render_cart();" style="text-decoration: none;color: #282828;font-size: 20px;">
                         <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
                     </a>
-                    <select class="home-quick-view-select text">
-                        <option>Gazeuse</option>
+                    
+                    <select class="home-quick-view-select text font__futura-CondensedLight font-uppercase">
+                        <?php foreach ($variations as $key => $value) : ?>
+                            <?php 
+                                $variation     = wc_get_product($value); 
+                                $variationName = explode(" - ", $variation->get_name()); 
+                            ?>
+                            <option value="<?= $value; ?>"><?= $variationName['1']; ?></option>
+                        <?php endforeach ?>
                     </select>
-                    <select class="home-quick-view-select text mb-10">
-                        <option>3 x PACKS DE 6</option>
+                    <select class="home-quick-view-select text mb-10 font__futura-CondensedLight font-uppercase">
+                        <option value="1">1 x PACKS DE 6</option>
+                        <option value="2">2 x PACKS DE 6</option>
+                        <option value="3">3 x PACKS DE 6</option>
+                        <option value="4">4 x PACKS DE 6</option>
+                        <option value="5">5 x PACKS DE 6</option>
+                        <option value="6">6 x PACKS DE 6</option>
                     </select>
-                    <a href="" class="home-quick-view-link text-small mb-10">INFORMATIONS NUTRICIONELLES</a>
+                    <a href="" class="home-quick-view-link text-small mb-10 font__futura-medium">INFORMATIONS NUTRICIONELLES</a>
                     <div class="more-detail">
                         <img src="<?= $caracteristicas_1_image ?>">
-                        <span class="text"><?= $caracteristicas_1_text ?></span>
+                        <span class="text font-uppercase"><?= $caracteristicas_1_text ?></span>
                     </div>
                     <div class="more-detail">
                         <img src="<?= $caracteristicas_2_image ?>">
-                        <span class="text"><?= $caracteristicas_2_text ?></span>
+                        <span class="text font-uppercase"><?= $caracteristicas_2_text ?></span>
                     </div>
                     <div class="more-detail mb-10">
                         <img src="<?= $caracteristicas_3_image ?>">
-                        <span class="text"><?= $caracteristicas_3_text ?></span>
+                        <span class="text font-uppercase"><?= $caracteristicas_3_text ?></span>
                     </div>
                     <div class="hr mb-10"></div>
                     <div class="flex between">
                         <div>
-                            <a href="#" class="more-link text-small">je suis </a> <br>
-                            <a href="#" class="more-link text-small">professionnel</a> <br>
+                            <a href="#" class="more-link text-small font__futura-book font-uppercase">je suis </a> <br>
+                            <a href="#" class="more-link text-small font__futura-book font-uppercase">professionnel</a> <br>
                         </div>
                         <div>
-                            <a href="#" class="more-link text-small">FAQ</a> <br>
-                            <a href="#" class="more-link text-small">la LIVRAISON</a> <br>
-                            <a href="#" class="more-link text-small">moyens de paiement</a> <br>
+                            <a href="#" class="more-link text-small font__futura-book font-uppercase">FAQ</a> <br>
+                            <a href="#" class="more-link text-small font__futura-book font-uppercase">la LIVRAISON</a> <br>
+                            <a href="#" class="more-link text-small font__futura-book font-uppercase">moyens de paiement</a> <br>
                         </div>
                     </div>
                 </div>
@@ -89,9 +108,9 @@
         <div class="wrapper">
             <div class="single-grid-2">
                 <div class="single-images">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/c3.png" alt="">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/c4.png" alt="">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/c5.png" alt="">
+                    <img src="<?= $foto_1 ?>" alt="">
+                    <img src="<?= $foto_2 ?>" alt="">
+                    <img src="<?= $foto_3 ?>" alt="">
                 </div>
             </div>
         </div>
@@ -104,20 +123,20 @@
                 <p class="text mb-30">
                     <?= $product->get_description(); ?>
                 </p>
-                <span class="single-sitacao text-small mb-30">
+                <span class="single-sitacao text-small mb-30 font__futura-book">
                     <?= $destaque_texto ?>
                 </span>
                 <div class="hr"></div>
                 <span class="single-list text-small">
                     <img src="<?= $item_1_image ?>">
-                    <span>
+                    <span class="font__futura-book">
                         <?= $item_1_texto ?>
                     </span>
                 </span>
                 <div class="hr"></div>
                 <span class="single-list text-small">
                     <img src="<?= $item_2_image ?>">
-                    <span>
+                    <span class="font__futura-book">
                         <?= $item_2_texto ?>
                     </span>
                 </span>
@@ -179,8 +198,6 @@
         let x2 = ((window.scrollY / 4) - 175) * -1
         horizontal.style.backgroundPosition = `${x1}px 50px, ${x2}px 50px`;
     }
-    
-
 </script>
 
 <?php get_footer(); ?>

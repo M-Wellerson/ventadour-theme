@@ -70,7 +70,7 @@ body {
 }
 
 .banner-home-slide>strong {
-    font-family: "FuturaStd Condensed";
+    font-family: "FuturaStd CondensedBold";
     letter-spacing: 1.5px;
     display: block;
     font-size: 16px;
@@ -169,8 +169,8 @@ body {
 .home-quick-view-image>span {
     display: block;
     border-radius: 100%;
-    width: 180px;
-    height: 180px;
+    width: 469px;
+    height: 469px;
     position: absolute;
     z-index: 991;
     background-color: #C00;
@@ -321,10 +321,10 @@ body {
     .banner-padding-left {
         padding-left: 20px;
     }
-    .home-quick-view-image>span {
+    /* .home-quick-view-image>span {
         width: 300px;
         height: 300px;
-    }
+    } */
     .home-quick-view-image>img {
         height: auto;
     }
@@ -356,3 +356,10 @@ body {
     /* [xl-] muito largo */
 }
 
+.cursor_point {
+    cursor: pointer;
+}
+
+.text_decoration-none {
+    text-decoration: none;
+}

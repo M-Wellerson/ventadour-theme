@@ -2682,8 +2682,6 @@ jQuery('document').ready(function ($) {
 			isAnimating = true;
 			var idToActive = $(this).data('id');
 			var sliderSlideToActive = $('.sliderSwiper__slide:nth-child('+idToActive+')');
-			console.log(idToActive);
-			console.log(sliderSlideToActive);
 
 			sliderPaginationActive.removeClass('active');
 			elem.addClass('active');

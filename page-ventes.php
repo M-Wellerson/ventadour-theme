@@ -63,8 +63,6 @@ Template Name: Ventes template
 				?>
 				<script type="text/javascript">
 					getMapInfos(<?php echo json_encode($cities); ?>);
-					console.log(<?php echo json_encode($cities); ?>);
-
 				</script>
 				<div class="mapcontainer">
 					<div class="map">

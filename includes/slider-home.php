@@ -19,7 +19,7 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                 <div class="swiper-slide banner-home-slide" style="display: block !important; heigh: auto">
                     <img onclick="window.location.href='<?= get_permalink($product->get_id()); ?>'" src="<?= wp_get_attachment_image_url($product->get_image_id(), 'full'); ?>">
                     <strong><?= $product->get_name(); ?></strong>
-                    <span>$<?= $product->get_price(); ?> €</span>
+                    <span><?= $product->get_price(); ?> €</span>
                     <a href="javascript:void(0)" onclick="open_quick_view(
                         '<?= $product->get_name() ?>', 
                         '<?= $product->get_price() ?>', 
@@ -52,7 +52,7 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
             </div>
             <div class="banner-padding-left">
                 <strong class="home-quick-view-preco">00,00 € </strong>
-                <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
+                <a href="javascript:void(fetch('<?= $product->add_to_cart_url() ?>'));render_cart();" class="home-quick-view-add text_decoration-none" style="background-color: #FDE17F;">ajouter au panier</a>
                 <select class="home-quick-view-select">
                     <option>Gazeuse</option>
                 </select>

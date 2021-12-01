@@ -4,8 +4,8 @@ import { DRACOLoader } from './three.js-master/examples/jsm/loaders/DRACOLoader.
 
 export default class Lata {
 
-    texture = './../wp-content/themes/rsw-pestrin/assets/images/can/metal.jpg'
-    draw3d = './../wp-content/themes/rsw-pestrin/assets/images/can/materials/can-of-soda-4.0.glb'
+    texture = './../wp-content/themes/ventadour-theme/assets/images/can/metal.jpg'
+    draw3d = './../wp-content/themes/ventadour-theme/assets/images/can/materials/can-of-soda-4.0.glb'
     
     canvas = null
     camera = null
@@ -70,14 +70,25 @@ export default class Lata {
                 mesh2.position.x = positionCan.x;
                 mesh2.position.z = positionCan.z;
 
+                const cubeTextureLoader     = new THREE.CubeTextureLoader();
+                const environmentMapTexture = cubeTextureLoader.load([
+                    './../wp-content/themes/ventadour-theme/assets/images/can/4/px.png',
+                    './../wp-content/themes/ventadour-theme/assets/images/can/4/nx.png',
+                    './../wp-content/themes/ventadour-theme/assets/images/can/4/py.png',
+                    './../wp-content/themes/ventadour-theme/assets/images/can/4/ny.png',
+                    './../wp-content/themes/ventadour-theme/assets/images/can/4/pz.png',
+                    './../wp-content/themes/ventadour-theme/assets/images/can/4/nz.png'
+                ]);
+
                 mesh.material = new THREE.MeshMatcapMaterial({
                     matcap: texture
                 });
 
                 mesh2.material = new THREE.MeshStandardMaterial({
                     map: textureRotulo,
-                    metalness: .1,
-                    roughness: .1
+                    envMap: environmentMapTexture,
+                    metalness: .8,
+                    roughness: .4,
                 });
 
                 gltf.scene.rotateZ(positionCan.rotateZ);
@@ -131,7 +142,7 @@ export default class Lata {
     }
 
     add_light_in_scene() {
-        let ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+        let ambientLight = new THREE.AmbientLight(0xffffff, 1);
         this.scene.add(ambientLight);
     }
 

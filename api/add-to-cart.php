@@ -11,7 +11,8 @@ function add_product_to_cart($request)
     }
 
     $product_id = $request['product_id'];
-    $quantity = $request['quantity'] ?? 1;
+    $quantity   = $request['quantity'] ?? 1;
+    $variation  = $request['variation'] ?? '';
 
     $full_url = site_url();
     $full_url .= "/add-to-cart?product_id={$product_id}&quantity={$quantity}";
@@ -19,12 +20,9 @@ function add_product_to_cart($request)
     $woocommerce->cart->add_to_cart($product_id, $quantity);
 
     $response = array(
-        'next' => true,
+        'next'       => true,
         'product_id' => $product_id,
-        'message' => "produto adicionado com sucesso",
-        'links' => array(
-            $full_url
-        )
+        'message'    => "produto adicionado com sucesso",
     );
     return rest_ensure_response($response);
 }

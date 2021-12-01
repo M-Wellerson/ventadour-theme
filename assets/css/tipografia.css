@@ -3,7 +3,7 @@
     font-family: 'FuturaLT-Bold';
 }
 .title-big {
-    font-family: 'FuturaLT-ExtraBold';
+    font-family: 'FuturaStd CondensedExtraBd';
     font-size: 100px;
 }
 .title-sub {
@@ -19,4 +19,23 @@
     font-family: 'FuturaLT-Condensed';
     font-size: 15px;
     line-height: 18px;
+}
+
+.font__futura-bold {
+    font-family: 'FuturaLT-Bold' !important;
+}
+.font__futura-book {
+    font-family: 'FuturaStd Book' !important;
+}
+
+.font__futura-medium {
+    font-family: 'FuturaStd Medium' !important;
+}
+
+.font__futura-CondensedLight {
+    font-family: 'FuturaLT-CondensedLight' !important;
+}
+
+.font-uppercase {
+    text-transform: uppercase;
 }

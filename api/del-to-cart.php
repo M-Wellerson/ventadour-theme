@@ -1,33 +1,27 @@
 <?php
 
-function del_product_to_cart($request)
+function deletar_prod($request)
 {
-    header("Content-Type: text/html");
-
-    $id = $_REQUEST['product_id'] ?? '';
-
-    $full_url =  wc_get_cart_remove_url( $id );
-    $full_url = str_replace('amp;','', $full_url);
-    file_get_contents($full_url);
-    
+    WC()->cart->remove_cart_item($request['id']);
     $response = array(
-        'next' => true,
-        'product_id' => $product_id,
-        'message' => "produto Removido com sucesso",
-        'links' => array($full_url  )
+        'next'       => true,
+        'product_id' => $request['id'],
+        'message'    => "produto Removido com sucesso"
     );
-    
+
     return rest_ensure_response($response);
 }
 
-function register_del_product_to_cart()
-{
-    register_rest_route('api', '/del-to-cart', array(
-        array(
-            'methods' => 'GET',
-            'callback' => 'del_product_to_cart'
-        )
-    ));
-}
-
-add_action('rest_api_init',  'register_del_product_to_cart');
+add_action(
+    "woocommerce_is_rest_api_request",
+    function () {
+        register_rest_route(
+            "api",
+            "/del-to-cart/(?P<id>\w+\d+)",
+            [
+                "method" => "GET",
+                "callback" => "deletar_prod"
+            ]
+        );
+    }
+);
