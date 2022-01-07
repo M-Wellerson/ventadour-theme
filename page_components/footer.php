@@ -53,7 +53,8 @@ $ardechePage;
 				<a href="javascript:void(0)" class="c-footer-link"> Ventadour Gazeuses </a>
 				<a href="javascript:void(0)" class="c-footer-link"> O’cool </a>
 				<a href="javascript:void(0)" class="c-footer-link"> O’Coll </a>
-				<a href="javascript:void(0)" class="c-footer-link"> O’ZakeA.Fer </a>
+				<a href="javascript:void(0)" class="c-footer-link"> O’Zake </a>
+				<a href="javascript:void(0)" class="c-footer-link"> A.Fer </a>
 				<a href="javascript:void(0)" class="c-footer-link"> O’Vive </a>
 			</div>
 			<div class="c-footer-sanfona" onclick="this.classList.toggle('active-footer')">
