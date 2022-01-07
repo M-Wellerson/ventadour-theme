@@ -65,7 +65,7 @@
                                 <?= $preco ?> € 
                             </strong>
                         <?php endif; ?>
-                        <strong class="text ml-10 font__futura-bold <?= $procentagem ? 'ricado' : '' ?> ">
+                        <strong class="text ml-10 font__futura-bold">
                             <?= $preco_aplicado_desconto ?> €
                         </strong>
                         <?php if($procentagem) : ?>
