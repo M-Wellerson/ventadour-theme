@@ -156,6 +156,22 @@
     width: 100%;
 }
 
+.description_single p {
+    font-family: 'FuturaStd Book';
+    font-size: 20px;
+}
+
+.description_single p b, 
+.description_single p strong {
+    font-size: 20px;
+    font-family: 'FuturaStd';
+}
+
+.description_single:nth-child(1) p strong {
+    font-size: 30px;
+    font-family: 'FuturaStd';
+}
+
 @media ( max-width: 600px) {
     /* [s-] pequeno */
     .single-grid-2 {

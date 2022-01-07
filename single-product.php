@@ -122,9 +122,9 @@
         <div class="single-grid-2">
             <div>
                 <!-- <h4 class="title mb-10">QUE EST CE QUE LE CBD ?</h4> -->
-                <p class="text mb-30">
+                <div class="description_single">
                     <?= $product->get_description(); ?>
-                </p>
+                </div>
                 <span class="single-sitacao text-small mb-30 font__futura-book">
                     <?= $destaque_texto ?>
                 </span>
@@ -191,9 +191,7 @@
     window.scroll({
         behavior: 'smooth'
     });
-    globalThis._banner_single = "<?= $rotulo ?>"
-
-    
+    globalThis._banner_single = "<?= $rotulo ?>"    
 
     window.onscroll = function() {
         const horizontal = document.querySelector('.js-single-bg');
@@ -204,7 +202,6 @@
         
         let x1 = parseInt(  -500 + andu )
         let x2 = parseInt(  -750 + -andu ) 
-
 
         // horizontal.style.backgroundPosition = `${x1}px 50px, ${x2}px 50px`;
         horizontal.style.setProperty('--line-1', `${x1}px`);
