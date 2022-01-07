@@ -156,6 +156,10 @@
     width: 100%;
 }
 
+.ricado {
+    text-decoration: line-through;
+}
+
 .description_single p {
     font-family: 'FuturaStd Book';
     font-size: 20px;

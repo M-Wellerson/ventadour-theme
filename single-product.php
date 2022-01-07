@@ -29,6 +29,17 @@
 
     global $woocommerce; 
 
+    
+    $procentagem = 0;
+    $preco = $product->get_regular_price();
+    $preco_aplicado_desconto = $product->get_price();
+
+    if($preco != $preco_aplicado_desconto) {
+        $procentagem = intval( 100 - ($preco_aplicado_desconto * 100 / $preco) ) ;
+    }
+    $preco = number_format( $preco, 2, ',', '.');
+    $preco_aplicado_desconto = number_format( $preco_aplicado_desconto, 2, ',', '.');
+
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
@@ -49,9 +60,19 @@
             <div>
                 <div class="box-single js-single-snap">
                     <div class="mb-10">
-                        <strong class="text c-gray-300 font__futura-bold">75,26 € </strong>
-                        <strong class="text ml-10 font__futura-bold">52,50 €</strong>
-                        <b class="text red-900 c-gray-50 single-discout ml-10 font__futura-bold">- 30%</b>
+                        <?php if($procentagem) : ?>
+                            <strong class="text c-gray-300 font__futura-bold <?= $procentagem ? 'ricado' : '' ?> ">
+                                <?= $preco ?> € 
+                            </strong>
+                        <?php endif; ?>
+                        <strong class="text ml-10 font__futura-bold <?= $procentagem ? 'ricado' : '' ?> ">
+                            <?= $preco_aplicado_desconto ?> €
+                        </strong>
+                        <?php if($procentagem) : ?>
+                            <b class="text red-900 c-gray-50 single-discout ml-10 font__futura-bold">
+                                - <?= $procentagem ?>%
+                            </b>
+                        <?php endif; ?>
                     </div>
                     <a href="javascript:void(fetch('<?= '?add-to-cart=' . $product->get_id() . '&quantity=2' ?>'));render_cart();" style="text-decoration: none;color: #282828;font-size: 20px;">
                         <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
