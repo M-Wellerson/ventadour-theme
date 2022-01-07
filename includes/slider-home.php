@@ -79,7 +79,9 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                     <span class="text more-detail__quick-view-text-3"></span>
                 </div>
             </div>
-            <span onclick="close_quick_view()" class="quick-close">x</span>
+            <span onclick="close_quick_view()" class="quick-close">
+                <img src="<?= get_template_directory_uri() ?>/assets/icons/close.png" alt="">
+            </span>
         </div>
     </div>
 

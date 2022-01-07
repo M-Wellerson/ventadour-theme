@@ -50,7 +50,8 @@
     /* border: 1px solid #CCC; */
     --texto: 'TEXTO PADRAO';
     display: block;
-    background-image: url(../../svg/?texto=RELAXANTE&size=50&top=40), url(../../svg/?texto=RELAXANTE&size=50&top=90);
+    /* background-image: url(../../svg/?texto=RELAXANTE&size=50&top=40), url(../../svg/?texto=RELAXANTE&size=50&top=90); */
+    /* background-image: url('#text-svg'), url(../../svg/?texto=RELAXANTE&size=50&top=40); */
     background-position: 0 50px, -175px 50px;
     padding: 50px 0;
     margin-bottom: 50px;
@@ -58,8 +59,38 @@
     background-position: center  top, center  top;
     background-size: top 0px 100%, top 0px 100%, ;
     min-height: 520px;
+    /* position: relative; */
 
 }
+.single-bg::before {
+    /* --line-1: "-500px"; */
+    display: block;
+    content: var(--text) ;
+    font-family: 'FuturaStd CondensedBold';
+    font-size: 200px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #CCC;
+    color: #FFF;
+    width: 1000%;
+    margin-left: var(--line-1);
+    transition: all .5s;
+}
+
+.single-bg::after {
+    /* --line-2: "-750px"; */
+    display: block;
+    content: var(--text) ;
+    font-family: 'FuturaStd CondensedBold';
+    font-size: 200px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #CCC;
+    color: #FFF;
+    width: 1000%;
+    margin-left: var(--line-2);
+    transition: all .5s;
+   
+}
+
 .single-sitacao{
     background-color: #FFF6D8;
     display: block;

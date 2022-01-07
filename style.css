@@ -126,6 +126,11 @@ body {
     font-weight: bolder;
 }
 
+.quick-close img {
+    display: block;
+    width: 16px;
+}
+
 .home-quick-view-title {
     display: block;
     font-size: 40px;
@@ -213,6 +218,7 @@ body {
     color: #111;
     font-size: 15px;
     font-family: 'FuturaLT-CondensedLight';
+    margin-top: 20px;
 }
 
 .home-quick-view-description {
@@ -259,7 +265,7 @@ body {
     height: calc(100vh + 150px);
 }
 .header__social {
-    bottom: 105px !important;
+    bottom: 350px !important;
 }
 
 .home__info {
@@ -282,6 +288,20 @@ body {
     font-size: 25px;
     line-height: 30px;
     color: #282828;
+}
+
+.font-home-banner {
+    font-size: 30px !important;
+    line-height: 35px !important;
+    font-family: 'FuturaStd CondensedBold';
+}
+.link-home-banner {
+    text-decoration: none !important;
+
+}
+
+.home__header .header__content {
+    top: 37%;
 }
 
 

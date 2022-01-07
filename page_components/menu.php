@@ -39,15 +39,16 @@
 		<img class="menu__popup_close" src="<?= get_template_directory_uri(); ?>/assets/icons/button_arrow_right.png" alt="">
 		<div class="filetBottom"></div>
 		<div class="menu__popup_item"><a class="<?= is_home() ? 'active' : ''; ?>" href="<?= $homePage ?>"><span class="number">01</span><span class="title"><?= __('Un patrimoine', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'ventadour' ? 'active' : ''; ?> pestrin" href="<?= $ventadourPage ?>"><span class="number">02</span><span class="title"><?= __('Ventadour', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'chantemerle' ? 'active' : ''; ?> pestrin" href="<?= $chantemerlePage ?>"><span class="number">03</span><span class="title"><?= __('Chantemerle', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'sources' ? 'active' : ''; ?>" href="<?= $sourcesPage ?>"><span class="number">04</span><span class="title"><?= __('Une histoire', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'presse' ? 'active' : ''; ?>" href="<?= $pressePage ?>"><span class="number">05</span><span class="title"><?= __('Presse et disctinctions', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'ardeche' ? 'active' : ''; ?>" href="<?= $ardechePage ?>"><span class="number">06</span><span class="title"><?= __('Émerveillés par l\'Ardèche', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="aime menu__sub_action" href="javascript:;"><span class="number">07</span><span class="title"><?= __('On aime', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'portfolio' ? 'active' : ''; ?>" href="<?= $portfolioPage ?>"><span class="number">08</span><span class="title"><?= __('Vos photos', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'ventes' ? 'active' : ''; ?>" href="<?= $ventesPage ?>"><span class="number">09</span><span class="title"><?= __('Points de ventes', 'pestrin'); ?></span></a></div>
-		<div class="menu__popup_item"><a class="<?= $currentPage == 'contact' ? 'active' : ''; ?>" href="<?= $contactPage ?>"><span class="number">10</span><span class="title"><?= __('Contact', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'loja' ? 'active' : ''; ?> pestrin" href="<?= get_site_url() ?>/loja"><span class="number">02</span><span class="title"><?= __('Les Boissons', 'pestrin'); ?></span></a></div>		
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'ventadour' ? 'active' : ''; ?> pestrin" href="<?= $ventadourPage ?>"><span class="number">03</span><span class="title"><?= __('Ventadour', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'chantemerle' ? 'active' : ''; ?> pestrin" href="<?= $chantemerlePage ?>"><span class="number">04</span><span class="title"><?= __('Chantemerle', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'sources' ? 'active' : ''; ?>" href="<?= $sourcesPage ?>"><span class="number">05</span><span class="title"><?= __('Une histoire', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'presse' ? 'active' : ''; ?>" href="<?= $pressePage ?>"><span class="number">06</span><span class="title"><?= __('Presse et disctinctions', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'ardeche' ? 'active' : ''; ?>" href="<?= $ardechePage ?>"><span class="number">07</span><span class="title"><?= __('Émerveillés par l\'Ardèche', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="aime menu__sub_action" href="javascript:;"><span class="number">08</span><span class="title"><?= __('On aime', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'portfolio' ? 'active' : ''; ?>" href="<?= $portfolioPage ?>"><span class="number">09</span><span class="title"><?= __('Vos photos', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'ventes' ? 'active' : ''; ?>" href="<?= $ventesPage ?>"><span class="number">10</span><span class="title"><?= __('Points de ventes', 'pestrin'); ?></span></a></div>
+		<div class="menu__popup_item"><a class="<?= $currentPage == 'contact' ? 'active' : ''; ?>" href="<?= $contactPage ?>"><span class="number">11</span><span class="title"><?= __('Contact', 'pestrin'); ?></span></a></div>
 
 		<div class="menu__popup_social">
 			<div class="social">

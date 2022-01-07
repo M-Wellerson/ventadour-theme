@@ -15,17 +15,26 @@
 
 	<div class="header__content">
 		<div class="header__content_item">
-			<h4 class="fontpestrin upper white">Ventadour</h4>
-			<div class="text light white upper"><?= __('Eau minérale<br>gazeuse légère', 'pestrin'); ?></div>
+			<a href="<?= get_site_url() ?>/sources" class="link-home-banner">
+				<h4 class="fontpestrin upper white font-home-banner">
+					LES SOURCES <br>
+					DU PESTRIN
+				</h4>
+			</a>
+			<!-- <div class="text light white upper"><?= __('Eau minérale<br>gazeuse légère', 'pestrin'); ?></div> -->
 		</div>
 		<div class="header__content_item">
-			<div class="text condensedLTBold white smaller"><?= mb_strtoupper(__('les meilleures', 'pestrin')); ?></div>
-			<div class="text condensedLTBold white"><?= mb_strtoupper(__('eaux minérales', 'pestrin')); ?></div>
-			<div class="text condensedLTBold white smaller"><?= mb_strtoupper(__('de france', 'pestrin')); ?></div>
+			<div class="text condensedLTBold white smaller font-home-banner"><?= mb_strtoupper(__('les meilleures', 'pestrin')); ?></div>
+			<div class="text condensedLTBold white font-home-banner"><?= mb_strtoupper(__('eaux minérales', 'pestrin')); ?></div>
+			<div class="text condensedLTBold white smaller font-home-banner"><?= mb_strtoupper(__('de france', 'pestrin')); ?></div>
 		</div>
 		<div class="header__content_item">
-			<h4 class="fontpestrin upper white">Chantemerle</h4>
-			<div class="text light white upper"><?= __('Eau minerale<br>plate de caractère', 'pestrin'); ?></div>
+			<a href="<?= get_site_url() ?>/loja" class="link-home-banner">
+				<h4 class="fontpestrin upper white font-home-banner">
+					LES BOISSONS
+				</h4>
+			</a>
+			<!-- <div class="text light white upper"><?= __('Eau minerale<br>plate de caractère', 'pestrin'); ?></div> -->
 		</div>
 	</div>
 

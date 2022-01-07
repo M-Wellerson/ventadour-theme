@@ -9,12 +9,14 @@ $largura = $total_caracter * ($font_size - 15 ) + 2;
 ?>
 <svg xmlns='http://www.w3.org/2000/svg' viewBox="0 0 <?= $largura ?> 100" version='1.1'>
     <style>
+
+
         @font-face {
             font-family: 'FuturaT';
-            src: url("FuturaLT-Bold.ttf") format("opentype");
+            src: url("../../../FuturaStd-CondensedBold.otf");
         }
         svg{
-            font-family: 'FuturaT', sans-serif;
+            font-family: 'FuturaStd CondensedBold', serif;
             font-weight: 900;
         }
     </style>
@@ -28,6 +30,9 @@ $largura = $total_caracter * ($font_size - 15 ) + 2;
         fill="none"
         letter-spacing="0" 
         word-spacing="0"
+        style="font-family: 'FuturaT';"
+        font-family="FuturaT"
+        
     >
         <?= $texto ?>
     </text>

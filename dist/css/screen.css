@@ -2042,7 +2042,7 @@ body {
 }
 .home__header .header__content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   z-index: 30;
   width: 100%;

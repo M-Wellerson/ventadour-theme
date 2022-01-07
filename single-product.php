@@ -104,7 +104,9 @@
         </div>
     </div>
 
-    <div class="single-bg js-single-bg">
+    <div 
+        class="single-bg js-single-bg" 
+        style="--text: 'RELAXANTE RELAXANTE RELAXANTE RELAXANTE'; --line-1: -500px; --line-2: -750px ">
         <div class="wrapper">
             <div class="single-grid-2">
                 <div class="single-images">
@@ -190,13 +192,23 @@
         behavior: 'smooth'
     });
     globalThis._banner_single = "<?= $rotulo ?>"
+
+    
+
     window.onscroll = function() {
         const horizontal = document.querySelector('.js-single-bg');
-        // const scroll     = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
-        // background-position: 0 50px, -175px 50px;
-        let x1 = window.scrollY / 4
-        let x2 = ((window.scrollY / 4) - 175) * -1
-        horizontal.style.backgroundPosition = `${x1}px 50px, ${x2}px 50px`;
+
+        let andu = window.scrollY / 10
+        // let x1 = window.scrollY / 4
+        // let x2 = ((window.scrollY / 4) - 175) * -1 
+        
+        let x1 = parseInt(  -500 + andu )
+        let x2 = parseInt(  -750 + -andu ) 
+
+
+        // horizontal.style.backgroundPosition = `${x1}px 50px, ${x2}px 50px`;
+        horizontal.style.setProperty('--line-1', `${x1}px`);
+        horizontal.style.setProperty('--line-2', `${x2}px`);
     }
 </script>
 
