@@ -139,27 +139,29 @@
     background-image: url(../images/enradiacao.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 80% 90%;
+    background-size: contain;
 }
 
 .bg-red {
-    background-image: url(../images/red.png);
+    /* background-image: url(../images/red.png); */
+    background-image: url(../images/full-bg-1.png);
     background-repeat: no-repeat;
-    background-position: 20% center;
-    background-size: auto 90%;
+    background-position: center center;
+    /* background-size: auto 90%; */
 }
 
 .bg-amarelo {
-    background-image: url(../images/amarelo.png);
+    /* background-image: url(../images/amarelo.png); */
+    background-image: url(../images/full-bg-0.png);
     background-repeat: no-repeat;
-    background-position: 20% center;
-    background-size: auto 90%;
+    background-position: top center;
+    /* background-size: auto 90%; */
 }
 .bg-meridianas {
     background-image: url(../images/meridianas.png);
     background-repeat: repeat-y;
     background-position: center center;
-    background-size: auto 100%;
+    background-size: 0 100%;
 }
 
 .shop-product-canvas {
@@ -428,5 +430,14 @@
     .shop-product-descriacao {
         font-size: 20px;
         line-height: 25px;
+    }
+    .shop-product-col {
+        margin-top: 0 !important;
+    }
+    .shop-product-col-o-zak {
+        margin-top: 350px !important;
+    }
+    .js-o-zak {
+        margin-top: 200px;
     }
 }
