@@ -161,8 +161,7 @@
 .bg-meridianas {
     background-image: url(../images/meridianas.png);
     background-repeat: repeat-y;
-    background-position: center center;
-    background-size: 0 100%;
+    background-position: 0 center;
 }
 
 .shop-product-canvas {
