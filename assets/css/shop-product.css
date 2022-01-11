@@ -335,6 +335,7 @@
         font-size: 16px;
         line-height: 18px;
     }
+   
 }
 
 @media ( min-width: 992px) {
@@ -383,6 +384,18 @@
     .shop-product-descriacao {
         font-size: 20px;
         line-height: 25px;
+    }
+    .shop-product-col {
+        margin-top: 0 !important;
+    }
+    .shop-product-col-o-zak {
+        margin-top: 350px !important;
+    }
+    .js-o-zak {
+        margin-top: 200px;
+    }
+    .header__social {
+        bottom: 100px !important;
     }
     
 }
@@ -439,5 +452,8 @@
     }
     .js-o-zak {
         margin-top: 200px;
+    }
+    .header__social {
+        bottom: 350px !important;
     }
 }

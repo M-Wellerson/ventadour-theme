@@ -18,7 +18,7 @@ function main(nameClass, path_img) {
 
         //texture
         const textureLoader     = new THREE.TextureLoader();
-        const texture           = textureLoader.load("./../../wp-content/themes/ventadour-theme/assets/images/can/metal.jpg");
+        const texture           = textureLoader.load("./../../wp-content/themes/rsw-pestrin/assets/images/can/metal.jpg");
         const textureRotulo     = textureLoader.load(path_img);
         texture.generateMipmaps = false;
         texture.minFilter       = THREE.NearestFilter;
@@ -32,19 +32,19 @@ function main(nameClass, path_img) {
         gltfLoader.setDRACOLoader(dracoLoader)
 
         gltfLoader.load(
-            './../../wp-content/themes/ventadour-theme/assets/images/can/materials/can-of-soda-4.0.glb',
+            './../../wp-content/themes/rsw-pestrin/assets/images/can/materials/can-of-soda-4.0.glb',
             (gltf) => {
                 gltf.scene.scale.set(0.085, 0.075, 0.085);
                 let mesh  = gltf.scene.children[0];
                 let mesh2 = gltf.scene.children[1];
                 const cubeTextureLoader = new THREE.CubeTextureLoader()
                 const environmentMapTexture = cubeTextureLoader.load([
-                    './../../wp-content/themes/ventadour-theme/assets/images/can/4/px.png',
-                    './../../wp-content/themes/ventadour-theme/assets/images/can/4/nx.png',
-                    './../../wp-content/themes/ventadour-theme/assets/images/can/4/py.png',
-                    './../../wp-content/themes/ventadour-theme/assets/images/can/4/ny.png',
-                    './../../wp-content/themes/ventadour-theme/assets/images/can/4/pz.png',
-                    './../../wp-content/themes/ventadour-theme/assets/images/can/4/nz.png'
+                    './../../wp-content/themes/rsw-pestrin/assets/images/can/4/px.png',
+                    './../../wp-content/themes/rsw-pestrin/assets/images/can/4/nx.png',
+                    './../../wp-content/themes/rsw-pestrin/assets/images/can/4/py.png',
+                    './../../wp-content/themes/rsw-pestrin/assets/images/can/4/ny.png',
+                    './../../wp-content/themes/rsw-pestrin/assets/images/can/4/pz.png',
+                    './../../wp-content/themes/rsw-pestrin/assets/images/can/4/nz.png'
                 ])
 
                 mesh.position.y  = 3;
@@ -121,5 +121,5 @@ function main(nameClass, path_img) {
     }
 }
 
-main('canvas.can-of-soda', "./../../wp-content/themes/ventadour-theme/assets/images/can/textures/1868.png");
+main('canvas.can-of-soda', "./../../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png");
 // main('canvas.can-of-soda', globalThis?._banner_single || '' );

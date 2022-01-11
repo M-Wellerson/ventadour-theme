@@ -4,8 +4,8 @@ import { DRACOLoader } from './three.js-master/examples/jsm/loaders/DRACOLoader.
 
 export default class Lata {
 
-    texture = './../wp-content/themes/ventadour-theme/assets/images/can/metal.jpg'
-    draw3d = './../wp-content/themes/ventadour-theme/assets/images/can/materials/can-of-soda-4.0.glb'
+    texture = './../wp-content/themes/rsw-pestrin/assets/images/can/metal.jpg'
+    draw3d = './../wp-content/themes/rsw-pestrin/assets/images/can/materials/can-of-soda-4.0.glb'
     
     canvas = null
     camera = null
@@ -72,12 +72,12 @@ export default class Lata {
 
                 const cubeTextureLoader     = new THREE.CubeTextureLoader();
                 const environmentMapTexture = cubeTextureLoader.load([
-                    './../wp-content/themes/ventadour-theme/assets/images/can/4/px.png',
-                    './../wp-content/themes/ventadour-theme/assets/images/can/4/nx.png',
-                    './../wp-content/themes/ventadour-theme/assets/images/can/4/py.png',
-                    './../wp-content/themes/ventadour-theme/assets/images/can/4/ny.png',
-                    './../wp-content/themes/ventadour-theme/assets/images/can/4/pz.png',
-                    './../wp-content/themes/ventadour-theme/assets/images/can/4/nz.png'
+                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/px.png',
+                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/nx.png',
+                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/py.png',
+                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/ny.png',
+                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/pz.png',
+                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/nz.png'
                 ]);
 
                 mesh.material = new THREE.MeshMatcapMaterial({

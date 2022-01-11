@@ -264,9 +264,9 @@ body {
 .home__header {
     height: calc(100vh + 150px);
 }
-.header__social {
+/* .header__social {
     bottom: 350px !important;
-}
+} */
 
 .home__info {
     display: grid;
@@ -297,7 +297,6 @@ body {
 }
 .link-home-banner {
     text-decoration: none !important;
-
 }
 
 .home__header .header__content {
