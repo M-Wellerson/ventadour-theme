@@ -458,8 +458,8 @@
     }
 
     .shop-product-canvas {
-        height: 80vh !important;
-        width: auto !important;
+        width: 50vw !important;
+        height: auto !important;
         top: 0vh !important;
         margin: 0 auto;
         top: 0;
@@ -471,13 +471,13 @@
     }
 
     .shop-product-title {
-        font-size: 250px;
-        line-height: 270px;
+        font-size: 200px;
+        line-height: 170px;
     }
 
     .shop-product-subtitle {
-        font-size: 240px;
-        line-height: 270px;
+        font-size: 200px;
+        line-height: 170px;
     }
 
     .shop-product-title-right {
@@ -518,7 +518,7 @@
     }
 
     .shop-product-col-o-zak {
-        margin-top: 350px !important;
+        margin-top: 50px !important;
     }
 
     .js-o-zak {
