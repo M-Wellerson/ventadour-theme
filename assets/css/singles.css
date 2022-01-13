@@ -60,6 +60,7 @@
     background-size: top 0px 100%, top 0px 100%, ;
     min-height: 520px;
     /* position: relative; */
+    position: relative;
 
 }
 .single-bg::before {
@@ -74,6 +75,8 @@
     width: 1000%;
     margin-left: var(--line-1);
     transition: all .5s;
+    position: absolute;
+    z-index: -1;
 }
 
 .single-bg::after {
@@ -88,6 +91,9 @@
     width: 1000%;
     margin-left: var(--line-2);
     transition: all .5s;
+    position: absolute;
+    top: 230px;
+    z-index: -1;
    
 }
 

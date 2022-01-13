@@ -17,11 +17,19 @@
     $foto_2  = get_field( "foto_2" ) ?? "";
     $foto_3  = get_field( "foto_3" ) ?? "";
 
+    $texto_fundo_animado  = get_field( "texto_fundo_animado" ) ?? "";
+    $texto_fundo_animado = empty($texto_fundo_animado) ? "RELAXANTE" : $texto_fundo_animado;
+    for ($i=0; $i < 3 ; $i++) { 
+        $texto_fundo_animado .= " " . $texto_fundo_animado;
+    }
+
+
+
     $item_1_texto = get_field( "item_1_texto" ) ?? "";
     $item_1_image = get_field( "item_1_image" ) ?? "";
     $item_2_texto = get_field( "item_2_texto" ) ?? "";
     $item_2_image = get_field( "item_2_image" ) ?? "";
-    $destaque_texto = get_field( "destaque_texto" ) ?? "";
+    $destaque_texto = get_field( "destaque_texto" ) ?? "RELAXANTE";
     $product = wc_get_product(get_the_ID());
 
     $terms      = get_the_terms( $product->get_id(), 'product_cat' );
@@ -127,8 +135,8 @@
 
     <div 
         class="single-bg js-single-bg" 
-        style="--text: 'RELAXANTE RELAXANTE RELAXANTE RELAXANTE'; --line-1: -500px; --line-2: -750px ">
-        <div class="wrapper">
+        style="--text: ' <?= $texto_fundo_animado ?> RELAXANTE RELAXANTE RELAXANTE'; --line-1: -500px; --line-2: -750px ">
+        <div class="wrapper wrapper-absolute">
             <div class="single-grid-2">
                 <div class="single-images">
                     <img src="<?= $foto_1 ?>" alt="">
