@@ -139,7 +139,7 @@ async function cart_add(id) {
 }
 
 async function render_cart() {
-    let path = `${window.location.protocol}//${window.location.hostname}/regularswitch/ventadour//wp-json/api/get-cart`
+    let path = `${window.location.protocol}//${window.location.hostname}/wp-json/api/get-cart`
     let res = await (await fetch(path)).json()
     let total_itens = Object.keys(res.itens).length
 

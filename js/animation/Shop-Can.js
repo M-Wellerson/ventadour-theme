@@ -25,36 +25,7 @@ let shop2 = new Lata('canvas.can-shop-2');
 // }
 // render_animate_rotate()
 
-shop2.add(
-    { 
-        y: '-=0.1, +=0.2', 
-        rotation: '-=1', 
-        rotateY: Math.PI * 2.5 
-    },
-    {
-        rotateX: 0.2,
-        y: -7,
-        x: -5,
-        z: -3,
-        rotateZ: Math.PI * +0.2
-    },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png"
-)
-shop2.add(
-    { 
-        y: '-=0.1, +=0.2', 
-        rotation: '-=1', 
-        rotateY: Math.PI * 2.5 
-    },
-    {
-        rotateX: -6.7,
-        y: -5.5,
-        x: 0,
-        z: -3,
-        rotateZ: Math.PI * 0.2
-    },
-    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/minerale.png"
-)
+
 
 let o_coll = new Lata('.js-shop-o-coll')
 o_coll.add(
@@ -87,6 +58,37 @@ o_coll.add(
         rotateZ: Math.PI * +0.07
     },
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/collagene.png"
+)
+
+shop2.add(
+    { 
+        y: '-=0.1, +=0.2', 
+        rotation: '-=1', 
+        rotateY: Math.PI * 2.5 
+    },
+    {
+        rotateX: 0.2,
+        y: -7,
+        x: -5,
+        z: -3,
+        rotateZ: Math.PI * +0.2
+    },
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png"
+)
+shop2.add(
+    { 
+        y: '-=0.1, +=0.2', 
+        rotation: '-=1', 
+        rotateY: Math.PI * 2.5 
+    },
+    {
+        rotateX: -6.7,
+        y: -5.5,
+        x: 0,
+        z: -3,
+        rotateZ: Math.PI * 0.2
+    },
+    "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/minerale.png"
 )
 
 

@@ -81,7 +81,7 @@ export default class Lata {
                     './../wp-content/themes/rsw-pestrin/assets/images/can/4/nz.png'
                 ]);
 
-              
+                
                 mesh.material = new THREE.MeshMatcapMaterial({
                     matcap: texture
                 });
@@ -95,9 +95,7 @@ export default class Lata {
 
                 gltf.scene.rotateZ(positionCan.rotateZ);
 
-                setTimeout( () => {
-                    this.scene.add(gltf.scene);
-                }, 1000 )
+                this.scene.add(gltf.scene);
 
                 gsap.registerPlugin(ScrollTrigger);
 

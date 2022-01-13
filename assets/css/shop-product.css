@@ -240,6 +240,38 @@
     line-height: 18px;
 }
 
+.catalogo-load {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+    background-color: #FFF;
+}
+.loading-lata {
+    position: relative;
+    background-image: url(../images/lata.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    animation-name: anime_lata;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes anime_lata {
+    0%, 29% { background-image: url(../images/lata.svg); }
+    30%, 59% { background-image: url(../images/lata-2.svg); }
+    60%, 90% { background-image: url(../images/lata-3.svg); }
+}
+
+.all_bg_none {
+    background-image: none !important;
+}
+
 @media (max-width: 600px) {
 
     /* [s-] pequeno */
