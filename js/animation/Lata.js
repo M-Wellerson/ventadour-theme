@@ -72,7 +72,8 @@ export default class Lata {
 
                 const cubeTextureLoader     = new THREE.CubeTextureLoader();
                 const environmentMapTexture = cubeTextureLoader.load([
-                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/px.png',
+                    
+                    './../wp-content/themes/rsw-pestrin/assets/images/can/4/px.png',              
                     './../wp-content/themes/rsw-pestrin/assets/images/can/4/nx.png',
                     './../wp-content/themes/rsw-pestrin/assets/images/can/4/py.png',
                     './../wp-content/themes/rsw-pestrin/assets/images/can/4/ny.png',
@@ -80,6 +81,7 @@ export default class Lata {
                     './../wp-content/themes/rsw-pestrin/assets/images/can/4/nz.png'
                 ]);
 
+              
                 mesh.material = new THREE.MeshMatcapMaterial({
                     matcap: texture
                 });
@@ -92,7 +94,10 @@ export default class Lata {
                 });
 
                 gltf.scene.rotateZ(positionCan.rotateZ);
-                this.scene.add(gltf.scene);
+
+                setTimeout( () => {
+                    this.scene.add(gltf.scene);
+                }, 1000 )
 
                 gsap.registerPlugin(ScrollTrigger);
 
@@ -148,8 +153,8 @@ export default class Lata {
 
     resize() {
         window.addEventListener('resize', () => {
-            this.sizes.width = this.canvas.innerWidth
-            this.sizes.height = this.canvas.innerHeight
+            this.sizes.width = window.innerWidth
+            this.sizes.height = window.innerHeight
             this.camera.aspect = this.sizes.width / this.sizes.height
             this.camera.updateProjectionMatrix()
             this.renderer.setSize(this.sizes.width, this.sizes.height)

@@ -17,6 +17,15 @@ $texto_ovive                 = get_field("texto_ovive") ?? "";
 
 <?php include_once('page_components/menu.php'); ?>
 
+<div hidden>
+<img src="<?= get_template_directory_uri() ?>/assets/images/can/4/px.png" />
+<img src="<?= get_template_directory_uri() ?>/assets/images/can/4/nx.png" />
+<img src="<?= get_template_directory_uri() ?>/assets/images/can/4/py.png" />
+<img src="<?= get_template_directory_uri() ?>/assets/images/can/4/ny.png" />
+<img src="<?= get_template_directory_uri() ?>/assets/images/can/4/pz.png" />
+<img src="<?= get_template_directory_uri() ?>/assets/images/can/4/nz.png" />
+</div>
+
 <div class="bg-meridianas">
 
     <div class="wrapper ventes">
