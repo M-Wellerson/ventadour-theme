@@ -11,14 +11,16 @@ export default class Lata {
     camera = null
     scene = null
     renderer = null
+    light = 2.5
     scale = 0
     sizes = {
         width: 0,
         height: 0
     }
 
-    constructor(selector) {
+    constructor(selector, light = 2.5) {
         this.canvas = document.querySelector(selector)
+        this.light = light
         if (!this.canvas) return null
 
         this.get_size()
@@ -145,7 +147,7 @@ export default class Lata {
     }
 
     add_light_in_scene() {
-        let ambientLight = new THREE.AmbientLight(0xffffff, 2.5);
+        let ambientLight = new THREE.AmbientLight(0xffffff, this.light);
         this.scene.add(ambientLight);
     }
 
