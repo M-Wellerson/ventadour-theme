@@ -308,7 +308,7 @@
     }
 
     .shop-product-canvas {
-        height: 50vh !important;
+        height: auto !important;
     }
 
     .menu-cat {
