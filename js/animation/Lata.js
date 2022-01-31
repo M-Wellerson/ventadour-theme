@@ -90,7 +90,7 @@ export default class Lata {
                     map: textureRotulo,
                     envMap: environmentMapTexture,
                     metalness: .8,
-                    roughness: .4,
+                    roughness: .3,
                 });
 
                 gltf.scene.rotateZ(positionCan.rotateZ);
@@ -145,7 +145,7 @@ export default class Lata {
     }
 
     add_light_in_scene() {
-        let ambientLight = new THREE.AmbientLight(0xffffff, 1);
+        let ambientLight = new THREE.AmbientLight(0xffffff, 2.5);
         this.scene.add(ambientLight);
     }
 

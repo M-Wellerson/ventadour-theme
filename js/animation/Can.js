@@ -57,7 +57,7 @@ function main(nameClass, path_img) {
                     map: textureRotulo,
                     envMap: environmentMapTexture,
                     metalness: .8,
-                    roughness: .6,
+                    roughness: .3,
                 });
 
                 scene.add(gltf.scene);
@@ -74,24 +74,22 @@ function main(nameClass, path_img) {
             height: canvas.height
         }
 
-        // window.addEventListener('resize', () => {
-        //     // Update sizes
-        //     sizes.width = canvas.innerWidth;
-        //     sizes.height = canvas.innerHeight;
+        window.addEventListener('resize', () => {
+            // Update sizes
+            sizes.width = window.innerWidth;
+            sizes.height = window.innerHeight;
 
-        //     // Update camera
-        //     camera.aspect = sizes.width / sizes.height;
-        //     camera.updateProjectionMatrix();
+            // Update camera
+            camera.aspect = sizes.width / sizes.height;
+            camera.updateProjectionMatrix();
 
-        //     console.log('tafarellllll')
-
-        //     // Update renderer
-        //     renderer.setSize(sizes.width, sizes.height);
-        //     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        // })
+            // Update renderer
+            renderer.setSize(sizes.width, sizes.height);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        })
 
         //Lights
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 2.5);
         scene.add(ambientLight);
 
         const camera = new THREE.PerspectiveCamera(20, sizes.width / sizes.height, 1, 3000);
