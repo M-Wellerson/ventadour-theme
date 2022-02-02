@@ -18,7 +18,7 @@
     z-index: 99;
     pointer-events: none;
 
-    border: 1px solid #282828;
+    /* border: 1px solid #282828; */
 }
 
 .shop-product-title {
@@ -308,6 +308,7 @@
     }
 
     .shop-product-canvas {
+        width: 90vw !important;
         height: auto !important;
     }
 
