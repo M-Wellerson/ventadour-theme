@@ -18,7 +18,7 @@
     z-index: 99;
     pointer-events: none;
 
-    /* border: 1px solid #282828; */
+    border: 1px solid #282828;
 }
 
 .shop-product-title {
