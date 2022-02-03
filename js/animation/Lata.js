@@ -18,7 +18,7 @@ export default class Lata {
         height: 0
     }
 
-    constructor(selector, light = 2.5) {
+    constructor(selector, light = 2.3) {
         this.canvas = document.querySelector(selector)
         this.light = light
         if (!this.canvas) return null

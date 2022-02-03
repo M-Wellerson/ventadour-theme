@@ -2,11 +2,13 @@
     /* border: 1px solid #000 !important; */
 }
 
+@import url('../futura-std-4-cufonfonts-webfont/style.css');
+
 .shop-product {
     display: block;
     margin-bottom: 50px;
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 .shop-product-canvas {
@@ -23,7 +25,9 @@
 
 .shop-product-title {
     display: block;
-    font-family: FuturaStd;
+    /* font-family: FuturaStd; */
+    font-family: 'Futura Std Bold';
+    
     font-size: clamp(8rem, 10vw, 12.5rem);
     line-height: clamp(8rem, 10vw, 12.5rem);
     color: #282828;
@@ -36,6 +40,8 @@
 .shop-product-title-right {
     width: 50%;
     margin-left: 49%;
+    position: relative;
+    z-index: -1;
 }
 
 .shop-product-title-afer {
@@ -46,7 +52,8 @@
 
 .shop-product-subtitle {
     display: block;
-    font-family: 'FuturaStd Light';
+    /* font-family: 'FuturaStd Light'; */
+    font-family: 'Futura Std Light';
     font-style: normal;
     font-weight: lighter;
     font-size: clamp(8rem, 10vw, 12.5rem);

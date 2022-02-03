@@ -55,6 +55,7 @@
 
     <?php wp_head(); ?>
 
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/futura-std-4-cufonfonts-webfont/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="<?php echo get_template_directory_uri(); ?>/dist/css/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="<?php echo get_template_directory_uri(); ?>/bower_components/swiper/dist/css/swiper.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
