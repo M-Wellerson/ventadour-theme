@@ -410,10 +410,10 @@
     
 
     .shop-product-canvas {
-        height: 50vh !important;
-        width: auto !important;
-        margin: 0 auto !important;
-        top: 0vh !important;
+        height: 80vw !important;
+        width: 90vw !important;
+        margin-left: 5vw;
+        top: 100px!important;
     }
 }
 
