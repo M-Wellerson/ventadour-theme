@@ -405,6 +405,17 @@
 
 }
 
+@media (max-width: 750px) {
+
+    
+
+    .shop-product-canvas {
+        height: 35vh !important;
+        width: 95vw !important;
+        top: 0vh !important;
+    }
+}
+
 @media (min-width: 992px) {
     /* [l-] largo */
 
