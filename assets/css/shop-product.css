@@ -411,7 +411,8 @@
 
     .shop-product-canvas {
         height: 50vh !important;
-        width: 100vw !important;
+        width: auto !important;
+        margin: 0 auto !important;
         top: 0vh !important;
     }
 }
