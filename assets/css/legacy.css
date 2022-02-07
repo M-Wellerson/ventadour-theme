@@ -31,3 +31,12 @@ menu {
     font-family: 'FuturaStd Medium' !important ;
     font-weight: 1000;
 }
+
+@media only screen and (max-width: 767px) {
+    .home__header .header__top {
+      top: 70%;
+    }
+    .home .home__social {
+        height: 117px;
+    }
+}
