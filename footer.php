@@ -14,6 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 	<script src="<?= get_template_directory_uri() ?>/assets/js/main.js"></script>
 	<script src="<?= get_template_directory_uri() ?>/js/animation/Can.js?id=<?php echo uniqid(); ?>" type="module"></script>
-	<script src="<?= get_template_directory_uri() ?>/js/animation/Shop-Can.js?id=<?php echo uniqid(); ?>" type="module"></script>
+	<script src="<?= get_template_directory_uri() ?>/js/animation/Shop-Can.js?id=<?php echo uniqid(); ?>" type="module" defer></script>
 	</body>
 </html>
