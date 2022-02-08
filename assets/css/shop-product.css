@@ -412,7 +412,7 @@
         height: 300px !important;
         margin-left: 0vw;
         top: 130px!important;
-        background-color: #282828;
+        /* background-color: #282828; */
     }
 
 }
