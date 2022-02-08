@@ -55,7 +55,7 @@ $texto_ovive                 = get_field("texto_ovive") ?? "";
 
     <section class="catalogo-box loading-lata" id="o-cool">
         <div class="shop-product bg-red">
-            <canvas width="360" height="310" class="can-shop-1 shop-product-canvas" hidden></canvas>
+            <canvas width="350" height="300" class="can-shop-1 shop-product-canvas" hidden></canvas>
             <!-- <div class="loading-lata"></div> -->
             <h2 class="shop-product-title">O’COOL</h2>
             <span class="shop-product-subtitle">CBD</span>
