@@ -405,9 +405,7 @@
 
 }
 
-@media (max-width: 750px) {
-
-    
+@media (max-width: 750px) {   
 
     .shop-product-canvas {
         height: 80vw !important;
@@ -415,6 +413,7 @@
         margin-left: 5vw;
         top: 100px!important;
     }
+    
 }
 
 @media (min-width: 992px) {

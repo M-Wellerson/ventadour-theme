@@ -70,7 +70,7 @@
         }
     </script>
     <link href="<?php echo get_template_directory_uri(); ?>/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?id=<?php echo uniqid(); ?>" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
