@@ -152,6 +152,7 @@ export default class Lata {
     }
 
     resize() {
+        alert( window.innerWidth, window.innerHeight )
         window.addEventListener('resize', () => {
             this.sizes.width = window.innerWidth
             this.sizes.height = window.innerHeight
