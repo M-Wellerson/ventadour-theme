@@ -32,17 +32,32 @@ globalThis._store.banner = [
     },
 ]
 
-function open_quick_view(id, price, short_descrition, caracteristicas_1_image, caracteristicas_1_text, caracteristicas_2_image, caracteristicas_2_text, caracteristicas_3_image, caracteristicas_3_text ) {
+function open_quick_view(
+    id,
+    price,
+    short_descrition,
+    caracteristicas_1_image,
+    caracteristicas_1_text,
+    caracteristicas_2_image,
+    caracteristicas_2_text,
+    caracteristicas_3_image,
+    caracteristicas_3_text,
+    price_sale
+) {
     let $quick = document.querySelector('.js-home-quick-view')
-    document.querySelector('.home-quick-view-title').innerHTML          = id;
-    document.querySelector('.home-quick-view-preco').innerHTML          = `${price} €`;
-    document.querySelector('.home-quick-view-description').innerHTML    = short_descrition || '';
+    document.querySelector('.home-quick-view-title').innerHTML = id;
+    document.querySelector('.home-quick-view-preco').innerHTML = `${price} €`;
+    document.querySelector('.home-quick-view-description').innerHTML = short_descrition || '';
     document.querySelector('.more-detail__quick-view-text-1').innerHTML = caracteristicas_1_text || '';
-    document.querySelector('.more-detail__quick-view-image-1').src      = caracteristicas_1_image || '';
+    document.querySelector('.more-detail__quick-view-image-1').src = caracteristicas_1_image || '';
     document.querySelector('.more-detail__quick-view-text-2').innerHTML = caracteristicas_2_text || '';
-    document.querySelector('.more-detail__quick-view-image-2').src      = caracteristicas_2_image || '';
+    document.querySelector('.more-detail__quick-view-image-2').src = caracteristicas_2_image || '';
     document.querySelector('.more-detail__quick-view-text-3').innerHTML = caracteristicas_3_text || '';
-    document.querySelector('.more-detail__quick-view-image-3').src      = caracteristicas_3_image || '';
+    document.querySelector('.more-detail__quick-view-image-3').src = caracteristicas_3_image || '';
+    document.querySelector('.home-quick-view-preco-sale').innerHTML = ''
+    if( price_sale !=  price) {
+        document.querySelector('.home-quick-view-preco-sale').innerHTML = `${price_sale} €`;
+    }
 
     $quick.removeAttribute('hidden')
 }
@@ -65,7 +80,7 @@ function template_slider(prod) {
 }
 
 let $banner_itens = document.querySelector('.js-banner-itens')
-if( $banner_itens ) {
+if ($banner_itens) {
     $banner_itens.innerHTML = globalThis._store.banner.map(template_slider).join('')
 }
 

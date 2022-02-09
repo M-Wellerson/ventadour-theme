@@ -225,6 +225,15 @@ body {
     display: block;
     font-size: 20px;
 }
+.home-quick-view-preco-sale {
+    font-size: 28px !important;
+    margin-right: 15px;
+}
+
+.flex-quick {
+    display: flex;
+    align-items: baseline;
+}
 
 .banner-control {
     display: block;

@@ -1,5 +1,9 @@
 <?php
 
+function get_rotulo($id) {
+    return get_field( 'rotulo', $id );
+}
+
 function quick_view_wc($request)
 {
     // header("Content-Type: text/html");
@@ -8,6 +12,7 @@ function quick_view_wc($request)
     $product = wc_get_product($product_id);
     $response = (array) $product->get_data();
     $response['thumbnail'] = get_the_post_thumbnail_url($product->get_id());
+    $response['rotulo'] = get_rotulo($product_id);
     return rest_ensure_response($response);
 }
 

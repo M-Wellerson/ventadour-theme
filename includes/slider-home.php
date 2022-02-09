@@ -30,6 +30,7 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                         '<?= $caracteristicas_2_text ?>',
                         '<?= $caracteristicas_3_image ?>',
                         '<?= $caracteristicas_3_text ?>',
+                        '<?= $product->get_regular_price() ?>'
                         )">
                         quick view
                     </a>
@@ -47,11 +48,15 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                 <!-- <span class="home-quick-view-subtitle">GAZEUSE</span> -->
                 <div class="home-quick-view-image">
                     <span style="background-color: #FDE17F;"></span>
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/zoo.png">
+                    <canvas width="500" height="500" class="can-of-soda"></canvas>
+                    <!-- <img src="<?= get_template_directory_uri() ?>/assets/images/zoo.png"> -->
                 </div>
             </div>
             <div class="banner-padding-left">
-                <strong class="home-quick-view-preco">00,00 € </strong>
+                <div class="flex flex-quick">
+                    <strong class="home-quick-view-preco-sale text c-gray-300 font__futura-bold ricado"></strong>
+                    <strong class="home-quick-view-preco">00,00 € </strong>
+                </div>
                 <a href="javascript:void(fetch('<?= $product->add_to_cart_url() ?>'));render_cart();" class="home-quick-view-add text_decoration-none" style="background-color: #FDE17F;">ajouter au panier</a>
                 <select class="home-quick-view-select">
                     <option>Gazeuse</option>
@@ -67,16 +72,16 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                 </p>
                 <br>
                 <div class="more-detail">
-                    <img class="more-detail__quick-view-image-1" src="">
-                    <span class="text more-detail__quick-view-text-1"></span>
+                    <img class="more-detail__quick-view-image-1" src="<?= get_template_directory_uri() ?>/assets/icons/close.png">
+                    <span class="text more-detail__quick-view-text-1">...</span>
                 </div>
                 <div class="more-detail">
-                    <img class="more-detail__quick-view-image-2" src="">
-                    <span class="text more-detail__quick-view-text-2"></span>
+                    <img class="more-detail__quick-view-image-2" src="<?= get_template_directory_uri() ?>/assets/icons/close.png">
+                    <span class="text more-detail__quick-view-text-2">...</span>
                 </div>
                 <div class="more-detail">
-                    <img class="more-detail__quick-view-image-3" src="">
-                    <span class="text more-detail__quick-view-text-3"></span>
+                    <img class="more-detail__quick-view-image-3" src="<?= get_template_directory_uri() ?>/assets/icons/close.png">
+                    <span class="text more-detail__quick-view-text-3">...</span>
                 </div>
             </div>
             <span onclick="close_quick_view()" class="quick-close">
