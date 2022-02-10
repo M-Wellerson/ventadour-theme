@@ -13,6 +13,7 @@ function quick_view_wc($request)
     $response = (array) $product->get_data();
     $response['thumbnail'] = get_the_post_thumbnail_url($product->get_id());
     $response['rotulo'] = get_rotulo($product_id);
+    $response['categoria'] = get_the_terms( $product_id , 'product_cat' );
     return rest_ensure_response($response);
 }
 

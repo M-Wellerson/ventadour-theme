@@ -32,7 +32,7 @@
     $destaque_texto = get_field( "destaque_texto" ) ?? "RELAXANTE";
     $product = wc_get_product(get_the_ID());
 
-    $terms      = get_the_terms( $product->get_id(), 'product_cat' );
+    $categoria      = get_the_terms( $product->get_id(), 'product_cat' );
     $variations = $product->get_children();
 
     global $woocommerce; 
@@ -91,12 +91,8 @@
                     </a>
                     
                     <select class="home-quick-view-select text font__futura-CondensedLight font-uppercase">
-                        <?php foreach ($variations as $key => $value) : ?>
-                            <?php 
-                                $variation     = wc_get_product($value); 
-                                $variationName = explode(" - ", $variation->get_name()); 
-                            ?>
-                            <option value="<?= $value; ?>"><?= $variationName['1']; ?></option>
+                        <?php foreach ($categoria as $c) : ?>
+                            <option value="<?= $c->slug; ?>"><?= $c->name; ?></option>
                         <?php endforeach ?>
                     </select>
                     <select class="home-quick-view-select text mb-10 font__futura-CondensedLight font-uppercase">

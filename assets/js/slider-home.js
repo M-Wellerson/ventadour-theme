@@ -43,7 +43,8 @@ function open_quick_view(
     caracteristicas_3_image,
     caracteristicas_3_text,
     price_sale,
-    rotulo
+    rotulo,
+    options
 ) {
     let $quick = document.querySelector('.js-home-quick-view')
     document.querySelector('.home-quick-view-title').innerHTML = id;
@@ -56,6 +57,7 @@ function open_quick_view(
     document.querySelector('.more-detail__quick-view-text-3').innerHTML = caracteristicas_3_text || '';
     document.querySelector('.more-detail__quick-view-image-3').src = caracteristicas_3_image || '';
     document.querySelector('.home-quick-view-preco-sale').innerHTML = ''
+    document.querySelector('.home-quick-view-options').innerHTML = options
     globalThis._lata = rotulo
     globalThis._render_lata(rotulo)
     if( price_sale !=  price) {

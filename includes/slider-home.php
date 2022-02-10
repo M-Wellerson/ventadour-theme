@@ -15,6 +15,11 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                 $caracteristicas_2_text  = get_field("caracteristicas_2_text", $product->get_id()) ?? "";
                 $caracteristicas_3_image = get_field("caracteristicas_3_image", $product->get_id()) ?? "";
                 $caracteristicas_3_text  = get_field("caracteristicas_3_text", $product->get_id()) ?? "";
+                $categoria      = get_the_terms( $id, 'product_cat' );
+                $options = array_map(function($i) {
+                    return '<option value='.$i->slug.'>'.$i->name.'</option>';
+                }, $categoria);
+                $options = implode('', $options);
                 ?>
                 <div class="swiper-slide banner-home-slide" style="display: block !important; heigh: auto">
                     <img onclick="window.location.href='<?= get_permalink($product->get_id()); ?>'" src="<?= wp_get_attachment_image_url($product->get_image_id(), 'full'); ?>">
@@ -31,7 +36,8 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                         '<?= $caracteristicas_3_image ?>',
                         '<?= $caracteristicas_3_text ?>',
                         '<?= $product->get_regular_price() ?>',
-                        '<?= get_field( 'rotulo', $id ) ?>'
+                        '<?= get_field( 'rotulo', $id ) ?>',
+                        '<?= $options ?>'
                         )">
                         quick view
                     </a>
@@ -59,8 +65,8 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                     <strong class="home-quick-view-preco">00,00 € </strong>
                 </div>
                 <a href="javascript:void(fetch('<?= $product->add_to_cart_url() ?>'));render_cart();" class="home-quick-view-add text_decoration-none" style="background-color: #FDE17F;">ajouter au panier</a>
-                <select class="home-quick-view-select">
-                    <option>Gazeuse</option>
+                <select class="home-quick-view-select home-quick-view-options">
+                    <option>...</option>
                 </select>
                 <select class="home-quick-view-select">
                     <option>3 x PACKS DE 6</option>
