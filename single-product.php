@@ -50,6 +50,10 @@
 
 ?>
 
+<script>
+    globalThis._lata = '<?= $rotulo ?>'
+</script>
+
 <?php while (have_posts()) : the_post(); ?>
 
     <img class="big-banner-single" src="<?= $banner ?>">

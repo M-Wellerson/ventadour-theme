@@ -4,7 +4,7 @@ import { GLTFLoader }    from './three.js-master/examples/jsm/loaders/GLTFLoader
 import { DRACOLoader }   from './three.js-master/examples/jsm/loaders/DRACOLoader.js'
 import { EXRLoader }     from './three.js-master/examples/jsm/loaders/EXRLoader.js'
 
-function main(nameClass, path_img) {
+function main(nameClass, path_img, pop = false) {
     if (document.querySelector(nameClass)) {
         // Canvas
         const canvas = document.querySelector(nameClass)
@@ -73,6 +73,10 @@ function main(nameClass, path_img) {
             width: canvas.width,
             height: canvas.height
         }
+        if(pop) {
+            sizes.width = 300
+            sizes.height = 300
+        }
 
         window.addEventListener('resize', () => {
             // Update sizes
@@ -119,5 +123,7 @@ function main(nameClass, path_img) {
     }
 }
 
-main('canvas.can-of-soda', "./../../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png");
-// main('canvas.can-of-soda', globalThis?._banner_single || '' );
+// globalThis._lata
+main('canvas.can-of-soda', globalThis._lata);
+globalThis._render_lata = l => main('canvas.can-of-soda', l, true);
+// main('canvas.can-of-soda', "./../../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png");

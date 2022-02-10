@@ -165,6 +165,7 @@ body {
     width: 100%;
     max-width: 90vw;
     height: auto;
+    margin-top: 120px;
 }
 
 .home-quick-view-image>img:hover {
@@ -180,6 +181,7 @@ body {
     z-index: 991;
     background-color: #C00;
     background-color: attr(color);
+    margin-top: 80px;
 }
 
 .home-quick-view-preco {

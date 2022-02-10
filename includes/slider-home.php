@@ -30,7 +30,8 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                         '<?= $caracteristicas_2_text ?>',
                         '<?= $caracteristicas_3_image ?>',
                         '<?= $caracteristicas_3_text ?>',
-                        '<?= $product->get_regular_price() ?>'
+                        '<?= $product->get_regular_price() ?>',
+                        '<?= get_field( 'rotulo', $id ) ?>'
                         )">
                         quick view
                     </a>
