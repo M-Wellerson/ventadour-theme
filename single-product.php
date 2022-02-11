@@ -2,51 +2,51 @@
 
 <?php include_once('page_components/menu.php'); ?>
 
-<?php 
-    $caracteristicas_1_image = get_field( "caracteristicas_1_image" ) ?? "";
-    $caracteristicas_1_text  = get_field( "caracteristicas_1_text" ) ?? "";
-    $caracteristicas_2_image = get_field( "caracteristicas_2_image" ) ?? "";
-    $caracteristicas_2_text  = get_field( "caracteristicas_2_text" ) ?? "";
-    $caracteristicas_3_image = get_field( "caracteristicas_3_image" ) ?? "";
-    $caracteristicas_3_text  = get_field( "caracteristicas_3_text" ) ?? "";
-    
-    $banner  = get_field( "banner" ) ?? "";
-    $rotulo  = get_field( "rotulo" ) ?? "";
+<?php
+$caracteristicas_1_image = get_field("caracteristicas_1_image") ?? "";
+$caracteristicas_1_text  = get_field("caracteristicas_1_text") ?? "";
+$caracteristicas_2_image = get_field("caracteristicas_2_image") ?? "";
+$caracteristicas_2_text  = get_field("caracteristicas_2_text") ?? "";
+$caracteristicas_3_image = get_field("caracteristicas_3_image") ?? "";
+$caracteristicas_3_text  = get_field("caracteristicas_3_text") ?? "";
 
-    $foto_1  = get_field( "foto_1" ) ?? "";
-    $foto_2  = get_field( "foto_2" ) ?? "";
-    $foto_3  = get_field( "foto_3" ) ?? "";
+$banner  = get_field("banner") ?? "";
+$rotulo  = get_field("rotulo") ?? "";
 
-    $texto_fundo_animado  = get_field( "texto_fundo_animado" ) ?? "";
-    $texto_fundo_animado = empty($texto_fundo_animado) ? "RELAXANTE" : $texto_fundo_animado;
-    for ($i=0; $i < 3 ; $i++) { 
-        $texto_fundo_animado .= " " . $texto_fundo_animado;
-    }
+$foto_1  = get_field("foto_1") ?? "";
+$foto_2  = get_field("foto_2") ?? "";
+$foto_3  = get_field("foto_3") ?? "";
 
+$texto_fundo_animado  = get_field("texto_fundo_animado") ?? "";
+$texto_fundo_animado = empty($texto_fundo_animado) ? "RELAXANTE" : $texto_fundo_animado;
+for ($i = 0; $i < 3; $i++) {
+    $texto_fundo_animado .= " " . $texto_fundo_animado;
+}
 
+$item_1_texto = get_field("item_1_texto") ?? "";
+$item_1_image = get_field("item_1_image") ?? "";
+$item_2_texto = get_field("item_2_texto") ?? "";
+$item_2_image = get_field("item_2_image") ?? "";
+$destaque_texto = get_field("destaque_texto") ?? "RELAXANTE";
+$product = wc_get_product(get_the_ID());
 
-    $item_1_texto = get_field( "item_1_texto" ) ?? "";
-    $item_1_image = get_field( "item_1_image" ) ?? "";
-    $item_2_texto = get_field( "item_2_texto" ) ?? "";
-    $item_2_image = get_field( "item_2_image" ) ?? "";
-    $destaque_texto = get_field( "destaque_texto" ) ?? "RELAXANTE";
-    $product = wc_get_product(get_the_ID());
+$categoria      = get_the_terms($product->get_id(), 'product_cat');
+$packs          = get_field('packs');
+$packs          = explode("\n", $packs);
+$packs          = array_filter($packs, function ($i) {
+    return strlen($i) > 3;
+});
 
-    $categoria      = get_the_terms( $product->get_id(), 'product_cat' );
-    $variations = $product->get_children();
+global $woocommerce;
 
-    global $woocommerce; 
-
-    
-    $procentagem = 0;
-    $preco = $product->get_regular_price();
-    $preco_aplicado_desconto = $product->get_price();
-
-    if($preco != $preco_aplicado_desconto) {
-        $procentagem = intval( 100 - ($preco_aplicado_desconto * 100 / $preco) ) ;
-    }
-    $preco = number_format( $preco, 2, ',', '.');
-    $preco_aplicado_desconto = number_format( $preco_aplicado_desconto, 2, ',', '.');
+$procentagem = 0;
+$preco = $product->get_regular_price();
+$preco_aplicado_desconto = $product->get_price();
+if ($preco != $preco_aplicado_desconto) {
+    $procentagem = intval(100 - ($preco_aplicado_desconto * 100 / $preco));
+}
+$preco = number_format($preco, 2, ',', '.');
+$preco_aplicado_desconto = number_format($preco_aplicado_desconto, 2, ',', '.');
 
 ?>
 
@@ -72,36 +72,41 @@
             <div>
                 <div class="box-single js-single-snap">
                     <div class="mb-10">
-                        <?php if($procentagem) : ?>
+                        <?php if ($procentagem) : ?>
                             <strong class="text c-gray-300 font__futura-bold <?= $procentagem ? 'ricado' : '' ?> ">
-                                <?= $preco ?> € 
+                                <?= $preco ?> €
                             </strong>
                         <?php endif; ?>
                         <strong class="text ml-10 font__futura-bold">
                             <?= $preco_aplicado_desconto ?> €
                         </strong>
-                        <?php if($procentagem) : ?>
+                        <?php if ($procentagem) : ?>
                             <b class="text red-900 c-gray-50 single-discout ml-10 font__futura-bold">
                                 - <?= $procentagem ?>%
                             </b>
                         <?php endif; ?>
                     </div>
-                    <a href="javascript:void(fetch('<?= '?add-to-cart=' . $product->get_id() . '&quantity=2' ?>'));render_cart();" style="text-decoration: none;color: #282828;font-size: 20px;">
-                        <span class="home-quick-view-add" style="background-color: #FDE17F;">ajouter au panier</span>
+                    <!-- <a href="javascript:void(fetch('<?= '?add-to-cart=' . $product->get_id() . '&quantity=2' ?>'));render_cart();" style="text-decoration: none;color: #282828;font-size: 20px;">
+                        <span class="home-quick-view-add" style="background-color: #FDE17F;">
+                            ajouter au panier
+                        </span>
+                    </a>  -->
+                    <a href="javascript:void(0)" onclick="add_to_cart(this)" class="js-plus" data-id="<?= $product->get_id() ?>" data-quantity="1" style="text-decoration: none;color: #282828;font-size: 20px;">
+                        <span class="home-quick-view-add" style="background-color: #FDE17F;">
+                            ajouter au panier
+                        </span>
                     </a>
-                    
+
                     <select class="home-quick-view-select text font__futura-CondensedLight font-uppercase">
                         <?php foreach ($categoria as $c) : ?>
                             <option value="<?= $c->slug; ?>"><?= $c->name; ?></option>
                         <?php endforeach ?>
                     </select>
-                    <select class="home-quick-view-select text mb-10 font__futura-CondensedLight font-uppercase">
-                        <option value="1">1 x PACKS DE 6</option>
-                        <option value="2">2 x PACKS DE 6</option>
-                        <option value="3">3 x PACKS DE 6</option>
-                        <option value="4">4 x PACKS DE 6</option>
-                        <option value="5">5 x PACKS DE 6</option>
-                        <option value="6">6 x PACKS DE 6</option>
+                    <select onchange="set_quantity('.js-plus', this)" class="home-quick-view-select text mb-10 font__futura-CondensedLight font-uppercase">
+                        <?php foreach ($packs as $p) : ?>
+                            <option value="<?= $p[0]; ?>"><?= $p; ?></option>
+                        <?php endforeach ?>
+
                     </select>
                     <a href="" class="home-quick-view-link text-small mb-10 font__futura-medium">INFORMATIONS NUTRICIONELLES</a>
                     <div class="more-detail">
@@ -133,9 +138,7 @@
         </div>
     </div>
 
-    <div 
-        class="single-bg js-single-bg" 
-        style="--text: ' <?= $texto_fundo_animado ?> RELAXANTE RELAXANTE RELAXANTE'; --line-1: -500px; --line-2: -750px ">
+    <div class="single-bg js-single-bg" style="--text: ' <?= $texto_fundo_animado ?> RELAXANTE RELAXANTE RELAXANTE'; --line-1: -500px; --line-2: -750px ">
         <div class="wrapper wrapper-absolute">
             <div class="single-grid-2">
                 <div class="single-images">
@@ -220,7 +223,7 @@
     window.scroll({
         behavior: 'smooth'
     });
-    globalThis._banner_single = "<?= $rotulo ?>"    
+    globalThis._banner_single = "<?= $rotulo ?>"
 
     window.onscroll = function() {
         const horizontal = document.querySelector('.js-single-bg');
@@ -228,14 +231,28 @@
         let andu = window.scrollY / 10
         // let x1 = window.scrollY / 4
         // let x2 = ((window.scrollY / 4) - 175) * -1 
-        
-        let x1 = parseInt(  -500 + andu )
-        let x2 = parseInt(  -750 + -andu ) 
+
+        let x1 = parseInt(-500 + andu)
+        let x2 = parseInt(-750 + -andu)
 
         // horizontal.style.backgroundPosition = `${x1}px 50px, ${x2}px 50px`;
         horizontal.style.setProperty('--line-1', `${x1}px`);
         horizontal.style.setProperty('--line-2', `${x2}px`);
     }
+
+    function add_to_cart($el) {
+        console.log($el)
+        let id = $el.getAttribute('data-id')
+        let quantity = $el.getAttribute('data-quantity')
+        fetch(`?add-to-cart=${id}&quantity=${quantity}`)
+        render_cart()
+    }
+
+    function set_quantity( selector, $el ) {
+        let quantity =  $el.value
+        document.querySelector(selector).setAttribute('data-quantity', quantity )
+    }
+
 </script>
 
 <?php get_footer(); ?>
