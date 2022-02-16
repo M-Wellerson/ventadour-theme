@@ -64,7 +64,7 @@ $preco_aplicado_desconto = number_format($preco_aplicado_desconto, 2, ',', '.');
             <div>
                 <strong class="title-big"><?php the_title() ?></strong><br>
                 <span class="title-sub">GAZEUSE</span>
-                <div class="home-quick-view-image">
+                <div class="home-quick-view-image home-quick-view-image-single">
                     <span style="background-color: #FDE17F;"></span>
                     <canvas width="500" height="500" class="can-of-soda"></canvas>
                 </div>

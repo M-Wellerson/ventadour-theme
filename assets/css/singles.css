@@ -120,6 +120,7 @@
     width: 460px;
     max-width: 90vw;
     transition: .3s;
+    margin-bottom: 5px;
 }
 
 .more-detail {
@@ -191,7 +192,13 @@
         width: 30vw;
     }
     .single-bg {
-        background-size: 800px, 800px;    
+        /* background-size: 800px, 800px;     */
+    }
+    .single-bg {
+        display: none;
+    }
+    .single-grid-2 {
+        padding: 20px;
     }
 }
 

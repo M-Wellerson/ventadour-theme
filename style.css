@@ -62,6 +62,7 @@ body {
     background-position: left center;
     background-size: 0% 100%;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .banner-home-slide>a:hover {
@@ -334,6 +335,19 @@ body {
     .can-of-soda {
         width: 90vw !important;
         height: 50vh !important;
+    }
+    .home-quick-view-image-single {
+        margin-bottom: 50px;
+    }
+    .home-quick-view-image-single>span {
+        width: 300px;
+        height: 300px;        
+        margin-top: 20px;
+    }
+    .home-quick-view-image-single>canvas {
+        width: 270px !important;
+        height: 270px !important;
+        margin-top: 20px;
     }
 
 }

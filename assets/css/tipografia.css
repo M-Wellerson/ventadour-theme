@@ -39,3 +39,10 @@
 .font-uppercase {
     text-transform: uppercase;
 }
+
+@media (max-width: 760px) {
+    
+    .title {
+        text-align: center;
+    }
+}

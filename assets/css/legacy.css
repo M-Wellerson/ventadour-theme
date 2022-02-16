@@ -39,4 +39,7 @@ menu {
     .home .home__social {
         height: 117px;
     }
+    .ventes {
+        padding: 28px 8px 0px 20px;
+    }
 }
