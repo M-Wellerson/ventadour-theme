@@ -343,6 +343,23 @@
         position: absolute;
         bottom: 0;
     } */
+    .shop-product-title,
+    .shop-product-subtitle {
+        text-align: center !important;
+        width: 98vw;
+    }
+    .bg-amarelo {
+        background-size: 100%;
+    }
+    .js-o-zak {
+        width: 95vw !important;
+    }
+    .shop-product-col {
+        margin-top: 150px !important;
+    }
+    .catalogo-box {
+        min-height: 50vh !important;
+    }
 }
 
 @media (min-width: 600px) {

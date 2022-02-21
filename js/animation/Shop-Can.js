@@ -17,7 +17,7 @@ let shop1 = new Lata('canvas.can-shop-1');
 shop1.add({ y: '-=0.1, +=0.2', rotation: '-=1', rotateY: Math.PI * 2.5 }, { rotateX: 6.7, y: -5.5, x: -2, z: 4.5, rotateZ: Math.PI * -0.1 }, "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool-framboise.png")
 shop1.add({ y: '-=0.1, +=0.2', rotation: '-=1', rotateY: Math.PI * 1.5 }, { rotateX: 0, y: -7.5, x: -4.5, z: -0.7, rotateZ: Math.PI * 0.1 }, "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/ocool.png")
 
-let shop2 = new Lata('canvas.can-shop-2');
+let shop2 = new Lata('canvas.can-shop-2', 1.5);
 
 // function render_animate_rotate() {
 //     globalThis._shop2_animate = on_rotate('canvas.can-shop-2')
@@ -92,7 +92,7 @@ shop2.add(
 )
 
 
-let a_fer = new Lata('.js-a-fer')
+let a_fer = new Lata('.js-a-fer', 1.5)
 a_fer.add(
     { 
         y: '-=0.1, +=0.2', 
