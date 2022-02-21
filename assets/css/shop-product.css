@@ -360,6 +360,9 @@
     .catalogo-box {
         min-height: 50vh !important;
     }
+    .can-shop-2 {
+        margin-left: 80px !important;
+    }
 }
 
 @media (min-width: 600px) {
