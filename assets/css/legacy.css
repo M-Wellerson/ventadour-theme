@@ -42,4 +42,11 @@ menu {
     .ventes {
         padding: 28px 8px 0px 20px;
     }
+    .slowTop {
+        max-width: 100vw !important;
+    }
+    .menu__wrapper {
+        background-color: #000;
+        max-width: calc( 100vw - 40px ) !important;
+    }
 }
