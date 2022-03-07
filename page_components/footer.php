@@ -79,7 +79,9 @@ $ardechePage;
 			</div>
 		</div>
 		<div class="c-footer-copy"> 
-			© 2019 Ventadour | All rights reserved. 
+			<a href="javascript:document.location.reload(true);">©</a>  
+			2019 Ventadour | All rights reserved. 
+			
 		</div>
 	</div>
 </footer>
