@@ -350,6 +350,11 @@ body {
         margin-top: 20px;
     }
 
+    .can-of-soda-single {
+        width: 90vw !important;
+        height: 90vw !important;
+    }
+
 }
 
 @media ( min-width: 600px) {

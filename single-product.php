@@ -66,7 +66,7 @@ $preco_aplicado_desconto = number_format($preco_aplicado_desconto, 2, ',', '.');
                 <span class="title-sub">GAZEUSE</span>
                 <div class="home-quick-view-image home-quick-view-image-single">
                     <span style="background-color: #FDE17F;"></span>
-                    <canvas width="500" height="500" class="can-of-soda"></canvas>
+                    <canvas width="500" height="500" class="can-of-soda can-of-soda-single"></canvas>
                 </div>
             </div>
             <div>
@@ -96,7 +96,6 @@ $preco_aplicado_desconto = number_format($preco_aplicado_desconto, 2, ',', '.');
                             ajouter au panier
                         </span>
                     </a>
-
                     <select class="home-quick-view-select text font__futura-CondensedLight font-uppercase">
                         <?php foreach ($categoria as $c) : ?>
                             <option value="<?= $c->slug; ?>"><?= $c->name; ?></option>
@@ -106,7 +105,6 @@ $preco_aplicado_desconto = number_format($preco_aplicado_desconto, 2, ',', '.');
                         <?php foreach ($packs as $p) : ?>
                             <option value="<?= $p[0]; ?>"><?= $p; ?></option>
                         <?php endforeach ?>
-
                     </select>
                     <a href="" class="home-quick-view-link text-small mb-10 font__futura-medium">INFORMATIONS NUTRICIONELLES</a>
                     <div class="more-detail">
