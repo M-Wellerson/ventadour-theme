@@ -82,16 +82,16 @@ function main(nameClass, path_img, pop = false) {
             // Update sizes
             sizes.width = window.innerWidth;
             sizes.height = window.innerHeight;
-            // sizes.height = window.innerWidth;
+            if( sizes.width < 700 ) {
+
+                sizes.height = window.innerWidth;
+            }
 
             if(pop) {
                 sizes.width = 300
                 sizes.height = 300
             }
             
-            console.log( {w:sizes.width, h:sizes.height} )
-            alert('resize')
-
             // Update camera
             camera.aspect = sizes.width / sizes.height;
             camera.updateProjectionMatrix();
