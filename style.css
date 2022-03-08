@@ -333,8 +333,8 @@ body {
         width: 80vw;
     }
     .can-of-soda {
-        width: 90vw !important;
-        height: 50vh !important;
+        width: 250px !important;
+        height: 250px !important;
     }
     .home-quick-view-image-single {
         margin-bottom: 50px;
@@ -353,6 +353,10 @@ body {
     .can-of-soda-single {
         width: 90vw !important;
         height: 90vw !important;
+    }
+    .home-quick-view-image>span {
+        width: 250px;
+        height: 250px;
     }
 
 }

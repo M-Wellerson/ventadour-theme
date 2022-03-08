@@ -76,6 +76,11 @@ function main(nameClass, path_img, pop = false) {
         if(pop) {
             sizes.width = 300
             sizes.height = 300
+            if( sizes.width < 700 ) {
+                sizes.width = 250
+                sizes.height = 250
+            }
+            console.log('ok')
         }
 
         window.addEventListener('resize', () => {
@@ -90,6 +95,10 @@ function main(nameClass, path_img, pop = false) {
             if(pop) {
                 sizes.width = 300
                 sizes.height = 300
+                if( sizes.width < 700 ) {
+                    sizes.width = 250
+                    sizes.height = 250
+                }
             }
             
             // Update camera
