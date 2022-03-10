@@ -358,9 +358,7 @@ body {
     .bg-amarelo {
         background-size: 100%;
     }
-    .js-o-zak {
-        width: 95vw !important;
-    }
+   
     .shop-product-col {
         margin-top: 200px !important;
     }
@@ -602,5 +600,14 @@ body {
 
     .header__social {
         bottom: 350px !important;
+        
+    }
+}
+@media (max-width: 400px) {  
+    .js-o-zak {
+        width: 85vw !important;
+    }
+    .shop-product-ozak {
+        background-position: center;
     }
 }
