@@ -328,6 +328,7 @@ body {
     .menu-cat {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 100px;
     }
 
     .menu-cat-separador {
@@ -361,7 +362,7 @@ body {
         width: 95vw !important;
     }
     .shop-product-col {
-        margin-top: 150px !important;
+        margin-top: 200px !important;
     }
     .catalogo-box {
         min-height: 50vh !important;
@@ -369,6 +370,11 @@ body {
     .can-shop-2 {
         margin-left: 80px !important;
     }
+    .can-shop-1 {
+        display: block;
+        left: 40px;
+    }
+   
 }
 
 @media (min-width: 600px) {
