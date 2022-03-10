@@ -606,7 +606,7 @@ body {
 @media (max-width: 400px) {  
     .js-o-zak {
         width: auto !important;
-        height: 240px !important;
+        height: 150px !important;
     }
     .shop-product-ozak {
         background-position: center;
