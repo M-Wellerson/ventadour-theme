@@ -606,9 +606,13 @@ body {
 @media (max-width: 400px) {  
     .js-o-zak {
         width: auto !important;
-        height: 250px !important;
+        height: 240px !important;
     }
     .shop-product-ozak {
         background-position: center;
+        min-height: 30vh !important;
+    }
+    .shop-product-col {
+        margin-top: 100px !important;
     }
 }
