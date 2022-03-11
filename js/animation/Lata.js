@@ -156,8 +156,7 @@ export default class Lata {
     }
 
     resize() {
-        alert(window.innerWidth)
-        if(window.innerWidth < 700) {
+        if(window.innerWidth > 700) {
             window.addEventListener('resize', () => {
                 this.sizes.width = window.innerWidth
                 this.sizes.height = this.proporcional(window.innerWidth) // window.innerHeight
