@@ -157,7 +157,7 @@ export default class Lata {
 
     resize() {
         window.addEventListener('resize', () => {
-            console.log('resize lata')
+            alert('resize lata')
             this.sizes.width = window.innerWidth
             this.sizes.height = this.proporcional(window.innerWidth) // window.innerHeight
             this.camera.aspect = this.sizes.width / this.sizes.height
