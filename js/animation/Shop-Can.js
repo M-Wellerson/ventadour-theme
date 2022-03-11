@@ -27,7 +27,7 @@ let shop2 = new Lata('canvas.can-shop-2', 1.5);
 
 
 
-let o_coll = new Lata('.js-shop-o-coll')
+let o_coll = new Lata('.js-shop-o-coll', 1.5)
 o_coll.add(
     { 
         y: '-=0.1, +=0.2', 
@@ -109,7 +109,7 @@ a_fer.add(
     "./../wp-content/themes/rsw-pestrin/assets/images/can/textures/afer.png"
 )
 
-let o_vive = new Lata('.js-o-vive')
+let o_vive = new Lata('.js-o-vive', 1.5)
 o_vive.add(
     { 
         y: '-=0.1, +=0.2', 

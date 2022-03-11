@@ -642,4 +642,11 @@ body {
     .shop-product-ocol {
         margin-top: 190px !important;
     }
+    .js-shop-o-coll {
+        left: 50px;
+    }
+    .js-o-vive {
+        left: 50px;
+        top: 70px !important;
+    }
 }
