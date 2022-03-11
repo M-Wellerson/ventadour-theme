@@ -60,7 +60,7 @@ $texto_ovive                 = get_field("texto_ovive") ?? "";
             <h2 class="shop-product-title">O’COOL</h2>
             <span class="shop-product-subtitle">CBD</span>
             <div class="shop-product-row">
-                <div class="shop-product-col">
+                <div class="shop-product-col shop-product-ocol">
                     <p class="shop-product-descriacao">
                         <?= $texto_ocool; ?>
                     </p>
