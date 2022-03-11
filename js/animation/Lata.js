@@ -156,15 +156,17 @@ export default class Lata {
     }
 
     resize() {
-        window.addEventListener('resize', () => {
-            this.sizes.width = window.innerWidth
-            this.sizes.height = this.proporcional(window.innerWidth) // window.innerHeight
-            alert(this.sizes.width, this.sizes.height)
-            this.camera.aspect = this.sizes.width / this.sizes.height
-            this.camera.updateProjectionMatrix()
-            this.renderer.setSize(this.sizes.width, this.sizes.height)
-            this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-        })
+        if(window.innerWidth < 700) {
+            window.addEventListener('resize', () => {
+                this.sizes.width = window.innerWidth
+                this.sizes.height = this.proporcional(window.innerWidth) // window.innerHeight
+                alert(this.sizes.width, this.sizes.height)
+                this.camera.aspect = this.sizes.width / this.sizes.height
+                this.camera.updateProjectionMatrix()
+                this.renderer.setSize(this.sizes.width, this.sizes.height)
+                this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+            })
+        }
     }
 
     create_camera() {
