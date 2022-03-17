@@ -55,7 +55,7 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
                 <!-- <span class="home-quick-view-subtitle">GAZEUSE</span> -->
                 <div class="home-quick-view-image">
                     <span style="background-color: #FDE17F;"></span>
-                    <canvas width="500" height="500" class="can-of-soda"></canvas>
+                    <canvas width="1000" height="1000" class="can-of-soda"></canvas>
                     <!-- <img src="<?= get_template_directory_uri() ?>/assets/images/zoo.png"> -->
                 </div>
             </div>
