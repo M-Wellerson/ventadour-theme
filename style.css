@@ -408,6 +408,25 @@ body {
 @media ( min-width: 1200px) {
     /* [xl-] muito largo */
 }
+@media ( max-width: 700px) {
+    /* [xl-] muito largo */
+    .home-quick-view>div {
+        margin-top: 75px;
+    }
+    .home-quick-view-title {
+        font-size: 35px;
+    }
+    .home-quick-view-image>canvas {
+        display: block;
+        position: relative !important;
+        top: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .home-quick-view-image>span {
+        margin-top: 0px;
+    }
+}
 
 .cursor_point {
     cursor: pointer;
