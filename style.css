@@ -407,11 +407,15 @@ body {
 
 @media ( min-width: 1200px) {
     /* [xl-] muito largo */
+    .home-quick-view-image>canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
 }
 @media ( max-width: 700px) {
     /* [xl-] muito largo */
     .home-quick-view>div {
-        margin-top: 75px;
+        margin-top: 65px;
     }
     .home-quick-view-title {
         font-size: 35px;
