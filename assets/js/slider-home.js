@@ -100,7 +100,7 @@ var swiper = new Swiper(".js-banner-home", {
         prevEl: ".banner-prev",
     },
     breakpoints: {
-        600: { slidesPerView: 2 },
+        800: { slidesPerView: 2 },
         1000: { slidesPerView: 4 },
         1400: { slidesPerView: 5 },
     }

@@ -115,7 +115,7 @@ function main(nameClass, path_img, pop = false) {
         scene.add(ambientLight);
 
         const camera = new THREE.PerspectiveCamera(20, sizes.width / sizes.height, 1, 3000);
-        camera.position.set(2, 2, 2);
+        camera.position.set(2, 3, 2);
         scene.add(camera);
 
         // Controls
