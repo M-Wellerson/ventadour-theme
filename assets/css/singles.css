@@ -229,3 +229,11 @@
     /* [xl-] muito largo */
 }
 
+@media ( max-width: 700px) {
+    /* [xl-] muito largo */
+    .title-big {
+        font-size: 55px;
+    }
+}
+
+
