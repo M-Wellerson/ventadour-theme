@@ -48,7 +48,7 @@ $ids = wc_get_products(array('return' => 'ids', 'limit' => -1));
         <span class="banner-control banner-prev"></span>
     </div>
 
-    <div class="home-quick-view js-home-quick-view" -hidden>
+    <div class="home-quick-view js-home-quick-view" hidden>
         <div>
             <div>
                 <strong class="home-quick-view-title">VENTADOUR</strong>
