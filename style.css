@@ -182,7 +182,7 @@ body {
     z-index: 991;
     background-color: #C00;
     background-color: attr(color);
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 .home-quick-view-preco {
@@ -415,6 +415,14 @@ body {
     .home-quick-view-image>span {
         width: 31%;
         padding-top: 31%;
+        height: auto;
+    }
+}
+@media ( min-width: 2000px) {
+
+    .home-quick-view-image>span {
+        width: 15%;
+        padding-top: 15%;
         height: auto;
     }
 }
