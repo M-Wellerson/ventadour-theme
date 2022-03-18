@@ -73,15 +73,15 @@ function main(nameClass, path_img, pop = false) {
             width: canvas.width,
             height: canvas.height
         }
-        if(pop) {
-            sizes.width = 300
-            sizes.height = 300
-            if( sizes.width < 700 ) {
-                sizes.width = 250
-                sizes.height = 250
-            }
-            console.log('ok')
-        }
+        // if(pop) {
+        //     sizes.width = 300
+        //     sizes.height = 300
+        //     if( sizes.width < 700 ) {
+        //         sizes.width = 250
+        //         sizes.height = 250
+        //     }
+        //     console.log('ok')
+        // }
 
         window.addEventListener('resize', () => {
             // Update sizes
