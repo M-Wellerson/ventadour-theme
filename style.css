@@ -184,7 +184,11 @@ body {
     background-color: #C00;
     background-color: attr(color);
     margin-top: 0px !important;
-    top: 0 !important;
+    top: 80px !important;
+}
+
+.relative {
+    position: relative;
 }
 
 .home-quick-view-preco {

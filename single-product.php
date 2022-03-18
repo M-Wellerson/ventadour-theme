@@ -61,7 +61,7 @@ $preco_aplicado_desconto = number_format($preco_aplicado_desconto, 2, ',', '.');
 
     <div class="wrapper ventes js-warp">
         <div class="flex between s-grid-quick-view">
-            <div>
+            <div class="relative">
                 <strong class="title-big"><?php the_title() ?></strong><br>
                 <span class="title-sub">GAZEUSE</span>
                 <div class="home-quick-view-image home-quick-view-image-single">
