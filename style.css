@@ -459,6 +459,13 @@ body {
     }
     .home-quick-view-image>span {
         margin-top: 0px;
+        width: 55% !important;
+        height: auto !important;
+        padding-top: 55% !important;
+    }
+    .home-quick-view-image-single>span {
+        /* margin-top: 30% !important; */
+        top: 30% !important;
     }
 }
 
