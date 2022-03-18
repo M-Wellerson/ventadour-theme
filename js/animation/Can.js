@@ -92,14 +92,14 @@ function main(nameClass, path_img, pop = false) {
                 sizes.height = window.innerWidth;
             }
 
-            if(pop) {
-                sizes.width = 300
-                sizes.height = 300
-                if( sizes.width < 700 ) {
-                    sizes.width = 250
-                    sizes.height = 250
-                }
-            }
+            // if(pop) {
+            //     sizes.width = 300
+            //     sizes.height = 300
+            //     if( sizes.width < 700 ) {
+            //         sizes.width = 250
+            //         sizes.height = 250
+            //     }
+            // }
             
             // Update camera
             camera.aspect = sizes.width / sizes.height;
@@ -145,5 +145,5 @@ function main(nameClass, path_img, pop = false) {
 
 // globalThis._lata
 main('canvas.can-of-soda', globalThis._lata);
-globalThis._render_lata = l => main('canvas.can-of-soda', l, true);
+globalThis._render_lata = l => main('canvas.can-of-soda', l);
 // main('canvas.can-of-soda', "./../../wp-content/themes/rsw-pestrin/assets/images/can/textures/1868.png");
