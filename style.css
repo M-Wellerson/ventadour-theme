@@ -427,10 +427,20 @@ body {
 @media ( min-width: 2000px) {
 
     .home-quick-view-image>span {
-        width: 15%;
-        padding-top: 15%;
-        height: auto;
+        width: 40% !important;
+        height: auto !important;
+        padding-top: 40% !important;
+        margin-top: 0 !important;
+        top: 30% !important;
     }
+    .home-quick-view-image-single>span {
+        width: 70% !important;
+        height: auto !important;
+        padding-top: 70% !important;
+        margin-top: 0 !important;
+        top: 30% !important;
+    }
+    
 }
 @media ( max-width: 700px) {
     /* [xl-] muito largo */
