@@ -424,21 +424,21 @@ body {
         height: auto;
     }
 }
-@media ( min-width: 2000px) {
+@media ( min-width: 1500px) {
 
     .home-quick-view-image>span {
         width: 40% !important;
         height: auto !important;
         padding-top: 40% !important;
         margin-top: 0 !important;
-        top: 30% !important;
+        top: 25% !important;
     }
     .home-quick-view-image-single>span {
         width: 70% !important;
         height: auto !important;
         padding-top: 70% !important;
         margin-top: 0 !important;
-        top: 30% !important;
+        top: 25% !important;
     }
     
 }
