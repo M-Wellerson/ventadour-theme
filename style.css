@@ -373,7 +373,7 @@ body {
         height: 90vw !important;
     }
 
-   
+
 
 }
 
@@ -444,13 +444,13 @@ body {
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
 
     .home-quick-view-image>span {
-        width: 40% !important;
-        height: auto !important;
-        padding-top: 40% !important;
-        margin-top: 0 !important;
+        --percent: 35%;
+        width: var(--percent);
+        padding-top: var(--percent);
+        height: auto;
         top: 25% !important;
     }
 
