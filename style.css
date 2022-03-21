@@ -484,11 +484,11 @@ body {
     }
 
     .home-quick-view-image>span {
-        --percent: 50%;
+        --percent: 70%;
         width: var(--percent);
         padding-top: var(--percent);
         height: auto;
-        top: 10% !important;
+        top: 20% !important;
     }
 
     .home-quick-view-image-single>span {
